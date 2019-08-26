@@ -23,7 +23,7 @@ document.addEventListener('cdm-item-page:ready', function(){
    var itemLink = document.querySelector('.ItemUrl-itemUrlLink a');
    itemLink = itemLink ? itemLink.href.replace(/^http:\/\//i, 'https://') : null;
 
-   var collection = window.location.href.match(/collection\/([a-zA-Z0-1-_]+)\//i)[1];
+   var collection = window.location.href.match(/collection\/([a-zA-Z0-9-_]+)\//i)[1];
 
 
    // Check to see if there is an item link and if it is Ohms or Youtube.
