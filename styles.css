@@ -1,0 +1,171 @@
+/*
+ *  Everywhere changes.
+ */
+
+* {
+   font-family: Lato, sans-serif !important;
+}
+
+.fa {
+   font-family: FontAwesome !important;
+}
+
+body {
+   background-color: #fff;
+}
+
+/* Does this do anything? Who's valerie? */
+.Header-valerieBar {
+   display: none;
+}
+
+/* Does this do anything? */
+.Header-header .clearfix {
+   display: none;
+}
+
+
+/*
+ *  Header changes. !!! #headerNameDiv disappears on mobile
+ */
+#headerNameDiv {
+   padding: 0;
+}
+
+#gsuTitle {
+   text-align: center;
+}
+
+#gsuTitle h2,
+#gsuTitle h3 {
+   margin: 0;
+}
+
+.Header-logoHolder {
+   padding: 0;
+}
+
+.SimpleSearch-searchBox {
+   padding: 0 25px 0 0;
+   display: block;
+   text-align: right;
+}
+
+.SimpleSearch-searchInput,
+.SimpleSearch-searchHolder {
+   display:inline-block;
+}
+
+
+/*
+ *  Menu changes.
+ */
+@media screen and (min-width: 768px) {
+   .Header-logoImage {
+      margin-top: 10px !important;
+      height: 80px;
+      width: auto;
+   }
+
+   .Header-controls {
+      width: 100%;
+      position: static;
+   }
+
+   .Header-hamburgerHolder {
+      width: 100%;
+      text-align: center;
+      background-color: #0039A6;
+   }
+
+   .Header-hamburgerHolder .btn-group button {
+      display: none;
+   }
+
+   .Header-headerMenuLinks {
+      position: static;
+      display: flex;
+      flex-wrap: nowrap;
+      border: none;
+      box-shadow: none;
+      background: none;
+      padding: 0;
+      margin: 0;
+   }
+
+   .Header-headerMenuLinks h3 {
+      margin: 5px;
+      color: #fff;
+      font-weight: bolder;
+      font-size: 1rem;
+      line-height: 30px;
+   }
+
+   .dropdown.btn-group {
+      float: none;
+   }
+
+   .dropdown.btn-group {
+      padding: 0;
+   }
+
+   .dropdown-menu > li > a {
+      background: none !important;
+   }
+}
+
+
+/*
+ *  Homepage changes.
+ */
+
+/* Description on home. */
+.ContentHeader-maincontainer {
+   display: none;
+}
+
+.Card-cardImageHolder {
+   width: 100%;
+   padding: 10px 10px 0 10px;
+   margin: 0;
+}
+
+.Card-cardText {
+   display: none !important;
+}
+
+.Card-cardTextHolder {
+   width: 100%;
+   height: inherit;
+   float: none;
+   text-align: center;
+}
+
+.Card-cardImage {
+   width: 100%;
+   max-height: 150px;
+   max-width: none;
+}
+
+.Card-fullcard {
+   height:220px;
+   border: 1px solid #eee;
+   box-shadow: 1px 1px 3px #eee;
+}
+
+
+/*
+ *  Search/browse pages.
+ */
+.Paginator-paginationwrapper {
+   background: none;
+}
+
+.topSearchCardPaginator {
+   border-bottom: 1px solid #eee;
+}
+
+.bottomSearchCardPaginator {
+   padding-top: 10px;
+   border-top: 1px solid #eee;
+}

@@ -1,4 +1,4 @@
-# CONTENTdm Hosted Script
+# CONTENTdm Hosted Scripts, Pages, and CSS
 Code Repository: https://bitbucket.org/gsulibwebmaster/cdm-hosted-script/  
 Author: Matt Brooks <mbrooks34@gsu.edu>  
 Date Created: 2019-06-27  
@@ -14,6 +14,8 @@ Log into the CONTENTdm website configuration tool. Expand the custom menu on the
 ## Version History
 * 1.0.0, 2019-06-27, MB
     * Initial commit.
+* ?, 2019-09-04, MB
+    
 
 ## Dependencies
 * none

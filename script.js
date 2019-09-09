@@ -11,9 +11,137 @@
 *
 ***************************************************************************************************/
 
+// "cdm-app:ready" fires off first, followed by enter events then ready events.
+
+// .Header-logoHolder contains logo
+// #headerNameDiv contains the title
+// .SimpleSearch-searchBox contains the searchbox in another location
+// all three should probably be in .Header-logoNameContainer
+// .Header-hambuergerHolder is in .Header-controls and will need attention at some point (move to menu?)
+
+
+// Various fixes.
+function gsuFixes() {
+   var fontId = "gsuFont";
+
+   // Add lato font to pages.
+   if(!document.getElementById(fontId)) {
+      var link = document.createElement("link");
+      link.id = fontId;
+      link.rel = "stylesheet";
+      link.href = "https://fonts.googleapis.com/css?family=Lato&display=swap";
+      document.head.appendChild(link);
+   }
+
+
+   var wrapperId = "gsuWrapper";
+
+   // Wrap content in container.
+   if(!document.getElementById(wrapperId)) {
+      // Wrap content in a container.
+      var toWrap = document.querySelector(".CoreLayout-mainWrapperContainer");
+      var parent = toWrap.parentNode;
+      var wrapper = document.createElement("div");
+
+      wrapper.className = "container";
+      wrapper.setAttribute("id", wrapperId);
+      // Add wrapper to DOM before toWrap.
+      parent.insertBefore(wrapper, toWrap);
+      // Put content in wrapper.
+      wrapper.appendChild(toWrap);
+   }
+
+
+   // Title tweaks.
+   var titleId = "gsuTitle";
+
+   if(!document.getElementById(titleId)) {
+      var titleDiv = document.getElementById("headerNameDiv");
+      var newTitle = document.createElement("h2");
+      newTitle.innerHTML = '<a href="https://digital.library.gsu.edu">Digital Collections</a>';
+      var newSubTitle = document.createElement('h3');
+      newSubTitle.innerHTML = '<a href="https://library.gsu.edu/">Georgia State University Library</a>';
+      var div = document.createElement("div");
+      div.setAttribute("id", titleId);
+      div.innerHTML = newTitle.outerHTML + newSubTitle.outerHTML;
+      titleDiv.innerHTML = div.outerHTML;
+   }
+
+
+   // Header tweaks
+   var headerId = "gsuHeader";
+
+   if(!document.getElementById(headerId)) {
+      var headerParent = document.querySelector(".Header-logoNameContainer");
+      var logo = document.querySelector(".Header-logoHolder");
+      logo.classList.add("col-sm-3");
+      var title = document.getElementById("headerNameDiv");
+      title.classList.add("col-sm-6");
+      var search = document.querySelector(".SimpleSearch-searchBox");
+      search.classList.add("col-sm-3");
+      var wrapper = document.createElement("div");
+      wrapper.setAttribute("id", headerId);
+      wrapper.className = "row";
+      headerParent.insertBefore(wrapper, logo);
+      wrapper.appendChild(logo);
+      wrapper.appendChild(title);
+      wrapper.appendChild(search);
+   }
+}
+
+// For every page. THIS MIGHT NOT WORK AS EXPECTED
+// document.addEventListener("cdm-app:ready", function() {
+// });
+
+
+// For the home page.
+document.addEventListener("cdm-home-page:ready", function() {
+   gsuFixes();
+
+   // Change cards to col-sm-3s.
+   var cards = document.querySelectorAll(".Card-cardcontainer.col-sm-6");
+
+   cards.forEach(function(card) {
+      card.classList.remove("col-sm-6");
+      card.classList.add("col-sm-3");
+   });
+});
+
+
+// For the browse/search page.
+document.addEventListener("cdm-search-page:ready", function() {
+   gsuFixes();
+});
+
+
+// For the advanced search page.
+document.addEventListener("cdm-advanced-search-page:ready", function() {
+   gsuFixes();
+});
+
+
+// For collection pages.
+document.addEventListener("cdm-collection-page:ready", function() {
+   gsuFixes();
+});
+
+
+// For collection landing pages.
+document.addEventListener("cdm-collection-landing-page:ready", function() {
+   gsuFixes();
+});
+
+
+// For collection search pages.
+document.addEventListener("cdm-collection-search-page:ready", function() {
+   gsuFixes();
+});
+
 
 // Custom CDM call for an item page ready state.
 document.addEventListener('cdm-item-page:ready', function(){
+   gsuFixes();
+
    var id = document.querySelector('.field-identi .field-value span');
    id = id ? id.innerHTML : null;
 
@@ -98,4 +226,28 @@ document.addEventListener('cdm-item-page:ready', function(){
       element.innerHTML = '<td>View Maps from this Publication</td><td><a href="' + searchLink + '">Link</a></td>';
       description.appendChild(element);
    }
+});
+
+
+// For custom pages.
+document.addEventListener("cdm-custom-page:ready", function() {
+   gsuFixes();
+});
+
+
+// For the about page.
+document.addEventListener("cdm-about-page:ready", function() {
+   gsuFixes();
+});
+
+
+// For the login page.
+document.addEventListener("cdm-login-page:ready", function() {
+   gsuFixes();
+});
+
+
+// For the not found page.
+document.addEventListener("cdm-notfound-page:ready", function() {
+   gsuFixes();
 });
