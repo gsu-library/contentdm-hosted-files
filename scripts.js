@@ -20,8 +20,20 @@
 // .Header-hambuergerHolder is in .Header-controls and will need attention at some point (move to menu?)
 
 
+
 // Various fixes.
 function gsuFixes() {
+   var styleId = "gsuStyle";
+   // Add our CSS to the page for easy editing.
+   if(!document.getElementById(styleId)) {
+      var link = document.createElement("link");
+      link.id = styleId;
+      link.rel = "stylesheet";
+      link.href = "https://static.library.gsu.edu/contentdm/styles.css";
+      document.head.appendChild(link);
+   }
+
+
    var fontId = "gsuFont";
 
    // Add lato font to pages.
@@ -89,15 +101,9 @@ function gsuFixes() {
    }
 }
 
-// For every page. THIS MIGHT NOT WORK AS EXPECTED
-// document.addEventListener("cdm-app:ready", function() {
-// });
 
-
-// For the home page.
-document.addEventListener("cdm-home-page:ready", function() {
-   gsuFixes();
-
+// Home page ready
+function gsuHomePageReady() {
    // Change cards to col-sm-3s.
    var cards = document.querySelectorAll(".Card-cardcontainer.col-sm-6");
 
@@ -105,43 +111,11 @@ document.addEventListener("cdm-home-page:ready", function() {
       card.classList.remove("col-sm-6");
       card.classList.add("col-sm-3");
    });
-});
+}
 
 
-// For the browse/search page.
-document.addEventListener("cdm-search-page:ready", function() {
-   gsuFixes();
-});
-
-
-// For the advanced search page.
-document.addEventListener("cdm-advanced-search-page:ready", function() {
-   gsuFixes();
-});
-
-
-// For collection pages.
-document.addEventListener("cdm-collection-page:ready", function() {
-   gsuFixes();
-});
-
-
-// For collection landing pages.
-document.addEventListener("cdm-collection-landing-page:ready", function() {
-   gsuFixes();
-});
-
-
-// For collection search pages.
-document.addEventListener("cdm-collection-search-page:ready", function() {
-   gsuFixes();
-});
-
-
-// Custom CDM call for an item page ready state.
-document.addEventListener('cdm-item-page:ready', function(){
-   gsuFixes();
-
+// For the item Page
+function gsuItemPageReady() {
    var id = document.querySelector('.field-identi .field-value span');
    id = id ? id.innerHTML : null;
 
@@ -181,51 +155,110 @@ document.addEventListener('cdm-item-page:ready', function(){
       var googleMapsLink = "https://geo.library.gsu.edu/mapoverlay.php?collection=" + collection + "&map=" + id;
       var googleEarthLink = "https://geo.library.gsu.edu/geoserver/wms/kml?layers=" + id;
       var geoTiffLink = "https://geo.library.gsu.edu/geotiffs/" + collection + "/" + id + "_geo.tif";
-      var element = document.createElement('tr');
-      var description = document.querySelector('.item-description');
       var fragment = document.createDocumentFragment();
 
-      element.innerHTML = '<td>Google Maps</td><td><a href="' + googleMapsLink + '">Link</a></td>';
+      var element = document.createElement('div');
+      element.className = "btn-group btn-group-default";
+      element.innerHTML = '<button class="cdm-btn btn btn-primary"><a target="_blank" href="'+googleMapsLink+'"><span class="fa fa-2x fa-map"> Maps</span></a></button>';
       fragment.appendChild(element);
-      element = document.createElement('tr');
-      element.innerHTML = '<td>Google Earth</td><td><a href="' + googleEarthLink + '">Link</a></td>';
+      element = document.createElement('div');
+      element.className = "btn-group btn-group-default";
+      element.innerHTML = '<button class="cdm-btn btn btn-primary"><a href="'+googleEarthLink+'"><span class="fa fa-2x fa-globe"> Google Earth</span></a></button>';
       fragment.appendChild(element);
-      element = document.createElement('tr');
-      element.innerHTML = '<td>Download GeoTiff</td><td><a href="' + geoTiffLink + '">Link</a></td>';
+      element = document.createElement('div');
+      element.className = "btn-group btn-group-default";
+      element.innerHTML = '<button class="cdm-btn btn btn-primary"><a href="'+geoTiffLink+'"><span class="fa fa-2x fa-download"> GeoTiff</span></a></button>';
       fragment.appendChild(element);
-      description.appendChild(fragment);
+
+      var toolbars = document.querySelectorAll(".btn-toolbar");
+      toolbars.forEach(function(bar) {
+         bar.appendChild(fragment.cloneNode(true));
+      });
    }
 
 
-   // atlphdata | atlpp section.
+   // atlphdata
    if(id && collection && collection == "atlphdata") {
       console.log("ATL Population and Housing Data.");
       var excelLink = "https://static.library.gsu.edu/atlphdata/excel/" + id + ".xls";
       var csvLink = "https://static.library.gsu.edu/atlphdata/csv/" + id + ".zip";
-      var element = document.createElement('tr');
-      var description = document.querySelector('.item-description');
       var fragment = document.createDocumentFragment();
 
-      element.innerHTML = '<td>Excel Tables</td><td><a href="' + excelLink + '">Link</a></td>';
+      var element = document.createElement('div');
+      element.className = "btn-group btn-group-default";
+      element.innerHTML = '<button class="cdm-btn btn btn-primary"><a href="'+excelLink+'"><span class="fa fa-2x fa-file"> Excel</span></a></button>';
       fragment.appendChild(element);
-      element = document.createElement('tr');
-      element.innerHTML = '<td>CSV Tables</td><td><a href="' + csvLink + '">Link</a></td>';
+      element = document.createElement('div');
+      element.className = "btn-group btn-group-default";
+      element.innerHTML = '<button class="cdm-btn btn btn-primary"><a href="'+csvLink+'"><span class="fa fa-2x fa-file"> CSV</span></a></button>';
       fragment.appendChild(element);
-      element = document.createElement('tr');
-      description.appendChild(fragment);
+
+
+      var toolbars = document.querySelectorAll(".btn-toolbar");
+      toolbars.forEach(function(bar) {
+         bar.appendChild(fragment.cloneNode(true));
+      });
    }
 
 
-   // planATLpubs | atlpp section.
+   // planATLpubs | atlphdata section.
    if(id && collection && (collection == "planATLpubs" || collection == "atlphdata")) {
       console.log("Adding search link to planATLpubs and atlphdata.");
-      var searchLink = window.location.origin + "/digital/search/collection/atlmaps/searchterm/" + id;
-      var element = document.createElement('tr');
-      var description = document.querySelector('.item-description');
+      var searchLink = "/digital/search/collection/atlmaps/searchterm/" + id;
 
-      element.innerHTML = '<td>View Maps from this Publication</td><td><a href="' + searchLink + '">Link</a></td>';
-      description.appendChild(element);
+      var element = document.createElement('div');
+      element.className = "btn-group btn-group-default";
+      element.innerHTML = '<button class="cdm-btn btn btn-primary"><a href="'+searchLink+'"><span class="fa fa-2x fa-search"> View Maps</span></a></button>';
+
+      var toolbars = document.querySelectorAll(".btn-toolbar");
+      toolbars.forEach(function(bar) {
+         bar.appendChild(element.cloneNode(true));
+      });
    }
+}
+
+
+// For the home page.
+document.addEventListener("cdm-home-page:ready", function() {
+   gsuFixes();
+   gsuHomePageReady();
+});
+
+
+// For the browse/search page.
+document.addEventListener("cdm-search-page:ready", function() {
+   gsuFixes();
+});
+
+
+// For the advanced search page.
+document.addEventListener("cdm-advanced-search-page:ready", function() {
+   gsuFixes();
+});
+
+
+// For collection pages.
+document.addEventListener("cdm-collection-page:ready", function() {
+   gsuFixes();
+});
+
+
+// For collection landing pages.
+document.addEventListener("cdm-collection-landing-page:ready", function() {
+   gsuFixes();
+});
+
+
+// For collection search pages.
+document.addEventListener("cdm-collection-search-page:ready", function() {
+   gsuFixes();
+});
+
+
+// Custom CDM call for an item page ready state.
+document.addEventListener('cdm-item-page:ready', function(){
+   gsuFixes();
+   gsuItemPageReady();
 });
 
 

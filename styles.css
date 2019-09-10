@@ -1,4 +1,4 @@
-/*
+/***********************************************************
  *  Everywhere changes.
  */
 
@@ -10,8 +10,29 @@
    font-family: FontAwesome !important;
 }
 
+button > a > .fa {
+   color: #fff;
+}
+
 body {
    background-color: #fff;
+}
+
+/* old link color was #2178B5 */
+
+/* Make sure content isn't hidden by the header. */
+.CoreLayout-mainWrapperContainer {
+   margin-top: 190px;
+}
+
+
+/***********************************************************
+ *  Header changes. !!! #headerNameDiv disappears on mobile
+ */
+
+/* Row has -15px left & right margin for some reason, combatting with padding for our row. */
+#gsuHeader {
+   padding: 0 15px;
 }
 
 /* Does this do anything? Who's valerie? */
@@ -24,98 +45,117 @@ body {
    display: none;
 }
 
-
-/*
- *  Header changes. !!! #headerNameDiv disappears on mobile
- */
 #headerNameDiv {
    padding: 0;
-}
-
-#gsuTitle {
-   text-align: center;
-}
-
-#gsuTitle h2,
-#gsuTitle h3 {
-   margin: 0;
 }
 
 .Header-logoHolder {
    padding: 0;
 }
 
+.Header-logoImage {
+   margin: 0;
+   float: none;
+   margin: 0 auto !important;
+   display: block;
+   max-width: 137px;
+}
+
+#gsuTitle {
+   text-align: center;
+   margin: 40px 0 20px 0;
+}
+
+#gsuTitle h2,
+#gsuTitle h3 {
+   margin: 8px 0;
+}
+
+#gsuTitle h2 a {
+   color: #555;
+   font-size: 2rem;
+   font-weight: normal;
+}
+
+#gsuTitle h3 a {
+   color: #555;
+   font-size: 1rem;
+   font-weight: normal;
+}
+
 .SimpleSearch-searchBox {
-   padding: 0 25px 0 0;
+   padding: 0;
    display: block;
    text-align: right;
 }
 
-.SimpleSearch-searchInput,
+.SimpleSearch-searchInput {
+   display:inline-block;
+   margin: 15px 10px 15px 15px;
+}
+
 .SimpleSearch-searchHolder {
    display:inline-block;
+   margin: 15px 15px 15px 10px;
+}
+
+#search-button {
+   margin-top: -6px;
+}
+
+.Header-controls {
+   width: 100%;
+   position: static;
+   line-height: 12px;
+}
+
+.Header-hamburgerHolder {
+   width: 100%;
+   text-align: center;
+   background-color: #0039A6;
+   margin: 0;
+}
+
+.Header-hamburgerHolder .dropdown.btn-group {
+   float: none;
+   position: static;
+   padding: 0;
+}
+
+/* THIS IS THE HAMBURGER MENU BUTTON */
+.Header-hamburgerHolder .btn-group button {
+   display: none;
+}
+
+.Header-headerMenuLinks {
+   display: block;
+   position: static;
+   text-align: center;
+   margin: 0;
+   padding: 0;
+   color: #000;
+   background: none;
+   border: none;
+}
+
+.Header-headerMenuLinks > li {
+   display: inline-block;
+}
+
+.Header-headerMenuLinks > li > a {
+   padding: 15px 20px;
+   background: none !important;
+}
+
+/* Why does this even exist? */
+.Header-headerMenuLinks > li > a > h3 {
+   margin: 0;
+   color: #fff;
+   font-weight: 600;
 }
 
 
-/*
- *  Menu changes.
- */
-@media screen and (min-width: 768px) {
-   .Header-logoImage {
-      margin-top: 10px !important;
-      height: 80px;
-      width: auto;
-   }
-
-   .Header-controls {
-      width: 100%;
-      position: static;
-   }
-
-   .Header-hamburgerHolder {
-      width: 100%;
-      text-align: center;
-      background-color: #0039A6;
-   }
-
-   .Header-hamburgerHolder .btn-group button {
-      display: none;
-   }
-
-   .Header-headerMenuLinks {
-      position: static;
-      display: flex;
-      flex-wrap: nowrap;
-      border: none;
-      box-shadow: none;
-      background: none;
-      padding: 0;
-      margin: 0;
-   }
-
-   .Header-headerMenuLinks h3 {
-      margin: 5px;
-      color: #fff;
-      font-weight: bolder;
-      font-size: 1rem;
-      line-height: 30px;
-   }
-
-   .dropdown.btn-group {
-      float: none;
-   }
-
-   .dropdown.btn-group {
-      padding: 0;
-   }
-
-   .dropdown-menu > li > a {
-      background: none !important;
-   }
-}
-
-
-/*
+/***********************************************************
  *  Homepage changes.
  */
 
@@ -154,9 +194,10 @@ body {
 }
 
 
-/*
+/***********************************************************
  *  Search/browse pages.
  */
+
 .Paginator-paginationwrapper {
    background: none;
 }
@@ -168,4 +209,17 @@ body {
 .bottomSearchCardPaginator {
    padding-top: 10px;
    border-top: 1px solid #eee;
+}
+
+.Panel-expandedPanel {
+   background-color: #0039A6 !important;
+}
+
+
+/***********************************************************
+ *  Item pages.
+ */
+
+.btn-toolbar > .btn, .btn-toolbar > .btn-group, .btn-toolbar > .input-group {
+   margin-top: 5px;
 }
