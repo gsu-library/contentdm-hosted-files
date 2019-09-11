@@ -23,8 +23,9 @@
 
 // Various fixes.
 function gsuFixes() {
-   var styleId = "gsuStyle";
    // Add our CSS to the page for easy editing.
+   var styleId = "gsuStyle";
+
    if(!document.getElementById(styleId)) {
       var link = document.createElement("link");
       link.id = styleId;
@@ -34,9 +35,9 @@ function gsuFixes() {
    }
 
 
+   // Add lato font to pages.
    var fontId = "gsuFont";
 
-   // Add lato font to pages.
    if(!document.getElementById(fontId)) {
       var link = document.createElement("link");
       link.id = fontId;
@@ -46,9 +47,9 @@ function gsuFixes() {
    }
 
 
+   // Wrap content in container.
    var wrapperId = "gsuWrapper";
 
-   // Wrap content in container.
    if(!document.getElementById(wrapperId)) {
       // Wrap content in a container.
       var toWrap = document.querySelector(".CoreLayout-mainWrapperContainer");
@@ -98,6 +99,8 @@ function gsuFixes() {
       wrapper.appendChild(logo);
       wrapper.appendChild(title);
       wrapper.appendChild(search);
+
+      document.querySelector(".Header-logoImage").parentNode.href = "https://library.gsu.edu";
    }
 }
 

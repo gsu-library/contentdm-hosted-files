@@ -57,8 +57,9 @@ body {
    margin: 0;
    float: none;
    margin: 0 auto !important;
+   padding: 0;
    display: block;
-   max-width: 137px;
+   max-width: 127px;
 }
 
 #gsuTitle {
@@ -145,6 +146,16 @@ body {
 .Header-headerMenuLinks > li > a {
    padding: 15px 20px;
    background: none !important;
+}
+
+.Header-headerMenuLinks > li > a:focus,
+.Header-headerMenuLinks > li > a:hover {
+   background-color: #eee !important;
+}
+
+.Header-headerMenuLinks > li > a:focus > h3,
+.Header-headerMenuLinks > li > a:hover > h3 {
+   color: #4a4a4a !important;
 }
 
 /* Why does this even exist? */
