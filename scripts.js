@@ -162,7 +162,7 @@ function gsuItemPageReady() {
 
       var element = document.createElement('div');
       element.className = "btn-group btn-group-default";
-      element.innerHTML = '<button class="cdm-btn btn btn-primary"><a target="_blank" href="'+googleMapsLink+'"><span class="fa fa-2x fa-map"> Maps</span></a></button>';
+      element.innerHTML = '<button class="cdm-btn btn btn-primary"><a target="_blank" href="'+googleMapsLink+'"><span class="fa fa-2x fa-map"> Map Overlay</span></a></button>';
       fragment.appendChild(element);
       element = document.createElement('div');
       element.className = "btn-group btn-group-default";
@@ -211,7 +211,7 @@ function gsuItemPageReady() {
 
       var element = document.createElement('div');
       element.className = "btn-group btn-group-default";
-      element.innerHTML = '<button class="cdm-btn btn btn-primary"><a href="'+searchLink+'"><span class="fa fa-2x fa-search"> View Maps</span></a></button>';
+      element.innerHTML = '<button class="cdm-btn btn btn-primary"><a href="'+searchLink+'"><span class="fa fa-2x fa-search"> View Item\'s Maps</span></a></button>';
 
       var toolbars = document.querySelectorAll(".btn-toolbar");
       toolbars.forEach(function(bar) {
