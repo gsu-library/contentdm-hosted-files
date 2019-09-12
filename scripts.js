@@ -23,15 +23,31 @@
 
 // Various fixes.
 function gsuFixes() {
-   // Add our CSS to the page for easy editing.
-   var styleId = "gsuStyle";
+   var debug = new URL(document.location).searchParams.get("debug");
+   debug = debug ? true : false;
 
-   if(!document.getElementById(styleId)) {
-      var link = document.createElement("link");
-      link.id = styleId;
-      link.rel = "stylesheet";
-      link.href = "https://static.library.gsu.edu/contentdm/styles.css";
-      document.head.appendChild(link);
+   if(debug) {
+      links = document.getElementsByTagName("link");
+
+      for(var i = 0; i < links.length; i++) {
+         if(links[i].getAttribute("href") == "/customizations/global//styles.min.css") {
+            console.log("Removing local CSS.");
+            links[i].parentNode.removeChild(links[i]);
+
+            console.log("Adding CSS from static.");
+            var styleId = "gsuStyle";
+
+            if(!document.getElementById(styleId)) {
+               var link = document.createElement("link");
+               link.id = styleId;
+               link.rel = "stylesheet";
+               link.href = "https://static.library.gsu.edu/contentdm/styles.css";
+               document.head.appendChild(link);
+            }
+
+            break;
+         }
+      }
    }
 
 
