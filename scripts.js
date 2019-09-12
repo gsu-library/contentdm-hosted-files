@@ -71,7 +71,7 @@ function gsuFixes() {
    if(!document.getElementById(titleId)) {
       var titleDiv = document.getElementById("headerNameDiv");
       var newTitle = document.createElement("h2");
-      newTitle.innerHTML = '<a href="https://digital.library.gsu.edu">Digital Collections</a>';
+      newTitle.innerHTML = '<a href="https://digitalcollections.library.gsu.edu">Digital Collections</a>';
       var newSubTitle = document.createElement('h3');
       newSubTitle.innerHTML = '<a href="https://library.gsu.edu/">Georgia State University Library</a>';
       var div = document.createElement("div");
