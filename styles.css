@@ -184,6 +184,13 @@ a.SimpleSearch-headerAdvancedSearchButtonLink {
 }
 
 
+@media only screen and (max-width: 370px) {
+      .Header-headerMenuLinks li:first-child {
+      display: none;
+   }
+}
+
+
 @media only screen and (max-width: 767px) {
    .Header-logoHolder {
       display: none;
@@ -209,8 +216,8 @@ a.SimpleSearch-headerAdvancedSearchButtonLink {
       display: none;
    }
 
-   .Header-headerMenuLinks li:first-child {
-      display: none;
+   .Header-headerMenuLinks > li > a {
+      padding: 10px 15px;
    }
 }
 
