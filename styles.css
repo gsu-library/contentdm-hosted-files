@@ -26,6 +26,13 @@ body {
 }
 
 
+@media only screen and (max-width: 767px) {
+   .CoreLayout-mainWrapperContainer {
+      margin-top: 70px;
+   }
+}
+
+
 /***********************************************************
  *  Header changes. !!! #headerNameDiv disappears on mobile
  */
@@ -86,13 +93,13 @@ body {
 
 .SimpleSearch-searchBox {
    padding: 0;
-   display: block;
+   display: flex;
    text-align: right;
 }
 
 .SimpleSearch-searchInput {
    display:inline-block;
-   margin: 15px 10px 15px 15px;
+   margin: 15px 10px 15px auto;
 }
 
 .SimpleSearch-searchHolder {
@@ -101,7 +108,18 @@ body {
 }
 
 #search-button {
-   margin-top: -6px;
+   margin-top: -2px;
+   background-color: #0039A6;
+}
+
+a.headerIcon,
+a.SimpleSearch-headerAdvancedSearchButtonLink:visited,
+a.SimpleSearch-headerAdvancedSearchButtonLink {
+   color: #003aa6;
+}
+
+.headerIconButton:hover a {
+   background-color: #0039A6 !important;
 }
 
 .Header-controls {
@@ -166,6 +184,32 @@ body {
 }
 
 
+@media only screen and (max-width: 767px) {
+   .Header-logoHolder {
+      display: none;
+   }
+
+   .Header-mobileTitleHide {
+      display: block;
+   }
+
+   #gsuTitle {
+      margin-top: 0;
+   }
+
+   .SimpleSearch-searchBox {
+      margin-top: 80px;
+   }
+
+   .SimpleSearch-searchInput {
+      margin-left: 20px;
+   }
+
+   #advanced-search-button {
+      display: none;
+   }
+}
+
 /***********************************************************
  *  Homepage changes.
  */
@@ -202,6 +246,17 @@ body {
    height:220px;
    border: 1px solid #eee;
    box-shadow: 1px 1px 3px #eee;
+}
+
+
+@media only screen and (max-width: 767px) {
+   .Card-cardImageHolder {
+      text-align: center;
+   }
+
+   .Card-cardImage {
+      max-width: 250px;
+   }
 }
 
 
