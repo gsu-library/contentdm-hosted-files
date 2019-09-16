@@ -208,6 +208,10 @@ a.SimpleSearch-headerAdvancedSearchButtonLink {
    #advanced-search-button {
       display: none;
    }
+
+   .Header-headerMenuLinks li:first-child {
+      display: none;
+   }
 }
 
 /***********************************************************
