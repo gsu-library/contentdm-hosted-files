@@ -63,6 +63,19 @@ function gsuFixes() {
    }
 
 
+   // Lose focus on search box for mobile.
+   var searchBox = document.getElementById("search-input");
+
+   if(searchBox) {
+      searchBox.addEventListener("keydown", function(e){
+         if(e.keyCode === 13) {
+            searchBox.blur();
+            document.body.focus();
+         }
+      });
+   }
+
+
    // Wrap content in container.
    var wrapperId = "gsuWrapper";
 
