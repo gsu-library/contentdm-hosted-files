@@ -23,8 +23,19 @@
 
 // Various fixes.
 function gsuFixes() {
-   var debug = new URL(document.location).searchParams.get("debug");
-   debug = debug ? true : false;
+   var debug = false;
+   var params = document.location.search.slice(1).split("&");
+
+   for(i = 0; i < params.length; i++) {
+      temp = params[i].split("=");
+
+      if(temp.length && temp[0] == "debug") {
+         if(temp.length > 1 && temp[1]) {
+            debug = true;
+            break;
+         }
+      }
+   }
 
    if(debug) {
       links = document.getElementsByTagName("link");
@@ -139,10 +150,11 @@ function gsuHomePageReady() {
    // Change cards to col-sm-3s.
    var cards = document.querySelectorAll(".Card-cardcontainer.col-sm-6");
 
-   cards.forEach(function(card) {
-      card.classList.remove("col-sm-6");
-      card.classList.add("col-sm-3");
-   });
+   // Can't use forEach because IE.
+   for(i = 0; i < cards.length; i++) {
+      cards[i].classList.remove("col-sm-6");
+      cards[i].classList.add("col-sm-3");
+   }
 }
 
 
@@ -203,9 +215,10 @@ function gsuItemPageReady() {
       fragment.appendChild(element);
 
       var toolbars = document.querySelectorAll(".btn-toolbar");
-      toolbars.forEach(function(bar) {
-         bar.appendChild(fragment.cloneNode(true));
-      });
+
+      for(i = 0; i < toolbars.length; i++) {
+         toolbars[i].appendChild(fragment.cloneNode(true));
+      }
    }
 
 
@@ -227,9 +240,10 @@ function gsuItemPageReady() {
 
 
       var toolbars = document.querySelectorAll(".btn-toolbar");
-      toolbars.forEach(function(bar) {
-         bar.appendChild(fragment.cloneNode(true));
-      });
+
+      for(i = 0; i < toolbars.length; i++) {
+         toolbars[i].appendChild(fragment.cloneNode(true));
+      }
    }
 
 
@@ -243,9 +257,10 @@ function gsuItemPageReady() {
       element.innerHTML = '<button class="cdm-btn btn btn-primary"><a href="'+searchLink+'"><span class="fa fa-2x fa-search"> View Item\'s Maps</span></a></button>';
 
       var toolbars = document.querySelectorAll(".btn-toolbar");
-      toolbars.forEach(function(bar) {
-         bar.appendChild(element.cloneNode(true));
-      });
+      
+      for(i = 0; i < toolbars.length; i++) {
+         toolbars[i].appendChild(element.cloneNode(true));
+      }
    }
 }
 
