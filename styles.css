@@ -32,6 +32,14 @@ body {
    }
 }
 
+/* Remove hack for ellipsis. */
+.titleDiv::before,
+.truncation::before,
+.titleDiv::after,
+.truncation::after {
+   display: none;
+}
+
 
 /***********************************************************
  *  Header changes. !!! #headerNameDiv disappears on mobile
@@ -61,7 +69,7 @@ body {
 }
 
 .Header-logoHolder div {
-   text-align: center;
+   text-align: right;
 }
 
 .Header-logoImage {
@@ -101,7 +109,7 @@ body {
    padding: 0;
    display: flex;
    text-align: right;
-   justify-content: center;
+   justify-content: left;
 }
 
 .SimpleSearch-searchInput {
@@ -297,6 +305,16 @@ a.SimpleSearch-headerAdvancedSearchButtonLink {
 
 .Panel-expandedPanel {
    background-color: #0039A6 !important;
+}
+
+
+/* these might cause issues later */
+.GridSearchResult-container {
+   height: 201px;
+}
+
+.GridSearchResult-cardTitle {
+   height: 61px;
 }
 
 
