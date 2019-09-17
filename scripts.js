@@ -203,15 +203,15 @@ function gsuItemPageReady() {
 
       var element = document.createElement('div');
       element.className = "btn-group btn-group-default";
-      element.innerHTML = '<button class="cdm-btn btn btn-primary"><a target="_blank" href="'+googleMapsLink+'"><span class="fa fa-2x fa-map"> Map Overlay</span></a></button>';
+      element.innerHTML = '<a class="cdm-btn btn btn-primary" target="_blank" href="'+googleMapsLink+'"><span class="fa fa-2x fa-map"> Map Overlay</span></a>';
       fragment.appendChild(element);
       element = document.createElement('div');
       element.className = "btn-group btn-group-default";
-      element.innerHTML = '<button class="cdm-btn btn btn-primary"><a href="'+googleEarthLink+'"><span class="fa fa-2x fa-globe"> Google Earth</span></a></button>';
+      element.innerHTML = '<a class="cdm-btn btn btn-primary" href="'+googleEarthLink+'"><span class="fa fa-2x fa-globe"> Google Earth</span></a>';
       fragment.appendChild(element);
       element = document.createElement('div');
       element.className = "btn-group btn-group-default";
-      element.innerHTML = '<button class="cdm-btn btn btn-primary"><a href="'+geoTiffLink+'"><span class="fa fa-2x fa-download"> GeoTiff</span></a></button>';
+      element.innerHTML = '<a class="cdm-btn btn btn-primary" href="'+geoTiffLink+'"><span class="fa fa-2x fa-download"> GeoTiff</span></a>';
       fragment.appendChild(element);
 
       var toolbars = document.querySelectorAll(".btn-toolbar");
@@ -231,11 +231,11 @@ function gsuItemPageReady() {
 
       var element = document.createElement('div');
       element.className = "btn-group btn-group-default";
-      element.innerHTML = '<button class="cdm-btn btn btn-primary"><a href="'+excelLink+'"><span class="fa fa-2x fa-file"> Excel</span></a></button>';
+      element.innerHTML = '<a class="cdm-btn btn btn-primary" href="'+excelLink+'"><span class="fa fa-2x fa-file"> Excel</span></a>';
       fragment.appendChild(element);
       element = document.createElement('div');
       element.className = "btn-group btn-group-default";
-      element.innerHTML = '<button class="cdm-btn btn btn-primary"><a href="'+csvLink+'"><span class="fa fa-2x fa-file"> CSV</span></a></button>';
+      element.innerHTML = '<a class="cdm-btn btn btn-primary" href="'+csvLink+'"><span class="fa fa-2x fa-file"> CSV</span></a>';
       fragment.appendChild(element);
 
 
@@ -254,7 +254,7 @@ function gsuItemPageReady() {
 
       var element = document.createElement('div');
       element.className = "btn-group btn-group-default";
-      element.innerHTML = '<button class="cdm-btn btn btn-primary"><a href="'+searchLink+'"><span class="fa fa-2x fa-search"> View Item\'s Maps</span></a></button>';
+      element.innerHTML = '<a class="cdm-btn btn btn-primary" href="'+searchLink+'"><span class="fa fa-2x fa-search"> View Item\'s Maps</span></a>';
 
       var toolbars = document.querySelectorAll(".btn-toolbar");
       
