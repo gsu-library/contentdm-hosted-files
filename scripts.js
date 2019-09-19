@@ -162,6 +162,7 @@ function gsuHomePageReady() {
 function gsuItemPageReady() {
    var id = document.querySelector('.field-identi .field-value span');
    id = id ? id.innerHTML : null;
+   id = id.replace(/<[^>]*>?/gm, ''); // Remove any tags that may be in here.
 
    var geo = document.querySelector('.field-georef .field-value span');
    geo = geo ? (geo.innerHTML.toLowerCase() == "yes" ? true : false) : false;
@@ -203,15 +204,15 @@ function gsuItemPageReady() {
 
       var element = document.createElement('div');
       element.className = "btn-group btn-group-default";
-      element.innerHTML = '<a class="cdm-btn btn btn-primary" target="_blank" href="'+googleMapsLink+'"><span class="fa fa-2x fa-map"> Map Overlay</span></a>';
+      element.innerHTML = '<a class="cdm-btn btn btn-primary gsu-button" target="_blank" href="'+googleMapsLink+'"><span class="fa fa-map"></span> Map Overlay</a>';
       fragment.appendChild(element);
       element = document.createElement('div');
       element.className = "btn-group btn-group-default";
-      element.innerHTML = '<a class="cdm-btn btn btn-primary" href="'+googleEarthLink+'"><span class="fa fa-2x fa-globe"> Google Earth</span></a>';
+      element.innerHTML = '<a class="cdm-btn btn btn-primary gsu-button" href="'+googleEarthLink+'"><span class="fa fa-globe"></span> Google Earth</a>';
       fragment.appendChild(element);
       element = document.createElement('div');
       element.className = "btn-group btn-group-default";
-      element.innerHTML = '<a class="cdm-btn btn btn-primary" href="'+geoTiffLink+'"><span class="fa fa-2x fa-download"> GeoTiff</span></a>';
+      element.innerHTML = '<a class="cdm-btn btn btn-primary gsu-button" href="'+geoTiffLink+'"><span class="fa fa-download"></span> GeoTiff</a>';
       fragment.appendChild(element);
 
       var toolbars = document.querySelectorAll(".btn-toolbar");
@@ -225,17 +226,17 @@ function gsuItemPageReady() {
    // atlphdata
    if(id && collection && collection == "atlphdata") {
       console.log("ATL Population and Housing Data.");
-      var excelLink = "https://static.library.gsu.edu/atlphdata/excel/" + id + ".xls";
-      var csvLink = "https://static.library.gsu.edu/atlphdata/csv/" + id + ".zip";
+      var excelLink = "https://static.library.gsu.edu/contentdm/atlphdata/excel/" + id + ".xls";
+      var csvLink = "https://static.library.gsu.edu/contentdm/atlphdata/csv/" + id + ".zip";
       var fragment = document.createDocumentFragment();
 
       var element = document.createElement('div');
       element.className = "btn-group btn-group-default";
-      element.innerHTML = '<a class="cdm-btn btn btn-primary" href="'+excelLink+'"><span class="fa fa-2x fa-file"> Excel</span></a>';
+      element.innerHTML = '<a class="cdm-btn btn btn-primary gsu-button" href="'+excelLink+'"><span class="fa fa-file"></span> Excel</a>';
       fragment.appendChild(element);
       element = document.createElement('div');
       element.className = "btn-group btn-group-default";
-      element.innerHTML = '<a class="cdm-btn btn btn-primary" href="'+csvLink+'"><span class="fa fa-2x fa-file"> CSV</span></a>';
+      element.innerHTML = '<a class="cdm-btn btn btn-primary gsu-button" href="'+csvLink+'"><span class="fa fa-file"></span> CSV</a>';
       fragment.appendChild(element);
 
 
@@ -254,7 +255,7 @@ function gsuItemPageReady() {
 
       var element = document.createElement('div');
       element.className = "btn-group btn-group-default";
-      element.innerHTML = '<a class="cdm-btn btn btn-primary" href="'+searchLink+'"><span class="fa fa-2x fa-search"> View Item\'s Maps</span></a>';
+      element.innerHTML = '<a class="cdm-btn btn btn-primary gsu-button" href="'+searchLink+'"><span class="fa fa-search"></span> View Item\'s Maps</a>';
 
       var toolbars = document.querySelectorAll(".btn-toolbar");
       

@@ -334,6 +334,14 @@ a.SimpleSearch-headerAdvancedSearchButtonLink {
    font-size: 1.5em;
 }
 
+.gsu-button {
+   font-size: 1em;
+}
+
+.gsu-button .fa {
+   margin-right: 4px;
+}
+
 
 /***********************************************************
  *  Footer.
