@@ -206,7 +206,7 @@ function gsuItemPageReady() {
       var element = document.createElement('div');
       element.className = "btn-group btn-group-default";
       element.innerHTML = '<a class="cdm-btn btn btn-primary gsu-button" target="_blank" href="'+googleMapsLink+'"><span class="fa fa-map"></span> Map Overlay</a>';
-      fragment.appendChild(element);
+      //fragment.appendChild(element);
       element = document.createElement('div');
       element.className = "btn-group btn-group-default";
       element.innerHTML = '<a class="cdm-btn btn btn-primary gsu-button" href="'+googleEarthLink+'"><span class="fa fa-globe"></span> Google Earth</a>';
