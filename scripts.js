@@ -165,7 +165,8 @@ function gsuItemPageReady() {
    id = id.replace(/<[^>]*>?/gm, ''); // Remove any tags that may be in here.
 
    var geo = document.querySelector('.field-georef .field-value span');
-   geo = geo ? (geo.innerHTML.toLowerCase() == "yes" ? true : false) : false;
+   geo = geo ? geo.innerHTML.toLowerCase().replace(/<[^>]*>?/gm, '') : null;
+   geo = geo == "yes" ? true : false;
 
    var itemLink = document.querySelector('.ItemUrl-itemUrlLink a');
    itemLink = itemLink ? itemLink.href.replace(/^http:\/\//i, 'https://') : null;
