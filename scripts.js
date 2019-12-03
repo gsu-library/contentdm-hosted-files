@@ -198,7 +198,8 @@ function gsuItemPageReady() {
    // If the item on the page is georeferenced, has an ID, and a collection.
    if(id && collection && geo) {
       console.log("This item is georeferenced with a collection of " + collection + "and an id of " + id + ".");
-      var googleMapsLink = "https://geo.library.gsu.edu/mapoverlay.php?collection=" + collection + "&map=" + id;
+      //var googleMapsLink = "https://geo.library.gsu.edu/mapoverlay.php?collection=" + collection + "&map=" + id;
+      var googleMapsLink = "https://geo.library.gsu.edu/overlay/" + collection + "/" + id + "/";
       var googleEarthLink = "https://geo.library.gsu.edu/geoserver/wms/kml?layers=" + id;
       var geoTiffLink = "https://geo.library.gsu.edu/geotiffs/" + collection + "/" + id + "_geo.tif";
       var fragment = document.createDocumentFragment();
@@ -206,7 +207,7 @@ function gsuItemPageReady() {
       var element = document.createElement('div');
       element.className = "btn-group btn-group-default";
       element.innerHTML = '<a class="cdm-btn btn btn-primary gsu-button" target="_blank" href="'+googleMapsLink+'"><span class="fa fa-map"></span> Map Overlay</a>';
-      //fragment.appendChild(element);
+      fragment.appendChild(element);
       element = document.createElement('div');
       element.className = "btn-group btn-group-default";
       element.innerHTML = '<a class="cdm-btn btn btn-primary gsu-button" href="'+googleEarthLink+'"><span class="fa fa-globe"></span> Google Earth</a>';
