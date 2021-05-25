@@ -2,7 +2,7 @@
 *
 * CONTENTdm Hosted Script - <https://bitbucket.org/gsulibwebmaster/cdm-hosted-script/>
 * File Author: Matt Brooks <mbrooks34@gsu.edu>
-* License: none 
+* License: none
 * Description: See https://help.oclc.org/Metadata_Services/CONTENTdm/Advanced_website_customization
 *   /JavaScript_customizations/List_of_JavaScript_lifecycle_events and https://help.oclc.org/Metadat
 *   a_Services/CONTENTdm/Advanced_website_customization/JavaScript_customizations/JavaScript_events
@@ -23,42 +23,45 @@
 
 // Various fixes.
 function gsuFixes() {
-   var debug = false;
-   var params = document.location.search.slice(1).split("&");
+   var debugCss = false, debugJs = false;
+   var params = document.location.search.slice(1).split('&');
 
+   // Find out what kind of debugging we are doing.
    for(i = 0; i < params.length; i++) {
-      temp = params[i].split("=");
-
-      if(temp.length && temp[0] == "debug") {
-         if(temp.length > 1 && temp[1]) {
-            debug = true;
-            break;
-         }
+      if(params[i].startsWith('debugCss')) {
+         debugCss = true;
+      }
+      else if(params[i].startsWith('debugJs')) {
+         debugJs = true;
       }
    }
 
-   if(debug) {
-      links = document.getElementsByTagName("link");
+   if(debugCss) {
+      links = document.getElementsByTagName('link');
 
       for(var i = 0; i < links.length; i++) {
-         if(links[i].getAttribute("href") == "/customizations/global//styles.min.css") {
-            console.log("Removing local CSS.");
+         if(links[i].getAttribute('href') == '/customizations/global//styles.min.css') {
+            console.log('Removing local CSS.');
             links[i].parentNode.removeChild(links[i]);
 
-            console.log("Adding CSS from static.");
-            var styleId = "gsuStyle";
+            console.log('Adding CSS from static.');
+            var styleId = 'gsuStyle';
 
             if(!document.getElementById(styleId)) {
-               var link = document.createElement("link");
+               var link = document.createElement('link');
                link.id = styleId;
-               link.rel = "stylesheet";
-               link.href = "https://static.library.gsu.edu/contentdm/styles.css";
+               link.rel = 'stylesheet';
+               link.href = 'https://static.library.gsu.edu/contentdm/styles.css';
                document.head.appendChild(link);
             }
 
             break;
          }
       }
+   }
+
+   if(debugJs) {
+      throw new Error('Must halt the script.');
    }
 
 
@@ -193,7 +196,7 @@ function gsuItemPageReady() {
 
       if(iframe && container) { container.innerHTML = iframe; }
    }
-   
+
 
    // If the item on the page is georeferenced, has an ID, and a collection.
    if(id && collection && geo) {
@@ -260,7 +263,7 @@ function gsuItemPageReady() {
       element.innerHTML = '<a class="cdm-btn btn btn-primary gsu-button" href="'+searchLink+'"><span class="fa fa-search"></span> View Item\'s Maps</a>';
 
       var toolbars = document.querySelectorAll(".btn-toolbar");
-      
+
       for(i = 0; i < toolbars.length; i++) {
          toolbars[i].appendChild(element.cloneNode(true));
       }
