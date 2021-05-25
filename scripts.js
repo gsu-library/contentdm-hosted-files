@@ -19,11 +19,12 @@
 // all three should probably be in .Header-logoNameContainer
 // .Header-hambuergerHolder is in .Header-controls and will need attention at some point (move to menu?)
 
-
+// Global to halt JS.
+var debugJs = false
 
 // Various fixes.
 function gsuFixes() {
-   var debugCss = false, debugJs = false;
+   var debugCss = false;
    var params = document.location.search.slice(1).split('&');
 
    // Find out what kind of debugging we are doing.
@@ -61,7 +62,7 @@ function gsuFixes() {
    }
 
    if(debugJs) {
-      throw new Error('Must halt the script.');
+      return;
    }
 
 
@@ -274,7 +275,7 @@ function gsuItemPageReady() {
 // For the home page.
 document.addEventListener("cdm-home-page:ready", function() {
    gsuFixes();
-   gsuHomePageReady();
+   if(!debugJs) { gsuHomePageReady(); }
 });
 
 
@@ -311,7 +312,7 @@ document.addEventListener("cdm-collection-search-page:ready", function() {
 // Custom CDM call for an item page ready state.
 document.addEventListener('cdm-item-page:ready', function(){
    gsuFixes();
-   gsuItemPageReady();
+   if(!debugJs) { gsuItemPageReady(); }
 });
 
 
