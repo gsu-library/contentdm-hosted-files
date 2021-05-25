@@ -1,6 +1,6 @@
 /***************************************************************************************************
 *
-* CONTENTdm Hosted Script - <https://bitbucket.org/gsulibwebmaster/cdm-hosted-script/>
+* CONTENTdm Hosted Script - <https://github.com/gsu-library/css-js-toolbox-code-blocks>
 * File Author: Matt Brooks <mbrooks34@gsu.edu>
 * License: none
 * Description: See https://help.oclc.org/Metadata_Services/CONTENTdm/Advanced_website_customization
@@ -20,11 +20,12 @@
 // .Header-hambuergerHolder is in .Header-controls and will need attention at some point (move to menu?)
 
 // Global to halt JS.
-var debugJs = false
+// TODO: have better debugging logic including removing all of our CSS.
+var removeJs = false
 
 // Various fixes.
 function gsuFixes() {
-   var debugCss = false;
+   var debugCss = false, removeCss = false;
    var params = document.location.search.slice(1).split('&');
 
    // Find out what kind of debugging we are doing.
@@ -32,18 +33,23 @@ function gsuFixes() {
       if(params[i].startsWith('debugCss')) {
          debugCss = true;
       }
-      else if(params[i].startsWith('debugJs')) {
-         debugJs = true;
+      else if(params[i].startsWith('removeCss')) {
+         removeCss = true;
+      }
+      else if(params[i].startsWith('removeJs')) {
+         removeJs = true;
       }
    }
 
-   if(debugCss) {
+   if(debugCss || removeCss) {
       links = document.getElementsByTagName('link');
 
       for(var i = 0; i < links.length; i++) {
          if(links[i].getAttribute('href') == '/customizations/global//styles.min.css') {
             console.log('Removing local CSS.');
             links[i].parentNode.removeChild(links[i]);
+
+            if(removeCss) { break; }
 
             console.log('Adding CSS from static.');
             var styleId = 'gsuStyle';
@@ -61,7 +67,7 @@ function gsuFixes() {
       }
    }
 
-   if(debugJs) {
+   if(removeJs) {
       return;
    }
 
@@ -275,7 +281,7 @@ function gsuItemPageReady() {
 // For the home page.
 document.addEventListener("cdm-home-page:ready", function() {
    gsuFixes();
-   if(!debugJs) { gsuHomePageReady(); }
+   if(!removeJs) { gsuHomePageReady(); }
 });
 
 
@@ -312,7 +318,7 @@ document.addEventListener("cdm-collection-search-page:ready", function() {
 // Custom CDM call for an item page ready state.
 document.addEventListener('cdm-item-page:ready', function(){
    gsuFixes();
-   if(!debugJs) { gsuItemPageReady(); }
+   if(!removeJs) { gsuItemPageReady(); }
 });
 
 
