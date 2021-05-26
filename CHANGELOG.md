@@ -7,6 +7,7 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 ## [1.0.2] - 2021-05-25
 - Add changelog and move readme version history notes over.
 - Add debugging query parameter for halting script execution.
+- Update video embed code - add mediaspace support and fix youtube embeds.
 
 ## [1.0.1] - 2019-11-25
 - Fix finding georeferenced tags.
