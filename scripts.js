@@ -1,8 +1,8 @@
 /***************************************************************************************************
 *
-* CONTENTdm Hosted Script - <https://bitbucket.org/gsulibwebmaster/cdm-hosted-script/>
+* CONTENTdm Hosted Script - <https://github.com/gsu-library/css-js-toolbox-code-blocks>
 * File Author: Matt Brooks <mbrooks34@gsu.edu>
-* License: none 
+* License: none
 * Description: See https://help.oclc.org/Metadata_Services/CONTENTdm/Advanced_website_customization
 *   /JavaScript_customizations/List_of_JavaScript_lifecycle_events and https://help.oclc.org/Metadat
 *   a_Services/CONTENTdm/Advanced_website_customization/JavaScript_customizations/JavaScript_events
@@ -19,46 +19,57 @@
 // all three should probably be in .Header-logoNameContainer
 // .Header-hambuergerHolder is in .Header-controls and will need attention at some point (move to menu?)
 
-
+// Global to halt JS.
+// TODO: have better debugging logic.
+// TODO: add debug url parameters to all anchor tags
+var removeJs = false
 
 // Various fixes.
 function gsuFixes() {
-   var debug = false;
-   var params = document.location.search.slice(1).split("&");
+   var debugCss = false, removeCss = false;
+   var params = document.location.search.slice(1).split('&');
 
+   // Find out what kind of debugging we are doing.
    for(i = 0; i < params.length; i++) {
-      temp = params[i].split("=");
-
-      if(temp.length && temp[0] == "debug") {
-         if(temp.length > 1 && temp[1]) {
-            debug = true;
-            break;
-         }
+      if(params[i].startsWith('debugCss')) {
+         debugCss = true;
+      }
+      else if(params[i].startsWith('removeCss')) {
+         removeCss = true;
+      }
+      else if(params[i].startsWith('removeJs')) {
+         removeJs = true;
       }
    }
 
-   if(debug) {
-      links = document.getElementsByTagName("link");
+   if(debugCss || removeCss) {
+      links = document.getElementsByTagName('link');
 
       for(var i = 0; i < links.length; i++) {
-         if(links[i].getAttribute("href") == "/customizations/global//styles.min.css") {
-            console.log("Removing local CSS.");
+         if(links[i].getAttribute('href') == '/customizations/global//styles.min.css') {
+            console.log('Removing local CSS.');
             links[i].parentNode.removeChild(links[i]);
 
-            console.log("Adding CSS from static.");
-            var styleId = "gsuStyle";
+            if(removeCss) { break; }
+
+            console.log('Adding CSS from static.');
+            var styleId = 'gsuStyle';
 
             if(!document.getElementById(styleId)) {
-               var link = document.createElement("link");
+               var link = document.createElement('link');
                link.id = styleId;
-               link.rel = "stylesheet";
-               link.href = "https://static.library.gsu.edu/contentdm/styles.css";
+               link.rel = 'stylesheet';
+               link.href = 'https://static.library.gsu.edu/contentdm/styles.css';
                document.head.appendChild(link);
             }
 
             break;
          }
       }
+   }
+
+   if(removeJs) {
+      return;
    }
 
 
@@ -158,8 +169,10 @@ function gsuHomePageReady() {
 }
 
 
-// For the item Page
+// For the item page.
 function gsuItemPageReady() {
+   var collection = window.location.href.match(/collection\/([a-zA-Z0-9-_]+)\//i)[1];
+
    var id = document.querySelector('.field-identi .field-value span');
    id = id ? id.innerHTML : null;
    id = id.replace(/<[^>]*>?/gm, ''); // Remove any tags that may be in here.
@@ -168,32 +181,90 @@ function gsuItemPageReady() {
    geo = geo ? geo.innerHTML.toLowerCase().replace(/<[^>]*>?/gm, '') : null;
    geo = geo == "yes" ? true : false;
 
-   var itemLink = document.querySelector('.ItemUrl-itemUrlLink a');
+   let itemLink = document.querySelector('.ItemUrl-itemUrlLink a');
    itemLink = itemLink ? itemLink.href.replace(/^http:\/\//i, 'https://') : null;
 
-   var collection = window.location.href.match(/collection\/([a-zA-Z0-9-_]+)\//i)[1];
 
-
-   // Check to see if there is an item link and if it is Ohms or Youtube.
+   // Check to see if there is an item link and embed it if there is a video match.
    if(itemLink) {
       console.log("This is an item link page.");
-      var ohmsBase = "https://webapps.library.gsu.edu/ohms-viewer/viewer.php";
-      var youTubeBase = "https://www.youtube.com";
-      var container = document.querySelector(".ItemPreview-container");
-      var iframe = null;
 
-      // If link to Ohms Viewer.
-      if(itemLink.substring(0, ohmsBase.length) == ohmsBase) {
-         iframe = '<iframe src="' + itemLink + '" width="100%" height="700"></iframe>';
-      }
-      // If link to YouTube.
-      else if(itemLink.substring(0, youTubeBase.length) == youTubeBase) {
-         iframe = '<iframe src="' + itemLink + '" width="700" height="400" style="margin:0 auto;" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>';
+      let embeds = [
+         {
+            'urlMatch': 'https://webapps.library.gsu.edu/ohms-viewer/viewer.php',
+            'idMatch': /cachefile=(.+)$/,
+            'embedUrl': 'https://webapps.library.gsu.edu/ohms-viewer/viewer.php?cachefile=',
+            'iframeAttributes': 'width="100%" height="700"'
+         },
+         {
+            'urlMatch': 'https://www.youtube.com/embed/',
+            'idMatch': /\/embed\/(.+)$/,
+            'embedUrl': 'https://www.youtube.com/embed/',
+            'iframeAttributes': 'width="700" height="400" style="margin:0 auto;" frameborder="0" allowfullscreen'
+         },
+         {
+            'urlMatch': 'https://youtu.be/',
+            'idMatch': /\.be\/(.+)$/,
+            'embedUrl': 'https://www.youtube.com/embed/',
+            'iframeAttributes': 'width="700" height="400" style="margin:0 auto;" frameborder="0" allowfullscreen'
+         },
+         {
+            'urlMatch': 'https://www.youtube.com/watch',
+            'idMatch': /v=(.+)&|v=(.+)$/,
+            'embedUrl': 'https://www.youtube.com/embed/',
+            'iframeAttributes': 'width="700" height="400" style="margin:0 auto;" frameborder="0" allowfullscreen'
+         },
+         {
+            'urlMatch': 'https://mediaspace.gsu.edu/media',
+            'idMatch': /\/([\w\d_-]+)$/,
+            // 'embedUrl': 'https://cdnapisec.kaltura.com/p/1959611/sp/195961100/embedIframeJs/uiconf_id/31355121/partner_id/1959611?iframeembed=true&playerId=kaltura_player&flashvars[streamerType]=auto&amp;flashvars[localizationCode]=en&amp;flashvars[leadWithHTML5]=true&amp;flashvars[sideBarContainer.plugin]=true&amp;flashvars[sideBarContainer.position]=left&amp;flashvars[sideBarContainer.clickToClose]=true&amp;flashvars[chapters.plugin]=true&amp;flashvars[chapters.layout]=vertical&amp;flashvars[chapters.thumbnailRotator]=false&amp;flashvars[streamSelector.plugin]=true&amp;flashvars[EmbedPlayer.SpinnerTarget]=videoHolder&amp;flashvars[dualScreen.plugin]=true&amp;flashvars[hotspots.plugin]=1&amp;flashvars[Kaltura.addCrossoriginToIframe]=true&amp;&entry_id=',
+            'embedUrl': 'https://mediaspace.gsu.edu/embed/secure/iframe/entryId/',
+            'iframeAttributes': 'width="700" height="400" style="margin:0 auto;" frameborder="0" allowfullscreen'
+         },
+         {
+            'urlMatch': 'https://mediaspace.gsu.edu/embed',
+            'idMatch': /entryId\/([\w\d_-]+)/,
+            'embedUrl': 'https://mediaspace.gsu.edu/embed/secure/iframe/entryId/',
+            'iframeAttributes': 'width="700" height="400" style="margin:0 auto;" frameborder="0" allowfullscreen'
+         },
+         {
+            'urlMatch': 'https://vimeo.com/',
+            'idMatch': /vimeo.com\/(.+)$/,
+            'embedUrl': 'https://player.vimeo.com/video/',
+            'iframeAttributes': 'width="700" height="400" style="margin:0 auto;" frameborder="0" allowfullscreen'
+         },
+         // {
+         //    'urlMatch': '',
+         //    'idMatch': //,
+         //    'embedUrl': '',
+         //    'iframeAttributes': ''
+         // },
+      ];
+      let container = document.querySelector('.ItemPreview-container');
+      let iframe = null;
+      let matches = null;
+
+
+      for(let i = 0; i < embeds.length; i++) {
+         if(itemLink.startsWith(embeds[i].urlMatch)) {
+            matches = itemLink.match(embeds[i].idMatch);
+
+            // If we find a valid identifier match.
+            // Looks for first match beyond group 0.
+            for(let j = 1; j < matches.length; j++) {
+               if(typeof matches[j] != 'undefined' && matches[j]) {
+                  iframe = '<iframe src="' + embeds[i].embedUrl + matches[j] + '" ' + embeds[i].iframeAttributes + '></iframe>';
+                  break;
+               }
+            }
+
+            break;
+         }
       }
 
       if(iframe && container) { container.innerHTML = iframe; }
    }
-   
+
 
    // If the item on the page is georeferenced, has an ID, and a collection.
    if(id && collection && geo) {
@@ -260,7 +331,7 @@ function gsuItemPageReady() {
       element.innerHTML = '<a class="cdm-btn btn btn-primary gsu-button" href="'+searchLink+'"><span class="fa fa-search"></span> View Item\'s Maps</a>';
 
       var toolbars = document.querySelectorAll(".btn-toolbar");
-      
+
       for(i = 0; i < toolbars.length; i++) {
          toolbars[i].appendChild(element.cloneNode(true));
       }
@@ -271,7 +342,7 @@ function gsuItemPageReady() {
 // For the home page.
 document.addEventListener("cdm-home-page:ready", function() {
    gsuFixes();
-   gsuHomePageReady();
+   if(!removeJs) { gsuHomePageReady(); }
 });
 
 
@@ -308,7 +379,7 @@ document.addEventListener("cdm-collection-search-page:ready", function() {
 // Custom CDM call for an item page ready state.
 document.addEventListener('cdm-item-page:ready', function(){
    gsuFixes();
-   gsuItemPageReady();
+   if(!removeJs) { gsuItemPageReady(); }
 });
 
 
