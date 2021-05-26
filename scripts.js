@@ -21,6 +21,7 @@
 
 // Global to halt JS.
 // TODO: have better debugging logic.
+// TODO: add debug url parameters to all anchor tags
 var removeJs = false
 
 // Various fixes.
@@ -226,11 +227,17 @@ function gsuItemPageReady() {
             'embedUrl': 'https://mediaspace.gsu.edu/embed/secure/iframe/entryId/',
             'iframeAttributes': 'width="700" height="400" style="margin:0 auto;" frameborder="0" allowfullscreen'
          },
+         {
+            'urlMatch': 'https://vimeo.com/',
+            'idMatch': /vimeo.com\/(.+)$/,
+            'embedUrl': 'https://player.vimeo.com/video/',
+            'iframeAttributes': 'width="700" height="400" style="margin:0 auto;" frameborder="0" allowfullscreen'
+         },
          // {
          //    'urlMatch': '',
          //    'idMatch': //,
          //    'embedUrl': '',
-         //    'iframeAttributes': '',
+         //    'iframeAttributes': ''
          // },
       ];
       let container = document.querySelector('.ItemPreview-container');
