@@ -641,6 +641,9 @@ document.addEventListener("cdm-notfound-page:ready", function() {
 
    Collection and Creator Deny Lists
       if (globalScope || !(collectionScope.includes(collection)) && !(creatorScope.includes(creator))) {
+
+   Colletion and Creator Allow Lists
+      if (globalScope || (collectionScope.includes(collection) || creatorScope.includes(creator))) {
    */
 
 
