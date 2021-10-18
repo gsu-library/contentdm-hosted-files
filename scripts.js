@@ -617,13 +617,7 @@ document.addEventListener("cdm-notfound-page:ready", function() {
 
    let globalScope = false;
    let collectionScope = [
-      'afpl',
-      'atlaerial',
-      'atlmaps',
-      'atlpoh',
-      'atlphotos',
-      'planATLpubs',
-      'atlphdata'
+      'afpl'
    ];
    let creatorScope = [
       'Atlanta Journal-Constitution'
@@ -869,13 +863,7 @@ document.addEventListener("cdm-notfound-page:ready", function() {
 
   let globalScope = false;
   let collectionScope = [
-     'afpl',
-     'atlaerial',
-     'atlmaps',
-     'atlpoh',
-     'atlphotos',
-     'planATLpubs',
-     'atlphdata'
+     'afpl'
   ];
   let creatorScope = [
      'Atlanta Journal-Constitution'
