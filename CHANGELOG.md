@@ -4,6 +4,9 @@ All notable changes to this project will be documented in this file.
 The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/),
 and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
+## [1.3.0] - 2021-10-25
+- Fix collection slug when looking in new PlanATL collection. Fix georeferenced maps, atlphdata download buttons, and atlphdata & planATLpubs search buttons.
+
 ## [1.2.0] - 2021-10-18
 - Update collectionScope limiter in IIIF manifest and Mirador integration to be only 'afpl'.
 
