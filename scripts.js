@@ -182,6 +182,38 @@ function gsuHomePageReady() {
 // For the item page.
 function gsuItemPageReady() {
    var collection = window.location.href.match(/collection\/([a-zA-Z0-9-_]+)\//i)[1];
+   var collectionText = document.querySelector('.field-digcol .field-value').textContent;
+
+   var collToSlug = [
+      {
+         name: 'Planning Atlanta, A New City in the Making, 1930s-1990s - City Planning Maps',
+         slug: 'atlmaps'
+      }, {
+         name: 'Planning Atlanta, A New City in the Making, 1930s-1990s - Oral Histories',
+         slug: 'atlpoh'
+      }, {
+         name: 'Planning Atlanta, A New City in the Making, 1949 - Aerial Mosaic and Photographs',
+         slug: 'atlaerial'
+      }, {
+         name: 'Planning Atlanta, A New City in the Making, 1930s-1990s - Photographs',
+         slug: 'atlphotos'
+      }, {
+         name: 'Planning Atlanta, A New City in the Making, 1930s-1990s - Planning Publications',
+         slug: 'planATLpubs'
+      }, {
+         name: 'Planning Atlanta, A New City in the Making, 1930s-1990s - Population-Housing Data',
+         slug: 'atlphdata'
+      }
+   ];
+
+   // If the collectionText is one of the collToSlug items, use the slug in the array instead of the URL.
+   if(collectionText) {
+      var collection2 = collToSlug.find((collection) => (collection.name === collectionText));
+
+      if(typeof(collection2) !== 'undefined') {
+         collection = collection2.slug;
+      }
+   }
 
    var id = document.querySelector('.field-identi .field-value span');
    id = id ? id.innerHTML : null;
@@ -278,7 +310,7 @@ function gsuItemPageReady() {
 
    // If the item on the page is georeferenced, has an ID, and a collection.
    if(id && collection && geo) {
-      console.log("This item is georeferenced with a collection of " + collection + "and an id of " + id + ".");
+      console.log("This item is georeferenced with a collection of " + collection + " and an id of " + id + ".");
       //var googleMapsLink = "https://geo.library.gsu.edu/mapoverlay.php?collection=" + collection + "&map=" + id;
       var googleMapsLink = "https://geo.library.gsu.edu/overlay/" + collection + "/" + id + "/";
       var googleEarthLink = "https://geo.library.gsu.edu/geoserver/wms/kml?layers=" + id;
@@ -334,7 +366,7 @@ function gsuItemPageReady() {
    // planATLpubs | atlphdata section.
    if(id && collection && (collection == "planATLpubs" || collection == "atlphdata")) {
       console.log("Adding search link to planATLpubs and atlphdata.");
-      var searchLink = "/digital/search/collection/atlmaps/searchterm/" + id;
+      var searchLink = "/digital/search/collection/PlanATL/searchterm/" + id;
 
       var element = document.createElement('div');
       element.className = "btn-group btn-group-default";
@@ -617,13 +649,7 @@ document.addEventListener("cdm-notfound-page:ready", function() {
 
    let globalScope = false;
    let collectionScope = [
-      'afpl',
-      'atlaerial',
-      'atlmaps',
-      'atlpoh',
-      'atlphotos',
-      'planATLpubs',
-      'atlphdata'
+      'afpl'
    ];
    let creatorScope = [
       'Atlanta Journal-Constitution'
@@ -869,13 +895,7 @@ document.addEventListener("cdm-notfound-page:ready", function() {
 
   let globalScope = false;
   let collectionScope = [
-     'afpl',
-     'atlaerial',
-     'atlmaps',
-     'atlpoh',
-     'atlphotos',
-     'planATLpubs',
-     'atlphdata'
+     'afpl'
   ];
   let creatorScope = [
      'Atlanta Journal-Constitution'
