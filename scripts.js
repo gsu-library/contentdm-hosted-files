@@ -182,7 +182,7 @@ function gsuHomePageReady() {
 // For the item page.
 function gsuItemPageReady() {
    var collection = window.location.href.match(/collection\/([a-zA-Z0-9-_]+)\//i)[1];
-   var collectionText = document.querySelector('.field-digcol .field-value').textContent;
+   var collectionText = document.querySelector('.field-digcol .field-value');
 
    var collToSlug = [
       {
@@ -207,7 +207,7 @@ function gsuItemPageReady() {
    ];
 
    // If the collectionText is one of the collToSlug items, use the slug in the array instead of the URL.
-   if(collectionText) {
+   if(collectionText && (collectionText = collectionText.textContent)) {
       var collection2 = collToSlug.find((collection) => (collection.name === collectionText));
 
       if(typeof(collection2) !== 'undefined') {
