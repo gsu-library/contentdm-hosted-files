@@ -988,7 +988,7 @@ document.addEventListener("cdm-notfound-page:ready", function() {
    // Version 2018.10.24
 
    // CONFIGURE THE baseURL THAT POINTS TO YOUR AEON SERVER
-   var baseUrl = 'https://gsu.aeon.atlas-sys.com/aeon/Aeon.dll';
+   var baseUrl = 'https://gsu.aeon.atlas-sys.com/logon';
 
    // CONFIGURE THE TEXT DISPLAYED ON THE AEON REQUEST BUTTON
    var buttonText = 'Request Item';
@@ -1000,23 +1000,23 @@ document.addEventListener("cdm-notfound-page:ready", function() {
    var copyButtonText = 'Digital Copy';
 
    // CONFIGURE WHETHER TO USE DEFAULT OR GENERIC REQUEST FORMS FOR READING ROOM (LOAN) REQUESTS
-   var loanUseDefaultForms = true;
+   var loanUseDefaultForms = false;
    // IF loanUseDefaultForms IS false THEN CONFIGURE THE GENERIC REQUEST FORM TO USE FOR READING ROOM (LOAN) REQUESTS
    // SEE https://support.atlas-sys.com/hc/en-us/articles/360011920173-Creating-New-Request-Forms FOR MORE INFORMATION
-   var loanGenericRequestForm = 'GenericRequestCONTENTdmLoan';
+   var loanGenericRequestForm = 'GenericRequestManuscript';
 
    // CONFIGURE WHETHER TO USE DEFAULT OR GENERIC REQUEST FORMS FOR PHOTODUPLICATION (COPY) REQUESTS
    var copyUseDefaultForms = false;
    // IF copyUseDefaultForms IS false THEN CONFIGURE THE GENERIC REQUEST FORM TO USE FOR PHOTODUPLICATION (COPY) REQUESTS
    // SEE https://support.atlas-sys.com/hc/en-us/articles/360011920173-Creating-New-Request-Forms FOR MORE INFORMATION
-   var copyGenericRequestForm = 'GenericRequestPhoto';
+   var copyGenericRequestForm = 'GenericRequestManuscriptPhotodup';
 
    // FIELD MAPPINGS
    // Item Info fields corresponding to Aeon fields
    // Format:
    // Aeon field name: 'ContentDM identifier'
    var fieldMappings = {
-       ItemTitle: 'physic',
+       ItemTitle: 'collec',
        ItemSubTitle: 'title',
        ItemDate: 'date',
        DocumentType: '',
@@ -1036,7 +1036,7 @@ document.addEventListener("cdm-notfound-page:ready", function() {
        ItemNumber: '',
        EADNumber: '',
        ReferenceNumber: '',
-       CallNumber: '',
+       CallNumber: 'identi',
        Format: '',
        ServiceLevel: '',
        ShippingOption: '',
@@ -1073,7 +1073,7 @@ document.addEventListener("cdm-notfound-page:ready", function() {
          if (document.getElementsByClassName('btn-toolbar')) {
                var btnToolbar = document.getElementsByClassName('btn-toolbar');
 
-               var buttonMobileHTML = '<button title="Aeon Request" aria-label="Aeon Request" data-metrics-event-name="event" data-metrics-merge-pagedefaults="true" data-metrics-event-category="' + view + '" data-metrics-event-action="click" data-metrics-event-label="Aeon request menu" id="aeon-dropdown-mobile" role="button" aria-haspopup="true" aria-expanded="false" type="button" class="cdm-btn dropdown-toggle btn btn-primary" style="height: 36px;"><span style="display: inline-block;width: 24px;height: 24px;background: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAMAAAAoLQ9TAAAAk1BMVEX////15uT48O789/b47+389/b89/b15uT47+389/b89/bKW0PZlYvGSCfkuLHdopnKW0PowrzKXEXry8fy3tvObVvObFndoZjSfG3ry8bViHzv1dHViX357+768vHXj4TnwbzZlovqyMTdpJzfqKDszsrsz8rfqqLv1tLx2tfhrqb15+Xhrqfjta/+/f347ez37OqPABpgAAAADXRSTlMAPz8/R0djeHiDk+/vTVNvBAAAAIdJREFUeF6Nz8UOw1AQQ9FiinceB6HM+P9fVyVRu+4sj2TZ0/vvxneNscngC/2FSdkoJOtgGEOR4hE9auGgLNanLgjLFvLSmGCrqzHQgobgil1VC0wbiKGh9/MI8wYeIuK8f9UK3UYyIJjb5QxJ17tShSuVgI46iE4gCuLJb3u23et8Pfvv0Q8/FQoOmpKY8QAAAABJRU5ErkJggg==);background-size: 24px;"></span><span id="aeon_button_text_mobile" class="menu_button_text" style="font-size: 15px;padding: 10px;vertical-align: super;">Aeon Request</span><span class="caret" style="margin-top: -15px;"></span></button><ul id="aeonrequestmenu-side-bar-mobile" role="menu" class="dropdown-menu" aria-labelledby="aeon-dropdown"><li role="presentation"><a id="aeon_button_option_loan_mobile" class="aeon_button_option spacePad5" iopt="Loan">Request for Reading Room</a></li><li role="presentation"><a id="aeon_button_option_copy_mobile" class="aeon_button_option spacePad5" iopt="Copy">Request Copy</a></li></ul>';
+               var buttonMobileHTML = '<button title="Aeon Request" aria-label="Aeon Request" data-metrics-event-name="event" data-metrics-merge-pagedefaults="true" data-metrics-event-category="' + view + '" data-metrics-event-action="click" data-metrics-event-label="Aeon request menu" id="aeon-dropdown-mobile" role="button" aria-haspopup="true" aria-expanded="false" type="button" class="cdm-btn dropdown-toggle btn btn-primary" style="height: 36px;"><span style="display: none;width: 24px;height: 24px;background: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAMAAAAoLQ9TAAAAk1BMVEX////15uT48O789/b47+389/b89/b15uT47+389/b89/bKW0PZlYvGSCfkuLHdopnKW0PowrzKXEXry8fy3tvObVvObFndoZjSfG3ry8bViHzv1dHViX357+768vHXj4TnwbzZlovqyMTdpJzfqKDszsrsz8rfqqLv1tLx2tfhrqb15+Xhrqfjta/+/f347ez37OqPABpgAAAADXRSTlMAPz8/R0djeHiDk+/vTVNvBAAAAIdJREFUeF6Nz8UOw1AQQ9FiinceB6HM+P9fVyVRu+4sj2TZ0/vvxneNscngC/2FSdkoJOtgGEOR4hE9auGgLNanLgjLFvLSmGCrqzHQgobgil1VC0wbiKGh9/MI8wYeIuK8f9UK3UYyIJjb5QxJ17tShSuVgI46iE4gCuLJb3u23et8Pfvv0Q8/FQoOmpKY8QAAAABJRU5ErkJggg==);background-size: 24px;"></span><span id="aeon_button_text_mobile" class="menu_button_text" style="font-size: 15px;padding: 10px;vertical-align: super;">Aeon Request</span><span class="caret" style="margin-top: -15px;"></span></button><ul id="aeonrequestmenu-side-bar-mobile" role="menu" class="dropdown-menu" aria-labelledby="aeon-dropdown"><li role="presentation"><a id="aeon_button_option_loan_mobile" class="aeon_button_option spacePad5" iopt="Loan">Request for Reading Room</a></li><li role="presentation"><a id="aeon_button_option_copy_mobile" class="aeon_button_option spacePad5" iopt="Copy">Request Copy</a></li></ul>';
                var aeonButtonMobile = document.createElement("div");
                aeonButtonMobile.setAttribute("class", "ItemDownloadImage-itemDownloadDropdown dropdown btn-group");
                aeonButtonMobile.setAttribute("id", "aeon_button_container_mobile");
@@ -1197,11 +1197,11 @@ document.addEventListener("cdm-notfound-page:ready", function() {
        request['ItemIssue'] = itemInfo[fieldMappings.ItemIssue];
        request['ItemPages'] = itemInfo[fieldMappings.ItemPages];
        request['Location'] = itemInfo[fieldMappings.Location];
-      //  request['SubLocation'] = itemInfo[fieldMappings.SubLocation];
-       request['SubLocation'] = window.location.href;
+       request['SubLocation'] = itemInfo[fieldMappings.SubLocation];
        request['PageCount'] = itemInfo[fieldMappings.PageCount];
        request['ItemISxN'] = itemInfo[fieldMappings.ItemISxN];
-       request['ItemCitation'] = itemInfo[fieldMappings.ItemCitation];
+       request['ItemCitation'] = window.location.href;
+      //  request['ItemCitation'] = itemInfo[fieldMappings.ItemCitation];
        request['ItemNumber'] = itemInfo[fieldMappings.ItemNumber];
        request['EADNumber'] = itemInfo[fieldMappings.EADNumber];
        request['ReferenceNumber'] = itemInfo[fieldMappings.ReferenceNumber];
