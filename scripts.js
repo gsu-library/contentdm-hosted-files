@@ -1032,8 +1032,8 @@ document.addEventListener("cdm-notfound-page:ready", function() {
        PageCount: '',
        PageCount: '',
        ItemISxN: '',
-       ItemCitation: '',
-       ItemNumber: '',
+       ItemCitation: 'citati',
+       ItemNumber: 'title',
        EADNumber: '',
        ReferenceNumber: '',
        CallNumber: 'identi',
@@ -1041,7 +1041,7 @@ document.addEventListener("cdm-notfound-page:ready", function() {
        ServiceLevel: '',
        ShippingOption: '',
        ForPublication: '',
-       ItemInfo1: '',
+       ItemInfo1: 'formaa', // format field
        ItemInfo2: '',
        ItemInfo3: '',
        ItemInfo4: '',
@@ -1366,4 +1366,3 @@ document.addEventListener("cdm-notfound-page:ready", function() {
    }
    }
 })();
-
