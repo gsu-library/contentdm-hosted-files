@@ -1,0 +1,13 @@
+{
+  "scripts": {
+    "start": "npm-watch",
+    "minJs": "minify scripts.js > scripts.min.js"
+  },
+  "watch": {
+    "minJs": "scripts.js"
+  },
+  "devDependencies": {
+    "minify": "^8.0.3",
+    "npm-watch": "^0.11.0"
+  }
+}
