@@ -1227,6 +1227,7 @@ document.addEventListener("cdm-notfound-page:ready", function() {
            // For example, if you want the request to copy the Item's "ItemTitle" field
            // (mapped at the beginning of the file), you would have:
            // request['ItemTitle'] = childItemInfo[fieldMappings.ItemTitle];
+           request['ItemSubTitle'] = childItemInfo[fieldMappings.ItemSubTitle];
 
            // NOTE: Any changes made here should be mirrored in the below section
 
@@ -1246,7 +1247,7 @@ document.addEventListener("cdm-notfound-page:ready", function() {
            // NOTE: Any changes made here should be mirrored in the above section
 
            request['ItemTitle'] = parentItemInfo[fieldMappings.ItemTitle];
-           request['ItemSubTitle'] = parentItemInfo[fieldMappings.ItemSubTitle];
+           //  request['ItemSubTitle'] = parentItemInfo[fieldMappings.ItemSubTitle];
            request['ItemDate'] = parentItemInfo[fieldMappings.ItemDate];
            request['DocumentType'] = parentItemInfo[fieldMappings.DocumentType];
            request['ItemAuthor'] = parentItemInfo[fieldMappings.ItemAuthor];
