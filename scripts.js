@@ -1090,7 +1090,21 @@ document.addEventListener("cdm-notfound-page:ready", function() {
                aeonButton.setAttribute("id", "aeon_button_container");
                aeonButton.innerHTML = buttonHTML;
                btnToolbar[1].appendChild(aeonButton);
+
                aeonButtonInit();
+
+               window.addEventListener('click', function (e) {
+                if (!(document.getElementById('aeon-dropdown').contains(e.target))) {
+                    document.getElementById("aeonrequestmenu-side-bar").classList.remove("show");
+                    document.getElementById("aeon_button_container").classList.remove("open");
+                    document.getElementById("aeon-dropdown").setAttribute("aria-expanded", "false");
+                }
+                if (!(document.getElementById('aeon-dropdown-mobile').contains(e.target))) {
+                    document.getElementById("aeonrequestmenu-side-bar-mobile").classList.remove("show");
+                    document.getElementById("aeon_button_container_mobile").classList.remove("open");
+                    document.getElementById("aeon-dropdown-mobile").setAttribute("aria-expanded", "false");
+                }
+               });
          }
       } else {
          console.log("Cannot find view element");
@@ -1168,20 +1182,6 @@ document.addEventListener("cdm-notfound-page:ready", function() {
        })
        .catch(error => console.warn(error));
    }
-
-   // TODO: move this to after button creation.
-   window.addEventListener('click', function (e) {
-       if (!(document.getElementById('aeon-dropdown').contains(e.target))) {
-           document.getElementById("aeonrequestmenu-side-bar").classList.remove("show");
-           document.getElementById("aeon_button_container").classList.remove("open");
-           document.getElementById("aeon-dropdown").setAttribute("aria-expanded", "false");
-       }
-       if (!(document.getElementById('aeon-dropdown-mobile').contains(e.target))) {
-           document.getElementById("aeonrequestmenu-side-bar-mobile").classList.remove("show");
-           document.getElementById("aeon_button_container_mobile").classList.remove("open");
-           document.getElementById("aeon-dropdown-mobile").setAttribute("aria-expanded", "false");
-       }
-   });
 
    // Constructs base Aeon request
    function createRequest(requestType) {
@@ -1284,8 +1284,8 @@ document.addEventListener("cdm-notfound-page:ready", function() {
 
        // Do Not Modify: Request Type is set by clicking the dropdown menu
        request['RequestType'] = requestType;
-
-       console.log(request);
+       console.log('Request');
+       console.dir(request);
        return request;
    }
 
