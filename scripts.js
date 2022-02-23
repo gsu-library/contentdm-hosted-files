@@ -1021,28 +1021,32 @@ document.addEventListener("cdm-notfound-page:ready", function() {
        ItemDate: 'date',
        DocumentType: '',
        ItemAuthor: 'creato',
+       ItemAuthor2: 'interv',
+       ItemAuthor3: 'photog',
        ItemPlace: '',
        ItemPublisher: '',
        ItemEdition: '',
-       ItemVolume: '',
-       ItemIssue: '',
+       ItemVolume: 'box',
+       ItemIssue: 'folder',
+       ItemIssue2: 'file',
        ItemPages: '',
-       Location: '',
+       Location: 'curato',
        SubLocation: '',
        PageCount: '',
        PageCount: '',
        ItemISxN: '',
-       ItemCitation: 'citati',
-       ItemNumber: 'title',
+       ItemCitation: '',
+       ItemNumber: 'identi',
+       ItemNumber2: 'arrang',
        EADNumber: '',
        ReferenceNumber: '',
-       CallNumber: 'identi',
-       Format: '',
+       CallNumber: 'call',
+       Format: 'sourca',
        ServiceLevel: '',
        ShippingOption: '',
        ForPublication: '',
-       ItemInfo1: 'formaa', // format field
-       ItemInfo2: '',
+       ItemInfo1: 'righth',
+       ItemInfo2: 'note',
        ItemInfo3: '',
        ItemInfo4: '',
        ItemInfo5: ''
@@ -1165,6 +1169,7 @@ document.addEventListener("cdm-notfound-page:ready", function() {
        .catch(error => console.warn(error));
    }
 
+   // TODO: move this to after button creation.
    window.addEventListener('click', function (e) {
        if (!(document.getElementById('aeon-dropdown').contains(e.target))) {
            document.getElementById("aeonrequestmenu-side-bar").classList.remove("show");
@@ -1189,12 +1194,12 @@ document.addEventListener("cdm-notfound-page:ready", function() {
        request['ItemSubTitle'] = itemInfo[fieldMappings.ItemSubTitle];
        request['ItemDate'] = itemInfo[fieldMappings.ItemDate];
        request['DocumentType'] = itemInfo[fieldMappings.DocumentType];
-       request['ItemAuthor'] = itemInfo[fieldMappings.ItemAuthor];
+       request['ItemAuthor'] = itemInfo[fieldMappings.ItemAuthor] + ', ' + itemInfo[fieldMappings.ItemAuthor2] + ', ' + itemInfo[fieldMappings.ItemAuthor3];
        request['ItemPlace'] = itemInfo[fieldMappings.ItemPlace];
        request['ItemPublisher'] = itemInfo[fieldMappings.ItemPublisher];
        request['ItemEdition'] = itemInfo[fieldMappings.ItemEdition];
        request['ItemVolume'] = itemInfo[fieldMappings.ItemVolume];
-       request['ItemIssue'] = itemInfo[fieldMappings.ItemIssue];
+       request['ItemIssue'] = itemInfo[fieldMappings.ItemIssue] + ', ' + itemInfo[fieldMappings.ItemIssue2];
        request['ItemPages'] = itemInfo[fieldMappings.ItemPages];
        request['Location'] = itemInfo[fieldMappings.Location];
        request['SubLocation'] = itemInfo[fieldMappings.SubLocation];
@@ -1202,7 +1207,7 @@ document.addEventListener("cdm-notfound-page:ready", function() {
        request['ItemISxN'] = itemInfo[fieldMappings.ItemISxN];
        request['ItemCitation'] = window.location.href;
       //  request['ItemCitation'] = itemInfo[fieldMappings.ItemCitation];
-       request['ItemNumber'] = itemInfo[fieldMappings.ItemNumber];
+       request['ItemNumber'] = itemInfo[fieldMappings.ItemNumber] + ', ' + itemInfo[fieldMappings.ItemNumber2];
        request['EADNumber'] = itemInfo[fieldMappings.EADNumber];
        request['ReferenceNumber'] = itemInfo[fieldMappings.ReferenceNumber];
        request['CallNumber'] = itemInfo[fieldMappings.CallNumber];
@@ -1250,19 +1255,19 @@ document.addEventListener("cdm-notfound-page:ready", function() {
            //  request['ItemSubTitle'] = parentItemInfo[fieldMappings.ItemSubTitle];
            request['ItemDate'] = parentItemInfo[fieldMappings.ItemDate];
            request['DocumentType'] = parentItemInfo[fieldMappings.DocumentType];
-           request['ItemAuthor'] = parentItemInfo[fieldMappings.ItemAuthor];
+           request['ItemAuthor'] = parentItemInfo[fieldMappings.ItemAuthor] + ', ' + parentItemInfo[fieldMappings.ItemAuthor2] + ', ' + parentItemInfo[fieldMappings.ItemAuthor3];
            request['ItemPlace'] = parentItemInfo[fieldMappings.ItemPlace];
            request['ItemPublisher'] = parentItemInfo[fieldMappings.ItemPublisher];
            request['ItemEdition'] = parentItemInfo[fieldMappings.ItemEdition];
            request['ItemVolume'] = parentItemInfo[fieldMappings.ItemVolume];
-           request['ItemIssue'] = parentItemInfo[fieldMappings.ItemIssue];
+           request['ItemIssue'] = parentItemInfo[fieldMappings.ItemIssue] + ', ' + parentItemInfo[fieldMappings.ItemIssue2];
            request['ItemPages'] = parentItemInfo[fieldMappings.ItemPages];
            request['Location'] = parentItemInfo[fieldMappings.Location];
            request['SubLocation'] = parentItemInfo[fieldMappings.SubLocation];
            request['PageCount'] = parentItemInfo[fieldMappings.PageCount];
            request['ItemISxN'] = parentItemInfo[fieldMappings.ItemISxN];
            request['ItemCitation'] = parentItemInfo[fieldMappings.ItemCitation];
-           request['ItemNumber'] = parentItemInfo[fieldMappings.ItemNumber];
+           request['ItemNumber'] = parentItemInfo[fieldMappings.ItemNumber] + ', ' + parentItemInfo[fieldMappings.ItemNumber2];
            request['EADNumber'] = parentItemInfo[fieldMappings.EADNumber];
            request['ReferenceNumber'] = parentItemInfo[fieldMappings.ReferenceNumber];
            request['CallNumber'] = parentItemInfo[fieldMappings.CallNumber];
