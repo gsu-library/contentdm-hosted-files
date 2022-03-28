@@ -969,21 +969,6 @@ document.addEventListener("cdm-notfound-page:ready", function() {
  * Aeon Script Integration
  */
 (() => {
-   /**
-    * MB ADD START
-    */
-   let showAeon = false;
-   let params = document.location.search.slice(1).split('&');
-
-   for(i = 0; i < params.length; i++) {
-      if(params[i].startsWith('showAeon')) {
-         showAeon = true;
-      }
-   }
-   if(showAeon) {
-   /**
-    * MB ADD END
-    */
    // CONTENTdm Aeon request button javascript
    // Version 2018.10.24
 
@@ -1368,6 +1353,5 @@ document.addEventListener("cdm-notfound-page:ready", function() {
            document.getElementById("aeon_button_container").classList.toggle("open");
            document.getElementById("aeon-dropdown").setAttribute("aria-expanded", "true");
        }
-   }
    }
 })();
