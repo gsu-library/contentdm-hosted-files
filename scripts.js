@@ -596,13 +596,13 @@ document.addEventListener("cdm-notfound-page:ready", function() {
                let shouldCreateLink = false
                if (type === 'manifest') {
                    shouldCreateLink = true
-                   linkTarget = `${currentUrl}iiif/info/${collection}/${manifestId}/manifest.json`;
+                   linkTarget = `${currentUrl}iiif/2/${collection}:${manifestId}/manifest.json`;
                    linkContainer.title = 'View IIIF Manifest';
                    rowLabel = 'IIIF Manifest';
                    rowClass = 'iiif-manifest-link';
                } else if (type === 'image' && allChildren.includes(imageId)) {
                    shouldCreateLink = true
-                   linkTarget = `${currentUrl}digital/iiif/${collection}/${imageId}/full/full/0/default.jpg`;
+                   linkTarget = `${currentUrl}iiif/2/${collection}:${imageId}/full/full/0/default.jpg`;
                    linkContainer.title = 'View IIIF Image';
                    rowLabel = 'IIIF Image';
                    rowClass = 'iiif-image-link';
