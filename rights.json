@@ -1,0 +1,345 @@
+{
+   "right": [
+     {
+       "id": "InC",
+       "name": "In Copyright",
+       "version": "1.0",
+       "uri": "http://rightsstatements.org/vocab/InC/1.0/",
+       "icon_url":
+         {
+           "base": "https://rightsstatements.org/files/icons/",
+           "files": ["InC.Icon-Only.dark.svg"]
+         },
+       "button_url":
+         {
+           "base": "https://rightsstatements.org/files/buttons/",
+           "file": "InC.dark.svg"
+         },
+       "text_en": "This Item is protected by copyright and/or related rights. You are free to use this Item in any way that is permitted by the copyright and related rights legislation that applies to your use. For other uses you need to obtain permission from the rights-holder(s)."
+     },
+     {
+       "id": "InC-EDU",
+       "name": "In Copyright - Educational Use Permitted",
+       "version": "1.0",
+       "uri": "http://rightsstatements.org/vocab/InC-EDU/1.0/",
+       "icon_url":
+         {
+           "base": "https://rightsstatements.org/files/icons/",
+           "files": ["InC.Icon-Only.dark.svg"]
+         },
+       "button_url":
+         {
+           "base": "https://rightsstatements.org/files/buttons/",
+           "file": "InC-EDU.dark.svg"
+         },
+       "text_en": "This Item is protected by copyright and/or related rights. You are free to use this Item in any way that is permitted by the copyright and related rights legislation that applies to your use. In addition, no permission is required from the rights-holder(s) for educational uses. For other uses, you need to obtain permission from the rights-holder(s)."
+     },
+     {
+       "id": "InC-NC",
+       "name": "In Copyright - Non-Commercial Use Permitted",
+       "version": "1.0",
+       "uri": "http://rightsstatements.org/vocab/InC-NC/1.0/",
+       "icon_url":
+         {
+           "base": "https://rightsstatements.org/files/icons/",
+           "files": ["InC.Icon-Only.dark.svg"]
+         },
+       "button_url":
+         {
+           "base": "https://rightsstatements.org/files/buttons/",
+           "file": "InC-NC.dark.svg"
+         },
+       "text_en": "This Item is protected by copyright and/or related rights. You are free to use this Item in any way that is permitted by the copyright and related rights legislation that applies to your use. In addition, no permission is required from the rights-holder(s) for non-commercial uses. For other uses you need to obtain permission from the rights-holder(s)."
+     },
+     {
+       "id": "InC-OW-EU",
+       "name": "In Copyright - EU Orphan Work",
+       "version": "1.0",
+       "uri": "http://rightsstatements.org/vocab/InC-OW-EU/1.0/",
+       "icon_url":
+         {
+           "base": "https://rightsstatements.org/files/icons/",
+           "files": ["InC.Icon-Only.dark.svg"]
+         },
+       "button_url":
+         {
+           "base": "https://rightsstatements.org/files/buttons/",
+           "file": "InC-OW-EU.dark.svg"
+         },
+       "text_en": "This Item has been identified as an orphan work in the country of first publication and in line with Directive 2012/28/EU of the European Parliament and of the Council of 25 October 2012 on certain permitted uses of orphan works. For this Item, either (a) no rights-holder(s) have been identified or (b) one or more rights-holder(s) have been identified but none have been located even though a diligent search for the rights-holder(s) has been conducted. The results of the diligent search are available in the EU Orphan Works Database. You are free to use this Item in any way that is permitted by the copyright and related rights legislation that applies to your use."
+     },
+     {
+       "id": "InC-RUU",
+       "name": "In Copyright - Rights Holder(s) Unlocatable or Unidentifiable",
+       "version": "1.0",
+       "uri": "http://rightsstatements.org/vocab/InC-RUU/1.0/",
+       "icon_url":
+         {
+           "base": "https://rightsstatements.org/files/icons/",
+           "files": ["InC.Icon-Only.dark.svg"]
+         },
+       "button_url":
+         {
+           "base": "https://rightsstatements.org/files/buttons/",
+           "file": "InC-RUU.dark.svg"
+         },
+       "text_en": "This Item is protected by copyright and/or related rights. However, for this Item, either (a) no rights-holder(s) have been identified or (b) one or more rights-holder(s) have been identified but none have been located. You are free to use this Item in any way that is permitted by the copyright and related rights legislation that applies to your use."
+     },
+     {
+       "id": "CNE",
+       "name": "Copyright Not Evaluated",
+       "version": "1.0",
+       "uri": "http://rightsstatements.org/vocab/CNE/1.0/",
+       "icon_url":
+         {
+           "base": "https://rightsstatements.org/files/icons/",
+           "files": ["Other.Icon-Only.dark.svg"]
+         },
+       "button_url":
+         {
+           "base": "https://rightsstatements.org/files/buttons/",
+           "file": "CNE.dark.svg"
+         },
+       "text_en": "The copyright and related rights status of this Item has not been evaluated. Please refer to the organization that has made the Item available for more information. You are free to use this Item in any way that is permitted by the copyright and related rights legislation that applies to your use."
+     },
+     {
+       "id": "NKC",
+       "name": "No Known Copyright",
+       "version": "1.0",
+       "uri": "http://rightsstatements.org/vocab/NKC/1.0/",
+       "icon_url":
+         {
+           "base": "https://rightsstatements.org/files/icons/",
+           "files": ["Other.Icon-Only.dark.svg"]
+         },
+       "button_url":
+         {
+           "base": "https://rightsstatements.org/files/buttons/",
+           "file": "NKC.dark.svg"
+         },
+       "text_en": "The organization that has made the Item available reasonably believes that the Item is not restricted by copyright or related rights, but a conclusive determination could not be made. Please refer to the organization that has made the Item available for more information. You are free to use this Item in any way that is permitted by the copyright and related rights legislation that applies to your use."
+     },
+     {
+       "id": "UND",
+       "name": "Copyright Undetermined",
+       "version": "1.0",
+       "uri": "http://rightsstatements.org/vocab/UND/1.0/",
+       "icon_url":
+         {
+           "base": "https://rightsstatements.org/files/icons/",
+           "files": ["Other.Icon-Only.dark.svg"]
+         },
+       "button_url":
+         {
+           "base": "https://rightsstatements.org/files/buttons/",
+           "file": "UND.dark.svg"
+         },
+       "text_en": "The copyright and related rights status of this Item has been reviewed by the organization that has made the Item available, but the organization was unable to make a conclusive determination as to the copyright status of the Item. Please refer to the organization that has made the Item available for more information. You are free to use this Item in any way that is permitted by the copyright and related rights legislation that applies to your use."
+     },
+     {
+       "id": "NoC-CR",
+       "name": "No Copyright - Contractual Restrictions",
+       "version": "1.0",
+       "uri": "http://rightsstatements.org/vocab/NoC-CR/1.0/",
+       "icon_url":
+         {
+           "base": "https://rightsstatements.org/files/icons/",
+           "files": ["NoC.Icon-Only.dark.svg"]
+         },
+       "button_url":
+         {
+           "base": "https://rightsstatements.org/files/buttons/",
+           "file": "NoC-CR.dark.svg"
+         },
+       "text_en": "Use of this Item is not restricted by copyright and/or related rights. As part of the acquisition or digitization of this Work, the organization that has made the Item available is contractually required to limit the use of this Item. Limitations may include, but are not limited to, privacy issues, cultural protections, digitization agreements or donor agreements. Please refer to the organization that has made the Item available for more information."
+     },
+     {
+       "id": "NoC-NC",
+       "name": "No Copyright - Non-Commercial Use Only",
+       "version": "1.0",
+       "uri": "http://rightsstatements.org/vocab/NoC-NC/1.0/",
+       "icon_url":
+         {
+           "base": "https://rightsstatements.org/files/icons/",
+           "files": ["NoC.Icon-Only.dark.svg"]
+         },
+       "button_url":
+         {
+           "base": "https://rightsstatements.org/files/buttons/",
+           "file": "NoC-NC.dark.svg"
+         },
+       "text_en": "This Work has been digitized in a public-private partnership. As part of this partnership, the partners have agreed to limit commercial uses of this digital representation of the Work by third parties. You can, without permission, copy, modify, distribute, display, or perform the Item, for non-commercial uses. For any other permissible uses, please review the terms and conditions of the organization that has made the Item available."
+     },
+     {
+       "id": "NoC-OKLR",
+       "name": "No Copyright - Other Known Legal Restrictions",
+       "version": "1.0",
+       "uri": "http://rightsstatements.org/vocab/NoC-OKLR/1.0/",
+       "icon_url":
+         {
+           "base": "https://rightsstatements.org/files/icons/",
+           "files": ["NoC.Icon-Only.dark.svg"]
+         },
+       "button_url":
+         {
+           "base": "https://rightsstatements.org/files/buttons/",
+           "file": "NoC-OKLR.dark.svg"
+         },
+       "text_en": "Use of this Item is not restricted by copyright and/or related rights. In one or more jurisdictions, laws other than copyright are known to impose restrictions on the use of this Item. Please refer to the organization that has made the Item available for more information."
+     },
+     {
+       "id": "NoC-US",
+       "name": "No Copyright - United States",
+       "version": "1.0",
+       "uri": "http://rightsstatements.org/vocab/NoC-US/1.0/",
+       "icon_url":
+         {
+           "base": "https://rightsstatements.org/files/icons/",
+           "files": ["NoC.Icon-Only.dark.svg"]
+         },
+       "button_url":
+         {
+           "base": "https://rightsstatements.org/files/buttons/",
+           "file": "NoC-US.dark.svg"
+         },
+       "text_en": "The organization that has made the Item available believes that the Item is in the Public Domain under the laws of the United States, but a determination was not made as to its copyright status under the copyright laws of other countries. The Item may not be in the Public Domain under the laws of other countries. Please refer to the organization that has made the Item available for more information."
+     },
+     {
+       "id": "zero",
+       "name": "CC0 1.0 Universal (CC0 1.0) Public Domain Dedication",
+       "version": "1.0",
+       "uri": "https://creativecommons.org/publicdomain/zero/1.0/",
+       "icon_url":
+         {
+           "base": "https://mirrors.creativecommons.org/presskit/icons/",
+           "files": ["zero.svg"]
+         },
+       "button_url":
+         {
+           "base": "https://mirrors.creativecommons.org/presskit/buttons/88x31/svg/",
+           "file": "cc-zero.svg"
+         },
+       "text_en": "The person who associated a work with this deed has dedicated the work to the public domain by waiving all of his or her rights to the work worldwide under copyright law, including all related and neighboring rights, to the extent allowed by law. You can copy, modify, distribute and perform the work, even for commercial purposes, all without asking permission."
+     },
+     {
+       "id": "mark",
+       "name": "Public Domain Mark 1.0",
+       "version": "1.0",
+       "uri": "https://creativecommons.org/publicdomain/mark/1.0/",
+       "icon_url":
+         {
+           "base": "https://mirrors.creativecommons.org/presskit/icons/",
+           "files": ["pd.svg"]
+         },
+       "button_url":
+         {
+           "base": "https://mirrors.creativecommons.org/presskit/buttons/88x31/svg/",
+           "file": "publicdomain.svg"
+         },
+       "text_en": "This work has been identified as being free of known restrictions under copyright law, including all related and neighboring rights."
+     },
+     {
+       "id": "by",
+       "name": "Attribution 4.0 International (CC BY 4.0)",
+       "version": "4.0",
+       "uri": "https://creativecommons.org/licenses/by/4.0/",
+       "icon_url":
+         {
+           "base": "https://mirrors.creativecommons.org/presskit/icons/",
+           "files": ["cc.svg","by.svg"]
+         },
+       "button_url":
+         {
+           "base": "https://mirrors.creativecommons.org/presskit/buttons/88x31/svg/",
+           "file": "by.svg"
+         },
+       "text_en": "This license allows reusers to distribute, remix, adapt, and build upon the material in any medium or format, so long as attribution is given to the creator. The license allows for commercial use."
+     },
+     {
+       "id": "by-sa",
+       "name": "Attribution-ShareAlike 4.0 International (CC BY-SA 4.0)",
+       "version": "4.0",
+       "uri": "https://creativecommons.org/licenses/by-sa/4.0/",
+       "icon_url":
+         {
+           "base": "https://mirrors.creativecommons.org/presskit/icons/",
+           "files": ["cc.svg", "by.svg", "sa.svg"]
+         },
+       "button_url":
+         {
+           "base": "https://mirrors.creativecommons.org/presskit/buttons/88x31/svg/",
+           "file": "by-sa.svg"
+         },
+       "text_en": "This license allows reusers to distribute, remix, adapt, and build upon the material in any medium or format, so long as attribution is given to the creator. The license allows for commercial use. If you remix, adapt, or build upon the material, you must license the modified material under identical terms."
+     },
+     {
+       "id": "by-nd",
+       "name": "Attribution-NoDerivatives 4.0 International (CC BY-ND 4.0)",
+       "version": "4.0",
+       "uri": "https://creativecommons.org/licenses/by-nd/4.0/",
+       "icon_url":
+         {
+           "base": "https://mirrors.creativecommons.org/presskit/icons/",
+           "files": ["cc.svg", "by.svg", "nd.svg"]
+         },
+       "button_url":
+         {
+           "base": "https://mirrors.creativecommons.org/presskit/buttons/88x31/svg/",
+           "file": "by-nd.svg"
+         },
+       "text_en": "This license allows reusers to copy and distribute the material in any medium or format in unadapted form only, and only so long as attribution is given to the creator. The license allows for commercial use."
+     },
+     {
+       "id": "by-nc",
+       "name": "Attribution-NonCommercial 4.0 International (CC BY-NC 4.0)",
+       "version": "4.0",
+       "uri": "https://creativecommons.org/licenses/by-nc/4.0/",
+       "icon_url":
+         {
+           "base": "https://mirrors.creativecommons.org/presskit/icons/",
+           "files": ["cc.svg", "by.svg", "nc.svg"]
+         },
+       "button_url":
+         {
+           "base": "https://mirrors.creativecommons.org/presskit/buttons/88x31/svg/",
+           "file": "by-nc.svg"
+         },
+       "text_en": "This license allows reusers to distribute, remix, adapt, and build upon the material in any medium or format for noncommercial purposes only, and only so long as attribution is given to the creator."
+     },
+     {
+       "id": "by-nc-sa",
+       "name": "Attribution-NonCommercial-ShareAlike 4.0 International (CC BY-NC-SA 4.0)",
+       "version": "4.0",
+       "uri": "https://creativecommons.org/licenses/by-nc-sa/4.0/",
+       "icon_url":
+         {
+           "base": "https://mirrors.creativecommons.org/presskit/icons/",
+           "files": ["cc.svg", "by.svg", "nc.svg", "sa.svg"]
+         },
+       "button_url":
+         {
+           "base": "https://mirrors.creativecommons.org/presskit/buttons/88x31/svg/",
+           "file": "by-nc-sa.svg"
+         },
+       "text_en": "This license allows reusers to distribute, remix, adapt, and build upon the material in any medium or format for noncommercial purposes only, and only so long as attribution is given to the creator. If you remix, adapt, or build upon the material, you must license the modified material under identical terms."
+     },
+     {
+       "id": "by-nc-nd",
+       "name": "Attribution-NonCommercial-NoDerivatives 4.0 International (CC BY-NC-ND 4.0)",
+       "version": "4.0",
+       "uri": "https://creativecommons.org/licenses/by-nc-nd/4.0/",
+       "icon_url":
+         {
+           "base": "https://mirrors.creativecommons.org/presskit/icons/",
+           "files": ["cc.svg", "by.svg", "nc.svg", "nd.svg"]
+         },
+       "button_url":
+         {
+           "base": "https://mirrors.creativecommons.org/presskit/buttons/88x31/svg/",
+           "file": "by-nc-nd.svg"
+         },
+       "text_en": "This license allows reusers to copy and distribute the material in any medium or format in unadapted form only, for noncommercial purposes only, and only so long as attribution is given to the creator."
+     }
+   ],
+   "version": "1.0"
+ }
