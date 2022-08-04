@@ -165,7 +165,7 @@ function gsuFixes() {
    }
 
 
-  // Move access note and
+  // Move access note and disclaimer to top of metadata table.
   let table, access, discl;
 
   if(table = document.querySelector('.ItemView-itemMetadata')) {
