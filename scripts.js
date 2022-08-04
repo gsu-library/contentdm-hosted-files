@@ -163,6 +163,19 @@ function gsuFixes() {
          logoImage.parentNode.href = "https://library.gsu.edu/";
       }
    }
+
+
+  // Move access note and disclaimer to top of metadata table.
+  let table, access, discl;
+
+  if(table = document.querySelector('.ItemView-itemMetadata')) {
+    if(discl = document.querySelector('.field-discl')) {
+      table.prepend(discl);
+    }
+    if(access = document.querySelector('.field-access')) {
+      table.prepend(access);
+    }
+  }
 }
 
 
