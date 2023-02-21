@@ -325,7 +325,7 @@ function gsuItemPageReady() {
    if(id && collection && geo) {
       console.log("This item is georeferenced with a collection of " + collection + " and an id of " + id + ".");
       //var googleMapsLink = "https://geo.library.gsu.edu/mapoverlay.php?collection=" + collection + "&map=" + id;
-      var googleMapsLink = "https://geo.library.gsu.edu/overlay/" + collection + "/" + id + "/";
+      var googleMapsLink = "https://webapps.library.gsu.edu/overlay/" + collection + "/" + id + "/";
       var googleEarthLink = "https://geo.library.gsu.edu/geoserver/wms/kml?layers=" + id;
       var geoTiffLink = "https://geo.library.gsu.edu/geotiffs/" + collection + "/" + id + "_geo.tif";
       var fragment = document.createDocumentFragment();
