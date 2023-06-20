@@ -2,10 +2,10 @@
   "private": true,
   "scripts": {
     "start": "npm-watch",
-    "minJs": "minify scripts.js > scripts.min.js"
+    "minJs": "minify js/scripts.js > js/scripts.min.js"
   },
   "watch": {
-    "minJs": "scripts.js"
+    "minJs": "js/scripts.js"
   },
   "devDependencies": {
     "minify": "^9.1.0",
