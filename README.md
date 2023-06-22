@@ -21,6 +21,21 @@ Add the following URL parameters to a page to enable debugging:
 
 These parameters can be used in any combination and do not have to contain a value (e.g., `?debugCss&removeJs` will both remove the custom JavaScript and replace the custom CSS with the CSS file from the static server). The removeCss parameter trumps the debugCSS parameter so if both are present only the CSS will be removed from the page.
 
+## JavaScript Modules
+The 
+
+### CONTENTdm Cookbook Recipes
+The following recipes used are from the [CONTENTdm cookbook recipe portal](https://cdmdemo.contentdm.oclc.org/digital/custom/recipedownloads).
+
+- Rights & Licenses Badges
+- Mirador 2 Integration
+- Insert IIIF Links as Metadata
+
+### Aeon Module
+
+### Custom GSU Modules
+
+
 ## Dependencies
 - [Mirador](https://github.com/mirador/mirador), v2.7
 
