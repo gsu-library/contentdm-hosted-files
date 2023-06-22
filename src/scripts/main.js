@@ -1146,7 +1146,6 @@ document.addEventListener("cdm-notfound-page:ready", function() {
        Location: 'curato',
        SubLocation: '',
        PageCount: '',
-       PageCount: '',
        ItemISxN: '',
        ItemCitation: '',
        ItemNumber: 'identi',
