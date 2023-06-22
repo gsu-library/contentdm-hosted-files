@@ -23,3 +23,7 @@ These parameters can be used in any combination and do not have to contain a val
 
 ## Dependencies
 - [Mirador](https://github.com/mirador/mirador), v2.7
+
+TODO: replace minify with the esbuild package?
+TODO: add cookbook recipes used with links
+TODO: add NPM instructions
