@@ -60,7 +60,7 @@ function harmful_content_popup() {
           padding: 1.25em 2em;
           color: white;
           border: 1px solid hsla(0 0% 0% / 0.125);
-          border-radius: var(--btn-radious, none);
+          border-radius: var(--btn-radius, none);
           background-color: var(--btn-continue-color, hsl(219, 100%, 33%));
           cursor: pointer;
         }
