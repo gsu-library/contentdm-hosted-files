@@ -187,9 +187,11 @@ function harmful_content_popup() {
     }
   }
 
-  customElements.define("notice-dialog", NoticeDialog);
 
-  // Add notice-dialog to all pages
+  if(!customElements.get("notice-dialog")) {
+    customElements.define("notice-dialog", NoticeDialog);
+  }
+
   const noticeDialog = document.createElement("notice-dialog");
   // Update hide time to 7 days, default 0
   noticeDialog.setAttribute("hide-for-days", 7);
