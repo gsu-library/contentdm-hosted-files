@@ -6,12 +6,11 @@
     "copy-images": "cp src/images/* dist/images/.",
     "process-js": "npm run copy-scripts & npm run bundle-js & npm run min-js",
     "copy-scripts": "cp src/scripts/rights.json dist/scripts/rights.json",
-    "bundle-js": "esbuild --minify src/scripts/main.js --bundle --outfile=dist/scripts/bundle.js",
-    "min-js": "minify src/scripts/mirador-cp.js > dist/scripts/mirador-cp.js",
-    "min-css": "minify src/styles/styles.css > dist/styles/styles.min.css"
+    "bundle-js": "esbuild --bundle --minify src/scripts/main.js --outfile=dist/scripts/bundle.js",
+    "min-js": "esbuild --minify src/scripts/mirador-cp.js --outfile=dist/scripts/mirador-cp.js",
+    "min-css": "esbuild --minify src/styles/styles.css --outfile=dist/styles/styles.min.css"
   },
   "devDependencies": {
-    "esbuild": "^0.18.6",
-    "minify": "^9.1.0"
+    "esbuild": "^0.18.6"
   }
 }
