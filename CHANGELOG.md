@@ -7,7 +7,9 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 ## [1.10.0] - 2023-06-
 - Restructure repository directory structure.
 - Add offensive-content.html custom page.
+- Add harmful content popup.
 - Add esbuild for javascript bundling.
+- Remove npm-watch and minify.
 - Add CONTENTdm cookbook recpipes used to README.
 - Add NPM instructions.
 
