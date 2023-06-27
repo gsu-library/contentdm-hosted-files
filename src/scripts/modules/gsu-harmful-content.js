@@ -1,5 +1,6 @@
 export { harmful_content_popup };
 
+
 /**
  * Adds harmful content popup to all pages. Stores acknowledgement for 7 days which is refreshed on
  * page visit.
@@ -21,10 +22,10 @@ function harmful_content_popup() {
           max-width: 65ch;
           border: 1px solid hsla(0 0% 0% / 0.5);
           border-radius: 0.5em;
-          box-shadow: 0 2.8px 2.2px hsla(0, 0%, 0%, 0.034), 
+          box-shadow: 0 2.8px 2.2px hsla(0, 0%, 0%, 0.034),
                       0 6.7px 5.3px hsla(0, 0%, 0%, 0.048),
-                      0 12.5px 10px hsla(0, 0%, 0%, 0.06), 
-                      0 22.3px 17.9px hsla(0, 0%, 0%, 0.072), 
+                      0 12.5px 10px hsla(0, 0%, 0%, 0.06),
+                      0 22.3px 17.9px hsla(0, 0%, 0%, 0.072),
                       0 41.8px 33.4px hsla(0, 0%, 0%, 0.086),
                       0 100px 80px hsla(0, 0%, 0%, 0.12);
           color: currentColor;
