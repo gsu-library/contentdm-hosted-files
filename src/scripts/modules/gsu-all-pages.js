@@ -1,6 +1,7 @@
 export { all_pages_tweaks };
 
 
+// TODO: move harmful content to this file?
 // Various fixes.
 function all_pages_tweaks() {
    var debugCss = false, removeCss = false;
