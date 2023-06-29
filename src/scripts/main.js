@@ -29,7 +29,7 @@
 import { all_pages_tweaks } from "./modules/gsu-all-pages";
 import { home_page_tweaks } from "./modules/gsu-home-page";
 import { item_page_tweaks } from "./modules/gsu-item-page";
-import { harmful_content_popup } from "./modules/gsu-harmful-content";
+import { offensive_content_popup } from "./modules/gsu-offensive-content";
 import { aeon_button } from "./modules/aeon-integration";
 import { rights_licenses_badges } from "./modules/rights-licenses-badges";
 import { mirador_integration } from "./modules/mirador-integration";
@@ -44,35 +44,35 @@ document.addEventListener("cdm-home-page:ready", function() {
    all_pages_tweaks();
    // if(!removeJs) { home_page_tweaks(); }
    home_page_tweaks();
-   harmful_content_popup();
+   offensive_content_popup();
 });
 
 
 // For the browse/search page.
 document.addEventListener("cdm-search-page:ready", function() {
    all_pages_tweaks();
-   harmful_content_popup();
+   offensive_content_popup();
 });
 
 
 // For the collection search page.
 document.addEventListener("cdm-collection-search-page:ready", function() {
    all_pages_tweaks();
-   harmful_content_popup();
+   offensive_content_popup();
 });
 
 
 // For the advanced search page.
 document.addEventListener("cdm-advanced-search-page:ready", function() {
    all_pages_tweaks();
-   harmful_content_popup();
+   offensive_content_popup();
 });
 
 
 // For collection landing pages.
 document.addEventListener("cdm-collection-landing-page:ready", function() {
    all_pages_tweaks();
-   harmful_content_popup();
+   offensive_content_popup();
 });
 
 
@@ -81,21 +81,21 @@ document.addEventListener('cdm-item-page:ready', function(){
    all_pages_tweaks();
    // if(!removeJs) { item_page_tweaks(); }
    item_page_tweaks();
-   harmful_content_popup();
+   offensive_content_popup();
 });
 
 
 // For custom pages.
 document.addEventListener("cdm-custom-page:ready", function() {
    all_pages_tweaks();
-   harmful_content_popup();
+   offensive_content_popup();
 });
 
 
 // For the about page.
 document.addEventListener("cdm-about-page:ready", function() {
    all_pages_tweaks();
-   harmful_content_popup();
+   offensive_content_popup();
 });
 
 
@@ -110,28 +110,28 @@ document.addEventListener("cdm-about-page:ready", function() {
 // For the login page.
 document.addEventListener("cdm-login-page:ready", function() {
    all_pages_tweaks();
-   harmful_content_popup();
+   offensive_content_popup();
 });
 
 
 // For the not found page.
 document.addEventListener("cdm-notfound-page:ready", function() {
    all_pages_tweaks();
-   harmful_content_popup();
+   offensive_content_popup();
 });
 
 
 // For the saved items page.
 document.addEventListener("cdm-saved-items-page:ready", function() {
    all_pages_tweaks();
-   harmful_content_popup();
+   offensive_content_popup();
 });
 
 
 // For the shared items page.
 document.addEventListener("cdm-shared-items-page:ready", function() {
    all_pages_tweaks();
-   harmful_content_popup();
+   offensive_content_popup();
 });
 
 

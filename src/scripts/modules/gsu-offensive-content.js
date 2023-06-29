@@ -1,11 +1,11 @@
-export { harmful_content_popup };
+export { offensive_content_popup };
 
 
 /**
- * Adds harmful content popup to all pages. Stores acknowledgement for 7 days which is refreshed on
+ * Adds offensive content popup to all pages. Stores acknowledgement for 7 days which is refreshed on
  * page visit.
  */
-function harmful_content_popup() {
+function offensive_content_popup() {
   // Check that our browser supports custom elements,
   // ... cf. https://caniuse.com/?search=customElements
   if (!("customElements" in window)) {
