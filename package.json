@@ -1,13 +1,16 @@
 {
+  "private": true,
   "scripts": {
-    "start": "npm-watch",
-    "minJs": "minify scripts.js > scripts.min.js"
-  },
-  "watch": {
-    "minJs": "scripts.js"
+    "build": "npm run copy-pages & npm run copy-images & npm run process-js & npm run min-css",
+    "copy-pages": "cp src/custom_pages/* dist/custom_pages/.",
+    "copy-images": "cp src/images/* dist/images/.",
+    "process-js": "npm run copy-scripts & npm run bundle-js & npm run min-js",
+    "copy-scripts": "cp src/scripts/rights.json dist/scripts/rights.json",
+    "bundle-js": "esbuild --bundle --minify src/scripts/main.js --outfile=dist/scripts/bundle.js",
+    "min-js": "esbuild --minify src/scripts/mirador-cp.js --outfile=dist/scripts/mirador-cp.js",
+    "min-css": "esbuild --minify src/styles/styles.css --outfile=dist/styles/styles.min.css"
   },
   "devDependencies": {
-    "minify": "^9.1.0",
-    "npm-watch": "^0.11.0"
+    "esbuild": "^0.18.6"
   }
 }

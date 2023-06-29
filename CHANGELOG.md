@@ -4,6 +4,14 @@ All notable changes to this project will be documented in this file.
 The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/),
 and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
+## [1.10.0] - 2023-06-29
+- Reorganize repository file structure.
+- Add offensive-content.html custom page.
+- Add offensive content popup.
+- Add esbuild for javascript bundling.
+- Remove npm-watch and minify.
+- Rewrite most of the README.
+
 ## [1.9.0] - 2023-02-21
 - Change the map overlay link to point at webapps.
 
