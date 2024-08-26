@@ -1,345 +1,945 @@
 {
-   "right": [
-     {
-       "id": "InC",
-       "name": "In Copyright",
-       "version": "1.0",
-       "uri": "http://rightsstatements.org/vocab/InC/1.0/",
-       "icon_url":
-         {
-           "base": "https://rightsstatements.org/files/icons/",
-           "files": ["InC.Icon-Only.dark.svg"]
-         },
-       "button_url":
-         {
-           "base": "https://rightsstatements.org/files/buttons/",
-           "file": "InC.dark.svg"
-         },
-       "text_en": "This Item is protected by copyright and/or related rights. You are free to use this Item in any way that is permitted by the copyright and related rights legislation that applies to your use. For other uses you need to obtain permission from the rights-holder(s)."
-     },
-     {
-       "id": "InC-EDU",
-       "name": "In Copyright - Educational Use Permitted",
-       "version": "1.0",
-       "uri": "http://rightsstatements.org/vocab/InC-EDU/1.0/",
-       "icon_url":
-         {
-           "base": "https://rightsstatements.org/files/icons/",
-           "files": ["InC.Icon-Only.dark.svg"]
-         },
-       "button_url":
-         {
-           "base": "https://rightsstatements.org/files/buttons/",
-           "file": "InC-EDU.dark.svg"
-         },
-       "text_en": "This Item is protected by copyright and/or related rights. You are free to use this Item in any way that is permitted by the copyright and related rights legislation that applies to your use. In addition, no permission is required from the rights-holder(s) for educational uses. For other uses, you need to obtain permission from the rights-holder(s)."
-     },
-     {
-       "id": "InC-NC",
-       "name": "In Copyright - Non-Commercial Use Permitted",
-       "version": "1.0",
-       "uri": "http://rightsstatements.org/vocab/InC-NC/1.0/",
-       "icon_url":
-         {
-           "base": "https://rightsstatements.org/files/icons/",
-           "files": ["InC.Icon-Only.dark.svg"]
-         },
-       "button_url":
-         {
-           "base": "https://rightsstatements.org/files/buttons/",
-           "file": "InC-NC.dark.svg"
-         },
-       "text_en": "This Item is protected by copyright and/or related rights. You are free to use this Item in any way that is permitted by the copyright and related rights legislation that applies to your use. In addition, no permission is required from the rights-holder(s) for non-commercial uses. For other uses you need to obtain permission from the rights-holder(s)."
-     },
-     {
-       "id": "InC-OW-EU",
-       "name": "In Copyright - EU Orphan Work",
-       "version": "1.0",
-       "uri": "http://rightsstatements.org/vocab/InC-OW-EU/1.0/",
-       "icon_url":
-         {
-           "base": "https://rightsstatements.org/files/icons/",
-           "files": ["InC.Icon-Only.dark.svg"]
-         },
-       "button_url":
-         {
-           "base": "https://rightsstatements.org/files/buttons/",
-           "file": "InC-OW-EU.dark.svg"
-         },
-       "text_en": "This Item has been identified as an orphan work in the country of first publication and in line with Directive 2012/28/EU of the European Parliament and of the Council of 25 October 2012 on certain permitted uses of orphan works. For this Item, either (a) no rights-holder(s) have been identified or (b) one or more rights-holder(s) have been identified but none have been located even though a diligent search for the rights-holder(s) has been conducted. The results of the diligent search are available in the EU Orphan Works Database. You are free to use this Item in any way that is permitted by the copyright and related rights legislation that applies to your use."
-     },
-     {
-       "id": "InC-RUU",
-       "name": "In Copyright - Rights Holder(s) Unlocatable or Unidentifiable",
-       "version": "1.0",
-       "uri": "http://rightsstatements.org/vocab/InC-RUU/1.0/",
-       "icon_url":
-         {
-           "base": "https://rightsstatements.org/files/icons/",
-           "files": ["InC.Icon-Only.dark.svg"]
-         },
-       "button_url":
-         {
-           "base": "https://rightsstatements.org/files/buttons/",
-           "file": "InC-RUU.dark.svg"
-         },
-       "text_en": "This Item is protected by copyright and/or related rights. However, for this Item, either (a) no rights-holder(s) have been identified or (b) one or more rights-holder(s) have been identified but none have been located. You are free to use this Item in any way that is permitted by the copyright and related rights legislation that applies to your use."
-     },
-     {
-       "id": "CNE",
-       "name": "Copyright Not Evaluated",
-       "version": "1.0",
-       "uri": "http://rightsstatements.org/vocab/CNE/1.0/",
-       "icon_url":
-         {
-           "base": "https://rightsstatements.org/files/icons/",
-           "files": ["Other.Icon-Only.dark.svg"]
-         },
-       "button_url":
-         {
-           "base": "https://rightsstatements.org/files/buttons/",
-           "file": "CNE.dark.svg"
-         },
-       "text_en": "The copyright and related rights status of this Item has not been evaluated. Please refer to the organization that has made the Item available for more information. You are free to use this Item in any way that is permitted by the copyright and related rights legislation that applies to your use."
-     },
-     {
-       "id": "NKC",
-       "name": "No Known Copyright",
-       "version": "1.0",
-       "uri": "http://rightsstatements.org/vocab/NKC/1.0/",
-       "icon_url":
-         {
-           "base": "https://rightsstatements.org/files/icons/",
-           "files": ["Other.Icon-Only.dark.svg"]
-         },
-       "button_url":
-         {
-           "base": "https://rightsstatements.org/files/buttons/",
-           "file": "NKC.dark.svg"
-         },
-       "text_en": "The organization that has made the Item available reasonably believes that the Item is not restricted by copyright or related rights, but a conclusive determination could not be made. Please refer to the organization that has made the Item available for more information. You are free to use this Item in any way that is permitted by the copyright and related rights legislation that applies to your use."
-     },
-     {
-       "id": "UND",
-       "name": "Copyright Undetermined",
-       "version": "1.0",
-       "uri": "http://rightsstatements.org/vocab/UND/1.0/",
-       "icon_url":
-         {
-           "base": "https://rightsstatements.org/files/icons/",
-           "files": ["Other.Icon-Only.dark.svg"]
-         },
-       "button_url":
-         {
-           "base": "https://rightsstatements.org/files/buttons/",
-           "file": "UND.dark.svg"
-         },
-       "text_en": "The copyright and related rights status of this Item has been reviewed by the organization that has made the Item available, but the organization was unable to make a conclusive determination as to the copyright status of the Item. Please refer to the organization that has made the Item available for more information. You are free to use this Item in any way that is permitted by the copyright and related rights legislation that applies to your use."
-     },
-     {
-       "id": "NoC-CR",
-       "name": "No Copyright - Contractual Restrictions",
-       "version": "1.0",
-       "uri": "http://rightsstatements.org/vocab/NoC-CR/1.0/",
-       "icon_url":
-         {
-           "base": "https://rightsstatements.org/files/icons/",
-           "files": ["NoC.Icon-Only.dark.svg"]
-         },
-       "button_url":
-         {
-           "base": "https://rightsstatements.org/files/buttons/",
-           "file": "NoC-CR.dark.svg"
-         },
-       "text_en": "Use of this Item is not restricted by copyright and/or related rights. As part of the acquisition or digitization of this Work, the organization that has made the Item available is contractually required to limit the use of this Item. Limitations may include, but are not limited to, privacy issues, cultural protections, digitization agreements or donor agreements. Please refer to the organization that has made the Item available for more information."
-     },
-     {
-       "id": "NoC-NC",
-       "name": "No Copyright - Non-Commercial Use Only",
-       "version": "1.0",
-       "uri": "http://rightsstatements.org/vocab/NoC-NC/1.0/",
-       "icon_url":
-         {
-           "base": "https://rightsstatements.org/files/icons/",
-           "files": ["NoC.Icon-Only.dark.svg"]
-         },
-       "button_url":
-         {
-           "base": "https://rightsstatements.org/files/buttons/",
-           "file": "NoC-NC.dark.svg"
-         },
-       "text_en": "This Work has been digitized in a public-private partnership. As part of this partnership, the partners have agreed to limit commercial uses of this digital representation of the Work by third parties. You can, without permission, copy, modify, distribute, display, or perform the Item, for non-commercial uses. For any other permissible uses, please review the terms and conditions of the organization that has made the Item available."
-     },
-     {
-       "id": "NoC-OKLR",
-       "name": "No Copyright - Other Known Legal Restrictions",
-       "version": "1.0",
-       "uri": "http://rightsstatements.org/vocab/NoC-OKLR/1.0/",
-       "icon_url":
-         {
-           "base": "https://rightsstatements.org/files/icons/",
-           "files": ["NoC.Icon-Only.dark.svg"]
-         },
-       "button_url":
-         {
-           "base": "https://rightsstatements.org/files/buttons/",
-           "file": "NoC-OKLR.dark.svg"
-         },
-       "text_en": "Use of this Item is not restricted by copyright and/or related rights. In one or more jurisdictions, laws other than copyright are known to impose restrictions on the use of this Item. Please refer to the organization that has made the Item available for more information."
-     },
-     {
-       "id": "NoC-US",
-       "name": "No Copyright - United States",
-       "version": "1.0",
-       "uri": "http://rightsstatements.org/vocab/NoC-US/1.0/",
-       "icon_url":
-         {
-           "base": "https://rightsstatements.org/files/icons/",
-           "files": ["NoC.Icon-Only.dark.svg"]
-         },
-       "button_url":
-         {
-           "base": "https://rightsstatements.org/files/buttons/",
-           "file": "NoC-US.dark.svg"
-         },
-       "text_en": "The organization that has made the Item available believes that the Item is in the Public Domain under the laws of the United States, but a determination was not made as to its copyright status under the copyright laws of other countries. The Item may not be in the Public Domain under the laws of other countries. Please refer to the organization that has made the Item available for more information."
-     },
-     {
-       "id": "zero",
-       "name": "CC0 1.0 Universal (CC0 1.0) Public Domain Dedication",
-       "version": "1.0",
-       "uri": "https://creativecommons.org/publicdomain/zero/1.0/",
-       "icon_url":
-         {
-           "base": "https://mirrors.creativecommons.org/presskit/icons/",
-           "files": ["zero.svg"]
-         },
-       "button_url":
-         {
-           "base": "https://mirrors.creativecommons.org/presskit/buttons/88x31/svg/",
-           "file": "cc-zero.svg"
-         },
-       "text_en": "The person who associated a work with this deed has dedicated the work to the public domain by waiving all of his or her rights to the work worldwide under copyright law, including all related and neighboring rights, to the extent allowed by law. You can copy, modify, distribute and perform the work, even for commercial purposes, all without asking permission."
-     },
-     {
-       "id": "mark",
-       "name": "Public Domain Mark 1.0",
-       "version": "1.0",
-       "uri": "https://creativecommons.org/publicdomain/mark/1.0/",
-       "icon_url":
-         {
-           "base": "https://mirrors.creativecommons.org/presskit/icons/",
-           "files": ["pd.svg"]
-         },
-       "button_url":
-         {
-           "base": "https://mirrors.creativecommons.org/presskit/buttons/88x31/svg/",
-           "file": "publicdomain.svg"
-         },
-       "text_en": "This work has been identified as being free of known restrictions under copyright law, including all related and neighboring rights."
-     },
-     {
-       "id": "by",
-       "name": "Attribution 4.0 International (CC BY 4.0)",
-       "version": "4.0",
-       "uri": "https://creativecommons.org/licenses/by/4.0/",
-       "icon_url":
-         {
-           "base": "https://mirrors.creativecommons.org/presskit/icons/",
-           "files": ["cc.svg","by.svg"]
-         },
-       "button_url":
-         {
-           "base": "https://mirrors.creativecommons.org/presskit/buttons/88x31/svg/",
-           "file": "by.svg"
-         },
-       "text_en": "This license allows reusers to distribute, remix, adapt, and build upon the material in any medium or format, so long as attribution is given to the creator. The license allows for commercial use."
-     },
-     {
-       "id": "by-sa",
-       "name": "Attribution-ShareAlike 4.0 International (CC BY-SA 4.0)",
-       "version": "4.0",
-       "uri": "https://creativecommons.org/licenses/by-sa/4.0/",
-       "icon_url":
-         {
-           "base": "https://mirrors.creativecommons.org/presskit/icons/",
-           "files": ["cc.svg", "by.svg", "sa.svg"]
-         },
-       "button_url":
-         {
-           "base": "https://mirrors.creativecommons.org/presskit/buttons/88x31/svg/",
-           "file": "by-sa.svg"
-         },
-       "text_en": "This license allows reusers to distribute, remix, adapt, and build upon the material in any medium or format, so long as attribution is given to the creator. The license allows for commercial use. If you remix, adapt, or build upon the material, you must license the modified material under identical terms."
-     },
-     {
-       "id": "by-nd",
-       "name": "Attribution-NoDerivatives 4.0 International (CC BY-ND 4.0)",
-       "version": "4.0",
-       "uri": "https://creativecommons.org/licenses/by-nd/4.0/",
-       "icon_url":
-         {
-           "base": "https://mirrors.creativecommons.org/presskit/icons/",
-           "files": ["cc.svg", "by.svg", "nd.svg"]
-         },
-       "button_url":
-         {
-           "base": "https://mirrors.creativecommons.org/presskit/buttons/88x31/svg/",
-           "file": "by-nd.svg"
-         },
-       "text_en": "This license allows reusers to copy and distribute the material in any medium or format in unadapted form only, and only so long as attribution is given to the creator. The license allows for commercial use."
-     },
-     {
-       "id": "by-nc",
-       "name": "Attribution-NonCommercial 4.0 International (CC BY-NC 4.0)",
-       "version": "4.0",
-       "uri": "https://creativecommons.org/licenses/by-nc/4.0/",
-       "icon_url":
-         {
-           "base": "https://mirrors.creativecommons.org/presskit/icons/",
-           "files": ["cc.svg", "by.svg", "nc.svg"]
-         },
-       "button_url":
-         {
-           "base": "https://mirrors.creativecommons.org/presskit/buttons/88x31/svg/",
-           "file": "by-nc.svg"
-         },
-       "text_en": "This license allows reusers to distribute, remix, adapt, and build upon the material in any medium or format for noncommercial purposes only, and only so long as attribution is given to the creator."
-     },
-     {
-       "id": "by-nc-sa",
-       "name": "Attribution-NonCommercial-ShareAlike 4.0 International (CC BY-NC-SA 4.0)",
-       "version": "4.0",
-       "uri": "https://creativecommons.org/licenses/by-nc-sa/4.0/",
-       "icon_url":
-         {
-           "base": "https://mirrors.creativecommons.org/presskit/icons/",
-           "files": ["cc.svg", "by.svg", "nc.svg", "sa.svg"]
-         },
-       "button_url":
-         {
-           "base": "https://mirrors.creativecommons.org/presskit/buttons/88x31/svg/",
-           "file": "by-nc-sa.svg"
-         },
-       "text_en": "This license allows reusers to distribute, remix, adapt, and build upon the material in any medium or format for noncommercial purposes only, and only so long as attribution is given to the creator. If you remix, adapt, or build upon the material, you must license the modified material under identical terms."
-     },
-     {
-       "id": "by-nc-nd",
-       "name": "Attribution-NonCommercial-NoDerivatives 4.0 International (CC BY-NC-ND 4.0)",
-       "version": "4.0",
-       "uri": "https://creativecommons.org/licenses/by-nc-nd/4.0/",
-       "icon_url":
-         {
-           "base": "https://mirrors.creativecommons.org/presskit/icons/",
-           "files": ["cc.svg", "by.svg", "nc.svg", "nd.svg"]
-         },
-       "button_url":
-         {
-           "base": "https://mirrors.creativecommons.org/presskit/buttons/88x31/svg/",
-           "file": "by-nc-nd.svg"
-         },
-       "text_en": "This license allows reusers to copy and distribute the material in any medium or format in unadapted form only, for noncommercial purposes only, and only so long as attribution is given to the creator."
-     }
-   ],
-   "version": "1.0"
- }
+  "right": [{
+      "id": "InC",
+      "name": {
+        "en-US": "In Copyright",
+        "ca": "Protegit per Drets d’Autor",
+        "de": "Urheberrechtsschutz",
+        "es": "Protegido por derecho de autor",
+        "fr": "Protégé par le droit d'auteur",
+        "it": "In Copyright",
+        "ja": "In Copyright",
+        "ko": "In Copyright",
+        "nl": "Auteursrechtelijk beschermd",
+        "pt": "In Copyright",
+        "th": "In Copyright",
+        "tr": "In Copyright",
+        "vi": "In Copyright",
+        "zh-CN": "In Copyright",
+        "zh-TW": "In Copyright"
+      },
+      "text": {
+        "en-US": "This Item is protected by copyright and/or related rights. You are free to use this Item in any way that is permitted by the copyright and related rights legislation that applies to your use. For other uses you need to obtain permission from the rights-holder(s).",
+        "ca": "Aquest material està protegit per drets d’autor i/o drets afins. Podeu utilitzar aquest material en funció del que permet la legislació de drets d’autor i drets afins d'aplicació al vostre cas. Per a d’altres usos heu d’obtenir permís del(s) titular(s) de drets.",
+        "de": "Dieses Objekt ist durch das Urheberrecht und/oder verwandte Schutzrechte geschützt. Sie sind berechtigt, das Objekt in jeder Form zu nutzen, die das Urheberrechtsgesetz und/oder einschlägige verwandte Schutzrechte gestatten. Für weitere Nutzungsarten benötigen Sie die Zustimmung der/des Rechteinhaber/s.",
+        "es": "Este material se encuentra protegido por derecho de autor y/o otros derechos conexos. Usted es libre de utilizar este material de cualquier forma que esté permitida por la legislación sobre derecho de autor y derechos conexos que aplique para su uso. Para otros usos, usted necesita obtener permiso del titular o titulares de derechos.",
+        "fr": "Cet Objet est protégé par le droit d'auteur et/ou les droits voisins. Vous avez le droit d'utiliser l'Objet de toutes les manières autorisées par la législation sur le droit d'auteur et les droits voisins applicable à votre utilisation. Les autres utilisations requièrent l'autorisation du/des titulaire(s) des droits.",
+        "it": "Questo oggetto è protetto dal diritto d'autore e/o da diritti connessi. L'utente è libero di usare questo oggetto in qualsiasi modo consentito dalla legislazione sul diritto d'autore e sui diritti connessi che si applica al suo utilizzo. Per altri usi è necessario ottenere l'autorizzazione dal/i titolare/i dei diritti.",
+        "ja": "This Item is protected by copyright and/or related rights.",
+        "ko": "This Item is protected by copyright and/or related rights.",
+        "nl": "Dit Item is beschermd door het auteursrecht en/of aanverwante rechten. Je bent vrij om dit Item te gebruiken op elke manier die is toegestaan ​​door de wetgeving betreffende het auteursrecht en de aanverwante rechten die van toepassing is op je gebruik. Voor andere vormen van gebruik moet je toestemming krijgen van de rechthebbende(n).",
+        "pt": "This Item is protected by copyright and/or related rights.",
+        "th": "This Item is protected by copyright and/or related rights.",
+        "tr": "This Item is protected by copyright and/or related rights.",
+        "vi": "This Item is protected by copyright and/or related rights.",
+        "zh-CN": "This Item is protected by copyright and/or related rights.",
+        "zh-TW": "This Item is protected by copyright and/or related rights."
+      },
+      "version": "1.0",
+      "uri": "http://rightsstatements.org/vocab/InC/1.0/",
+      "icon_url": {
+        "base": "https://rightsstatements.org/files/icons/",
+        "files": ["InC.Icon-Only.dark.svg"]
+      },
+      "button_url": {
+        "base": "https://rightsstatements.org/files/buttons/",
+        "file": "InC.dark.svg"
+      }
+    },
+    {
+      "id": "InC-EDU",
+      "name": {
+        "en-US": "In Copyright - Educational Use Permitted",
+        "ca": "Protegit per Drets d’Autor - permès l’ús educatiu",
+        "de": "Urheberrechtsschutz - Nutzung zu Bildungszwecken erlaubt",
+        "es": "Protegido por derecho de autor - uso educativo permitido",
+        "fr": "Protégé par le droit d'auteur - utilisation à des fins pédagogiques autorisée",
+        "it": "In Copyright - uso educativo consentito",
+        "ja": "In Copyright - Educational Use Permitted",
+        "ko": "In Copyright - Educational Use Permitted",
+        "nl": "Auteursrechtelijk beschermd - educatief gebruik toegestaan",
+        "pt": "In Copyright - Educational Use Permitted",
+        "th": "In Copyright - Educational Use Permitted",
+        "tr": "In Copyright - Educational Use Permitted",
+        "vi": "In Copyright - Educational Use Permitted",
+        "zh-CN": "In Copyright - Educational Use Permitted",
+        "zh-TW": "In Copyright - Educational Use Permitted"
+      },
+      "text": {
+        "en-US": "This Item is protected by copyright and/or related rights. You are free to use this Item in any way that is permitted by the copyright and related rights legislation that applies to your use. In addition, no permission is required from the rights-holder(s) for educational uses. For other uses, you need to obtain permission from the rights-holder(s).",
+        "ca": "Aquest material està protegit per drets d’autor i/o drets afins. Podeu utilitzar aquest material en funció del que permet la legislació de drets d’autor i drets afins del vostre país. No es requereix cap permís del(s) titular(s) dels drets per a usos educatius. Per a d’altres usos heu d’obtenir permís del(s) titular(s) de drets.",
+        "de": "Dieses Objekt ist durch das Urheberrecht und/oder verwandte Schutzrechte geschützt. Sie sind berechtigt, das Objekt in jeder Form zu nutzen, die das Urheberrechtsgesetz und/oder einschlägige verwandte Schutzrechte gestatten. Darüber hinaus ist auch die Nutzung zu Bildungszwecken ohne weitere Erlaubnis der/des Rechteinhaber/s gestattet. Für weitere Nutzungsarten benötigen Sie die Zustimmung der/des Rechteinhaber/s.",
+        "es": "Este material está protegido por derecho de autor y/o derechos conexos. Usted es libre de utilizar este material de cualquier forma que esté permitida por la legislación de derecho de autor y derechos conexos que se aplique al uso que pretende hacer. Adicionalmente, no se requiere permiso del titular o titulares de derechos para usos educativos. Para otros usos, usted necesita obtener permiso del titular o titulares de derechos.",
+        "fr": "Cet Objet est protégé par le droit d'auteur et/ou les droits voisins. Vous avez le droit d'utiliser l'Objet de toutes les manières autorisées par la législation sur le droit d'auteur et les droits voisins applicable à votre utilisation. En outre, l'utilisation à des fins pédagogiques est autorisée sans l'autorisation du/des titulaire(s) des droits. Les autres utilisations requièrent l'autorisation du/des titulaire(s) des droits.",
+        "it": "Questo oggetto è protetto dal diritto d'autore e/o da diritti connessi. L'utente è libero di usare questo oggetto in qualsiasi modo consentito dalla legislazione sul diritto d'autore e sui diritti connessi che si applica al suo utilizzo. Inoltre non è richiesta alcuna autorizzazione del/i titolare/i dei diritti per usi educativi. Per altri usi è necessario ottenere l'autorizzazione dal/i titolare/i dei diritti.",
+        "ja": "This Item is protected by copyright and/or related rights.",
+        "ko": "This Item is protected by copyright and/or related rights.",
+        "nl": "Dit Item is beschermd door het auteursrecht en/of aanverwante rechten. Je bent vrij om dit Item te gebruiken op elke manier die is toegestaan ​​door de wetgeving betreffende het auteursrecht en de aanverwante rechten die van toepassing is op je gebruik. Bovendien is voor educatief gebruik geen toestemming van de rechthebbende(n) vereist. Voor andere vormen van gebruik moet je toestemming krijgen van de rechthebbende(n).",
+        "pt": "This Item is protected by copyright and/or related rights.",
+        "th": "This Item is protected by copyright and/or related rights.",
+        "tr": "This Item is protected by copyright and/or related rights.",
+        "vi": "This Item is protected by copyright and/or related rights.",
+        "zh-CN": "This Item is protected by copyright and/or related rights.",
+        "zh-TW": "This Item is protected by copyright and/or related rights."
+      },
+      "version": "1.0",
+      "uri": "http://rightsstatements.org/vocab/InC-EDU/1.0/",
+      "icon_url": {
+        "base": "https://rightsstatements.org/files/icons/",
+        "files": ["InC.Icon-Only.dark.svg"]
+      },
+      "button_url": {
+        "base": "https://rightsstatements.org/files/buttons/",
+        "file": "InC-EDU.dark.svg"
+      }
+    },
+    {
+      "id": "InC-NC",
+      "name": {
+        "en-US": "In Copyright - Non-Commercial Use Permitted",
+        "ca": "Protegit per Drets d’Autor - permès l'ús no comercial",
+        "de": "Urheberrechtsschutz - nicht kommerzielle Nutzung gestattet",
+        "es": "Protegido por derecho de autor - uso no comercial permitido",
+        "fr": "Protégé par le droit d'auteur - utilisation non commerciale autorisée",
+        "it": "In Copyright - uso non commerciale consentito",
+        "ja": "In Copyright - Non-Commercial Use Permitted",
+        "ko": "In Copyright - Non-Commercial Use Permitted",
+        "nl": "Auteursrechtelijk beschermd - niet-commercieel gebruik toegestaan",
+        "pt": "In Copyright - Non-Commercial Use Permitted",
+        "th": "In Copyright - Non-Commercial Use Permitted",
+        "tr": "In Copyright - Non-Commercial Use Permitted",
+        "vi": "In Copyright - Non-Commercial Use Permitted",
+        "zh-CN": "In Copyright - Non-Commercial Use Permitted",
+        "zh-TW": "In Copyright - Non-Commercial Use Permitted"
+      },
+      "text": {
+        "en-US": "This Item is protected by copyright and/or related rights. You are free to use this Item in any way that is permitted by the copyright and related rights legislation that applies to your use. In addition, no permission is required from the rights-holder(s) for non-commercial uses. For other uses you need to obtain permission from the rights-holder(s).",
+        "ca": "Aquest material està protegit per drets d’autor i/o drets afins. Podeu utilitzar aquest material en funció del que permet la legislació de drets d’autor d'aplicació al vostre cas. No cal autorització del titular de drets per a usos no comercials. Per a d’altres usos heu d’obtenir permís del(s) titular(s) de drets.",
+        "de": "Dieses Objekt ist durch das Urheberrecht und/oder verwandte Schutzrechte geschützt. Sie sind berechtigt, das Objekt in jeder Form zu nutzen, die das Urheberrechtsgesetz und/oder einschlägige verwandte Schutzrechte gestatten. Darüber hinaus ist auch die nicht kommerzielle Nutzung ohne weitere Erlaubnis der Rechteinhaber gestattet. Für weitere Nutzungsarten benötigen Sie die Zustimmung der/des Rechteinhaber/s.",
+        "es": "Este material está protegido por derecho de autor y/o derechos conexos. Usted es libre de utilizar este material de cualquier forma que esté permitida por la legislación de derecho de autor y derechos conexos que se aplique al uso que pretende hacer. Adicionalmente, no se requiere permiso del titular o titulares de derechos para usos no comerciales. Para otros usos, usted necesita obtener permiso del titular o titulares de derechos.",
+        "fr": "Cet Objet est protégé par le droit d'auteur et/ou les droits voisins. Vous avez le droit d'utiliser l'Objet de toutes les manières autorisées par la législation sur le droit d'auteur et les droits voisins applicable à votre utilisation. De plus, l'utilisation à des fins non commerciales est accordée de plein droit. Les autres utilisations requièrent l'autorisation du/des titulaire(s) des droits.",
+        "it": "Questo oggetto è protetto dal diritto d'autore e/o da diritti connessi. L'utente è libero di utilizzare questo oggetto in qualsiasi modo consentito dalla legislazione sul diritto d'autore e sui diritti connessi che si applica al suo utilizzo. Inoltre non è richiesta alcuna autorizzazione da parte del/i titolare/i dei diritti per usi non commerciali. Per altri usi è necessario ottenere l'autorizzazione dal/i titolare/i dei diritti.",
+        "ja": "This Item is protected by copyright and/or related rights.",
+        "ko": "This Item is protected by copyright and/or related rights.",
+        "nl": "Dit Item is beschermd door het auteursrecht en/of aanverwante rechten. Je bent vrij om dit Item te gebruiken op elke manier die is toegestaan ​​door de wetgeving betreffende het auteursrecht en aanverwante rechten die van toepassing is op je gebruik. Bovendien is voor niet-commercieel gebruik geen toestemming vereist van de rechthebbende(n). Voor andere vormen van gebruik moet je toestemming krijgen van de rechthebbende(n).",
+        "pt": "This Item is protected by copyright and/or related rights.",
+        "th": "This Item is protected by copyright and/or related rights.",
+        "tr": "This Item is protected by copyright and/or related rights.",
+        "vi": "This Item is protected by copyright and/or related rights.",
+        "zh-CN": "This Item is protected by copyright and/or related rights.",
+        "zh-TW": "This Item is protected by copyright and/or related rights."
+      },
+      "version": "1.0",
+      "uri": "http://rightsstatements.org/vocab/InC-NC/1.0/",
+      "icon_url": {
+        "base": "https://rightsstatements.org/files/icons/",
+        "files": ["InC.Icon-Only.dark.svg"]
+      },
+      "button_url": {
+        "base": "https://rightsstatements.org/files/buttons/",
+        "file": "InC-NC.dark.svg"
+      }
+    },
+    {
+      "id": "InC-OW-EU",
+      "name": {
+        "en-US": "In Copyright - EU Orphan Work",
+        "ca": "Protegit per Drets d’Autor - Obra Òrfena UE",
+        "de": "Urheberrechtsschutz - verwaistes Werk EU",
+        "es": "Protegido por derecho de autor - Obra Huérfana UE",
+        "fr": "Protégé par le droit d'auteur - Œuvre Orpheline de l'UE",
+        "it": "In Copyright - Opera Orfana UE",
+        "ja": "In Copyright - EU Orphan Work",
+        "ko": "In Copyright - EU Orphan Work",
+        "nl": "Auteursrechtelijk beschermd - EU Verweesd Werk",
+        "pt": "In Copyright - EU Orphan Work",
+        "th": "In Copyright - EU Orphan Work",
+        "tr": "In Copyright - EU Orphan Work",
+        "vi": "In Copyright - EU Orphan Work",
+        "zh-CN": "In Copyright - EU Orphan Work",
+        "zh-TW": "In Copyright - EU Orphan Work"
+      },
+      "text": {
+        "en-US": "This Item has been identified as an orphan work in the country of first publication and in line with Directive 2012/28/EU of the European Parliament and of the Council of 25 October 2012 on certain permitted uses of orphan works. For this Item, either (a) no rights-holder(s) have been identified or (b) one or more rights-holder(s) have been identified but none have been located even though a diligent search for the rights-holder(s) has been conducted. The results of the diligent search are available in the EU Orphan Works Database. You are free to use this Item in any way that is permitted by the copyright and related rights legislation that applies to your use.",
+        "ca": "Aquest material ha estat identificat com a obra òrfena en el país de primera publicació d’acord amb la Directiva 2012/28/UE del Parlament Europeu i del Consell del 25 d'octubre de 2012 sobre determinats usos permesos de les obres òrfenes. En relació a aquest material, cap titular(s) de dret(s) ha estat identificat, o bé un o més titular(s) de drets han estat identificats però no han pogut ser localitzats tot i haver-se realitzat una cerca diligent. Els resultats de la cerca diligent estan disponibles en la base de dades d’obres òrfenes. Podeu utilitzar aquest material en funció del que permet la legislació de drets d’autor i drets afins del vostre país.",
+        "de": "Dieses Objekt wurde im Land der Erstveröffentlichung in Übereinstimmung mit der Richtlinie 2012/28/EU des Europäischen Parlaments und Rates vom 25. Oktober 2012 über bestimmte zulässige Formen der Nutzung verwaister Werke als verwaistes Werk identifiziert. Für das Objekt konnten entweder (a) ein oder mehrere Rechteinhaber nicht identifiziert oder (b) auch mit Hilfe einer sorgfältigen Suche nicht aufgefunden werden. Die Ergebnisse der sorgfältigen Suche sind in der EU-Datenbank zu verwaisten Werken beim Amt der Europäischen Union für Geistiges Eigentum (EUIPO) verfügbar. Sie sind berechtigt, das Objekt in jeder Form zu nutzen, die das Urheberrechtsgesetz oder/und einschlägige verwandte Schutzrechte gestatten.",
+        "es": "Este material ha sido identificado como una obra huérfana en el país de la primera publicación y en consonancia con la Directiva 2012/28/EU del Parlamento Europeo y del Comité del 25 de octubre de 2012 sobre ciertos usos permitidos de las obras huérfanas. Para este material, o bien (a) no se han identificado titular o titulares de derechos o (b) uno o más titulares de derechos han sido identificados pero ninguno ha podido ser localizado a pesar de que se ha realizado una búsqueda diligente para intentar localizar al titular o a los titulares de derechos. Los resultados de la búsqueda diligente están disponibles en la Base de Datos de Obras Huérfanas de la UE. Usted es libre de utilizar este material de cualquier forma que esté permitida por la legislación de derecho de autor y derechos conexos que se aplique al uso que pretende hacer.",
+        "fr": "Cet Objet a été identifié comme Œuvre Orpheline dans le pays de première publication, conformément à la Directive 2012/28/UE du Parlement Européen et du Conseil du 25 octobre 2012 sur certaines utilisations autorisées des Œuvres Orphelines. Pour cet Objet, soit (a) aucun titulaire des droits n'a été identifié, soit (b) un ou plusieurs titulaires des droits ont été identifiés, mais aucun n'a pu être localisé, malgré une recherche diligente du/des titulaire(s) des droits. Les résultats de la recherche diligente sont disponibles dans la Base de données des Œuvres Orphelines de l'UE. Vous avez le droit d'utiliser l'Objet de toutes les manières autorisées par la législation sur le droit d'auteur et les droits voisins applicable à votre utilisation.",
+        "it": "Questo oggetto è stato identificato come opera orfana nel paese di prima pubblicazione e in linea con la Direttiva 2012/28/EU del Parlamento Europeo e del Consiglio del 25 ottobre 2012 su alcuni usi consentiti di opere orfane. Per questo oggetto o (a) non è stato identificato alcun titolare di diritti o (b) uno o più titolari di diritti sono stati identificati ma nessuno di essi è stato rintracciato nonostante sia stata condotta una diligente ricerca dei titolari di diritti. I risultati della ricerca sono disponibili nella Banca dati delle Opere Orfane dell'UE. L'utente è libero di utilizzare questo oggetto in qualsiasi modo consentito dalla legislazione sul diritto d'autore e sui diritti correlati che si applica al suo utilizzo.",
+        "ja": "This Item is protected by copyright and/or related rights.",
+        "ko": "This Item is protected by copyright and/or related rights.",
+        "nl": "Dit Item is geïdentificeerd als een Verweesd Werk in het land van eerste publicatie en in overeenstemming met de Richtlijn 2012/28 /EU van het Europees Parlement en de Raad van 25 oktober 2012 betreffende bepaald toegestaan gebruik van Verweesde Werken. Voor dit item is ofwel (a) geen rechthebbende(n) geïdentificeerd, of (b) een of meer rechthebbende(n) geïdentificeerd, maar ondanks een zorgvuldig onderzoek naar de rechthebbende(n) geen enkele gelokaliseerd. De resultaten van het zorgvuldig zoeken zijn beschikbaar in de Europese Databank van Verweesde Werken. Je bent vrij om dit Item te gebruiken op elke manier die is toegestaan door de wetgeving betreffende het auteursrecht en de aanverwante rechten die van toepassing is op je gebruik.",
+        "pt": "This Item is protected by copyright and/or related rights.",
+        "th": "This Item is protected by copyright and/or related rights.",
+        "tr": "This Item is protected by copyright and/or related rights.",
+        "vi": "This Item is protected by copyright and/or related rights.",
+        "zh-CN": "This Item is protected by copyright and/or related rights.",
+        "zh-TW": "This Item is protected by copyright and/or related rights."
+      },
+      "version": "1.0",
+      "uri": "http://rightsstatements.org/vocab/InC-OW-EU/1.0/",
+      "icon_url": {
+        "base": "https://rightsstatements.org/files/icons/",
+        "files": ["InC.Icon-Only.dark.svg"]
+      },
+      "button_url": {
+        "base": "https://rightsstatements.org/files/buttons/",
+        "file": "InC-OW-EU.dark.svg"
+      }
+    },
+    {
+      "id": "InC-RUU",
+      "name": {
+        "en-US": "In Copyright - Rights Holder(s) Unlocatable or Unidentifiable",
+        "ca": "Protegit per Drets d’Autor - Titular(s) de Drets No Localitzable(s) o Identificable(s)",
+        "de": "Urheberrechtsschutz - Rechteinhaber nicht auffindbar oder identifizierbar",
+        "es": "Protegido por derecho de autor - Titular o titulares de derechos imposibles de localizar o de identificar",
+        "fr": "Protégé par le droit d'auteur - Titulaire(s) des droits impossible(s) à localiser ou à identifier",
+        "it": "In Copyright - Titolari dei diritti non rintracciabili o non identificabili",
+        "ja": "In Copyright - Rights Holder(s) Unlocatable or Unidentifiable",
+        "ko": "In Copyright - Rights Holder(s) Unlocatable or Unidentifiable",
+        "nl": "Auteursrechtelijk beschermd - rechthebbende(n) niet-lokaliseerbaar of niet-identificeerbaar",
+        "pt": "In Copyright - Rights Holder(s) Unlocatable or Unidentifiable",
+        "th": "In Copyright - Rights Holder(s) Unlocatable or Unidentifiable",
+        "tr": "In Copyright - Rights Holder(s) Unlocatable or Unidentifiable",
+        "vi": "In Copyright - Rights Holder(s) Unlocatable or Unidentifiable",
+        "zh-CN": "In Copyright - Rights Holder(s) Unlocatable or Unidentifiable",
+        "zh-TW": "In Copyright - Rights Holder(s) Unlocatable or Unidentifiable"
+      },
+      "text": {
+        "en-US": "This Item is protected by copyright and/or related rights. However, for this Item, either (a) no rights-holder(s) have been identified or (b) one or more rights-holder(s) have been identified but none have been located. You are free to use this Item in any way that is permitted by the copyright and related rights legislation that applies to your use.",
+        "ca": "Aquest material està protegit per drets d’autor i/o drets afins. No obstant, en relació a aquest material cap titular(s) de dret(s) ha estat identificat, o bé un o més titular(s) de drets ha(n) estat identificat(s) però no ha(n) pogut ser localitzat(s). Podeu utilitzar aquest material en funció del que permet la legislació de drets d’autor d'aplicació al vostre cas.",
+        "de": "Das Objekt ist durch das Urheberrecht und/oder verwandte Schutzrechte geschützt. Jedoch konnte(n) (ein) Rechteinhaber (a) nicht identifiziert werden oder (b) nicht aufgefunden werden. Sie sind berechtigt, das Objekt in jeder Form zu nutzen, die das Urheberrechtsgesetz und/oder einschlägige verwandte Schutzrechte gestatten.",
+        "es": "Este material está protegido por derecho de autor y/o derechos conexos. Sin embargo, para este material, o bien (a) no se han identificado el titular o los titulares de derechos o (b) uno o más titulares de derechos han sido identificados, pero ninguno ha podido ser localizado. Usted es libre de utilizar este material de cualquier forma que esté permitida por la legislación de derecho de autor y derechos conexos que se aplique al uso que pretende hacer.",
+        "fr": "Cet Objet est protégé par le droit d'auteur et/ou les droits voisins. Toutefois, pour cet Objet, soit (a) aucun titulaire des droits n'a été identifié, soit (b) un ou plusieurs titulaires des droits a/ont été identifié(s), mais aucun n'a pu être localisé. Vous avez le droit d'utiliser l'Objet de toutes les manières autorisées par la législation sur le droit d'auteur et les droits voisins applicable à votre utilisation.",
+        "it": "Questo oggetto è protetto dal diritto d'autore e/o da diritti connessi. Tuttavia, per questo oggetto, o (a) non è stato identificato alcun titolare di diritti o (b) sono stati identificati uno o più titolari di diritti ma nessuno di essi è stato rintracciato. L'utente è libero di utilizzare questo articolo in qualsiasi modo consentito dalla legislazione sul diritto d'autore e sui diritti connessi che si applica al suo utilizzo.",
+        "ja": "This Item is protected by copyright and/or related rights.",
+        "ko": "This Item is protected by copyright and/or related rights.",
+        "nl": "Dit Item wordt beschermd door het auteursrecht en/of aanverwante rechten. Voor dit Item is echter ofwel (a) geen rechthebbende(n) geïdentificeerd of (b) een of meer rechthebbende(n) geïdentificeerd, maar zijn er geen gelokaliseerd. Je bent vrij om dit Item te gebruiken op elke manier die is toegestaan door de wetgeving betreffende het auteursrecht en de aanverwante rechten die van toepassing is op je gebruik.",
+        "pt": "This Item is protected by copyright and/or related rights.",
+        "th": "This Item is protected by copyright and/or related rights.",
+        "tr": "This Item is protected by copyright and/or related rights.",
+        "vi": "This Item is protected by copyright and/or related rights.",
+        "zh-CN": "This Item is protected by copyright and/or related rights.",
+        "zh-TW": "This Item is protected by copyright and/or related rights."
+      },
+      "version": "1.0",
+      "uri": "http://rightsstatements.org/vocab/InC-RUU/1.0/",
+      "icon_url": {
+        "base": "https://rightsstatements.org/files/icons/",
+        "files": ["InC.Icon-Only.dark.svg"]
+      },
+      "button_url": {
+        "base": "https://rightsstatements.org/files/buttons/",
+        "file": "InC-RUU.dark.svg"
+      }
+    },
+    {
+      "id": "CNE",
+      "name": {
+        "en-US": "Copyright Not Evaluated",
+        "ca": "Dret d’Autor Sense Avaluar",
+        "de": "Urheberrechtsschutz - Rechteinhaber nicht auffindbar oder identifizierbar",
+        "es": "Derecho de autor sin evaluar",
+        "fr": "Droit d'auteur non évalué",
+        "it": "Copyright non esaminato",
+        "ja": "Copyright Not Evaluated",
+        "ko": "Copyright Not Evaluated",
+        "nl": "Auteursrechtelijke status niet geëvalueerd",
+        "pt": "Copyright Not Evaluated",
+        "th": "Copyright Not Evaluated",
+        "tr": "Copyright Not Evaluated",
+        "vi": "Copyright Not Evaluated",
+        "zh-CN": "Copyright Not Evaluated",
+        "zh-TW": "Copyright Not Evaluated"
+      },
+      "text": {
+        "en-US": "The copyright and related rights status of this Item has not been evaluated. Please refer to the organization that has made the Item available for more information. You are free to use this Item in any way that is permitted by the copyright and related rights legislation that applies to your use.",
+        "ca": "Els drets d’autor i drets afins d’aquest material no han estat avaluats. Si us plau dirigiu-vos a l'organització que ha fet el material disponible per a més informació. Podeu utilitzar aquest material en funció del que permet la legislació de drets d’autor d'aplicació al vostre cas.",
+        "de": "Der Urheberrechtsschutz und sonstige Rechtsstatus des Objekts wurde nicht bewertet. Bitte kontaktieren Sie für weitergehende Informationen die Institution, die das Werk zugänglich gemacht hat. Sie sind berechtigt, das Objekt in jeder Form zu nutzen, die das Urheberrechtsgesetz und/oder einschlägige verwandte Schutzrechte gestatten.",
+        "es": "El estado del derecho de autor y derechos conexos de este material no ha sido evaluado. Por favor, refiérase a la organización que ha puesto el material a disposición para más información. Usted es libre de utilizar este material de cualquier forma que esté permitida por la legislación de derecho de autor y derechos conexos que se aplique para el uso que pretende hacer.",
+        "fr": "Le statut de cet Objet en ce qui concerne le droit d'auteur et les droits voisins n'a pas été évalué. Pour de plus amples informations, veuillez contacter l'organisme qui a rendu l'Objet accessible. Vous avez le droit d'utiliser l'Objet de toutes les manières autorisées par la législation sur le droit d'auteur et les droits voisins applicable à votre utilisation.",
+        "it": "Il diritto d'autore e i diritti connessi di questo oggetto non sono stati esaminati. Per maggiori informazioni si prega di fare riferimento all'organizzazione che ha messo l'oggetto a disposizione. L'utente è libero di usare questo oggetto in qualsiasi modo consentito dalla legislazione sul diritto d'autore e sui diritti connessi che si applica al suo utilizzo.",
+        "ja": "The copyright and related rights status of this Item has not been evaluated.",
+        "ko": "The copyright and related rights status of this Item has not been evaluated.",
+        "nl": "De status betreffende het auteursrecht en de aanverwante rechten van dit Item zijn niet onderzocht. Voor meer informatie, neem alsjeblieft contact op met  de organisatie die het Item beschikbaar heeft gesteld. Je bent vrij om dit Item te gebruiken op een manier die is toegestaan ​​door de wetgeving betreffende het auteursrecht en de aanverwante rechten die van toepassing is op je gebruik.",
+        "pt": "The copyright and related rights status of this Item has not been evaluated.",
+        "th": "The copyright and related rights status of this Item has not been evaluated.",
+        "tr": "The copyright and related rights status of this Item has not been evaluated.",
+        "vi": "The copyright and related rights status of this Item has not been evaluated.",
+        "zh-CN": "The copyright and related rights status of this Item has not been evaluated.",
+        "zh-TW": "The copyright and related rights status of this Item has not been evaluated."
+      },
+      "version": "1.0",
+      "uri": "http://rightsstatements.org/vocab/CNE/1.0/",
+      "icon_url": {
+        "base": "https://rightsstatements.org/files/icons/",
+        "files": ["Other.Icon-Only.dark.svg"]
+      },
+      "button_url": {
+        "base": "https://rightsstatements.org/files/buttons/",
+        "file": "CNE.dark.svg"
+      }
+    },
+    {
+      "id": "NKC",
+      "name": {
+        "en-US": "No Known Copyright",
+        "ca": "Sense Dret d’Autor Conegut",
+        "de": "Kein Urheberrechtsschutz bekannt",
+        "es": "Sin derecho de autor conocido",
+        "fr": "Absence de protection connue par le droit d'auteur",
+        "it": "Nessun Copyright conosciuto",
+        "ja": "No Known Copyright",
+        "ko": "No Known Copyright",
+        "nl": "Geen auteursrechtelijke beperkingen bekend",
+        "pt": "No Known Copyright",
+        "th": "No Known Copyright",
+        "tr": "No Known Copyright",
+        "vi": "No Known Copyright",
+        "zh-CN": "No Known Copyright",
+        "zh-TW": "No Known Copyright"
+      },
+      "text": {
+        "en-US": "The organization that has made the Item available reasonably believes that the Item is not restricted by copyright or related rights, but a conclusive determination could not be made. Please refer to the organization that has made the Item available for more information. You are free to use this Item in any way that is permitted by the copyright and related rights legislation that applies to your use.",
+        "ca": "L’organització que ha posat aquest material a disposició té raons per creure que el material no està protegit per drets d’autor o drets afins, però no ho pot assegurar de manera concloent. Per a més informació dirigiu-vos si us plau a l'organització que ha posat a disposició el material. Podeu utilitzar aquest material en funció del que permet la legislació de drets d’autor d'aplicació al vostre cas.",
+        "de": "Die Institution, die das Werk zugänglich gemacht hat, nimmt an, dass kein Urheberrechtsschutz besteht, hat es jedoch nicht abschließend festgestellt. Bitte kontaktieren Sie für weitergehende Informationen die Institution, die das Objekt zugänglich gemacht hat. Sie sind berechtigt, das Objekt in jeder Form zu nutzen, die das Urheberrechtsgesetz und/oder einschlägige verwandte Schutzrechte gestatten.",
+        "es": "La organización que ha puesto a disposición el material cree razonablemente que el material no está restringido por el derecho de autor o derechos conexos, pero no se pudo hacer una determinación concluyente. Por favor, refiérase a la organización que ha puesto el material a disposición para más información. Usted es libre de utilizar este material de cualquier forma que esté permitida bajo la legislación de derecho de autor y derechos conexos que aplique para el uso que pretende hacer.",
+        "fr": "L'organisme qui a rendu l'Objet accessible a des motifs raisonnables de croire que l'Objet n'est pas soumis à des restrictions liées au droit d'auteur ou à des droits voisins, sans pour autant l'avoir constaté de manière définitive. Pour de plus amples informations, veuillez contacter l'organisme qui a rendu l'Objet accessible. Vous avez le droit d'utiliser l'Objet de n'importe quelle manière autorisée par la législation sur le droit d'auteur et les droits voisins applicable à votre utilisation.",
+        "it": "L'organizzazione che ha messo l'oggetto a disposizione ritiene ragionevolmente che l'oggetto non sia limitato dal diritto d'autore o dai diritti connessi, ma non è stato possibile effettuare una determinazione decisiva. Si prega di fare riferimento all'organizzazione che ha messo l'oggetto a disposizione per ulteriori informazioni. L'utente è libero di utilizzare questo oggetto in qualsiasi modo consentito dalla legislazione sul diritto d'autore e sui diritti connessi che si applica al suo utilizzo.",
+        "ja": "The organization that has made the Item available reasonably believes that the Item is not restricted by copyright or related rights, but a conclusive determination could not be made.",
+        "ko": "The organization that has made the Item available reasonably believes that the Item is not restricted by copyright or related rights, but a conclusive determination could not be made.",
+        "nl": "De organisatie die het Item beschikbaar heeft gesteld, is redelijkerwijs van mening dat het Item niet wordt beperkt door het auteursrecht of aanverwante rechten, maar de organisatie kon hierover geen definitieve conclusie trekken. Voor meer informatie, neem alsjeblieft contact op met de organisatie die het Item beschikbaar heeft gesteld. Je bent vrij om dit Item te gebruiken op elke manier die is toegestaan door de wetgeving betreffende het auteursrecht en de aanverwante rechten die van toepassing is op je gebruik.",
+        "pt": "The organization that has made the Item available reasonably believes that the Item is not restricted by copyright or related rights, but a conclusive determination could not be made.",
+        "th": "The organization that has made the Item available reasonably believes that the Item is not restricted by copyright or related rights, but a conclusive determination could not be made.",
+        "tr": "The organization that has made the Item available reasonably believes that the Item is not restricted by copyright or related rights, but a conclusive determination could not be made.",
+        "vi": "The organization that has made the Item available reasonably believes that the Item is not restricted by copyright or related rights, but a conclusive determination could not be made.",
+        "zh-CN": "The organization that has made the Item available reasonably believes that the Item is not restricted by copyright or related rights, but a conclusive determination could not be made.",
+        "zh-TW": "The organization that has made the Item available reasonably believes that the Item is not restricted by copyright or related rights, but a conclusive determination could not be made."
+      },
+      "version": "1.0",
+      "uri": "http://rightsstatements.org/vocab/NKC/1.0/",
+      "icon_url": {
+        "base": "https://rightsstatements.org/files/icons/",
+        "files": ["Other.Icon-Only.dark.svg"]
+      },
+      "button_url": {
+        "base": "https://rightsstatements.org/files/buttons/",
+        "file": "NKC.dark.svg"
+      }
+    },
+    {
+      "id": "UND",
+      "name": {
+        "en-US": "Copyright Undetermined",
+        "ca": "Dret d’Autor Sense Determinar",
+        "de": "Urheberrechtsschutz ungewiss",
+        "es": "Derecho de autor sin determinar",
+        "fr": "Droit d'auteur indéterminé",
+        "it": "Copyright indeterminato",
+        "ja": "Copyright Undetermined",
+        "ko": "Copyright Undetermined",
+        "nl": "Auteursrechtelijke bescherming niet bepaald",
+        "pt": "Copyright Undetermined",
+        "th": "Copyright Undetermined",
+        "tr": "Copyright Undetermined",
+        "vi": "Copyright Undetermined",
+        "zh-CN": "Copyright Undetermined",
+        "zh-TW": "Copyright Undetermined"
+      },
+      "text": {
+        "en-US": "The copyright and related rights status of this Item has been reviewed by the organization that has made the Item available, but the organization was unable to make a conclusive determination as to the copyright status of the Item. Please refer to the organization that has made the Item available for more information. You are free to use this Item in any way that is permitted by the copyright and related rights legislation that applies to your use.",
+        "ca": "El règim de drets d’autor i drets afins d’aquest material ha estat avaluat per l’organització que l’ha posat a disposició, però no el pot establir de manera concloent. Per a més informació dirigiu-vos si us plau a l'organització que ha posat a disposició el material. Podeu utilitzar aquest material en funció del que permet la legislació de drets d’autor d'aplicació al vostre cas.",
+        "de": "Der Urheberrechtsschutz und sonstige Rechtsstatus des Objekts wurde von der Institution, die dieses zugänglich macht, überprüft, aber die Institution war nicht in der Lage, eine abschließende Bestimmung des Urheberrechtsschutz des Objekts vorzunehmen. Bitte kontaktieren Sie für weitergehende Informationen die Institution, die das Objekt zugänglich gemacht hat. Sie sind berechtigt, das Objekt in jeder Form zu nutzen, die das Urheberrechtsgesetz und/oder einschlägige verwandte Schutzrechte gestatten.",
+        "es": "El estado del derecho de autor y derechos conexos de este material ha sido evaluado por la organización que ha puesto a disposición el material, pero la organización no pudo hacer una determinación concluyente sobre el estado del derecho de autor sobre la obra. Por favor, refiérase a la organización que ha puesto el material a disposición para más información. Usted es libre de utilizar este material de cualquier forma que esté permitida por la legislación de derecho de autor y derechos conexos que se aplique para el uso que pretende hacer.",
+        "fr": "L'organisme qui a rendu l'Objet accessible a examiné le statut de l'Objet en ce qui concerne le droit d'auteur et les droits voisins. Toutefois, l'organisme n'était pas en mesure de déterminer de manière définitive le statut de l'Objet au vu du droit d'auteur. Pour de plus amples informations, veuillez contacter l'organisme qui a rendu l'Objet accessible. Vous avez le droit d'utiliser l'Objet de toutes les manières autorisées par la législation sur le droit d'auteur et les droits voisins applicable à votre utilisation.",
+        "it": "Il diritto d'autore e i diritti connessi dell'oggetto sono stati esaminati dall'organizzazione che ha messo l'oggetto a disposizione, ma l'organizzazione non è stata in grado di determinare in modo definitivo il diritto d'autore dell'oggetto. Si prega di fare riferimento all'organizzazione che ha messo a l'oggetto a disposizione per maggiori informazioni. L'utente è libero di utilizzare questo oggetto in qualsiasi modo consentito dalla legislazione sul diritto d'autore e sui diritti connessi che si applica al suo utilizzo.",
+        "ja": "The copyright and related rights status of this Item has been reviewed by the organization that has made the Item available, but the organization was unable to make a conclusive determination as to the copyright status of the Item.",
+        "ko": "The copyright and related rights status of this Item has been reviewed by the organization that has made the Item available, but the organization was unable to make a conclusive determination as to the copyright status of the Item.",
+        "nl": "De status betreffende het auteursrecht en de aanverwante rechten van dit Item is beoordeeld door de organisatie die het Item beschikbaar heeft gesteld, maar de organisatie kon de auteursrechtelijke status van het Item niet met zekerheid vaststellen. Voor meer informatie, neem alsjeblieft contact op met  de organisatie die het Item beschikbaar heeft gesteld. Je bent vrij om dit Item te gebruiken op elke manier die is toegestaan door de wetgeving betreffende het auteursrecht en de aanverwante rechten die van toepassing is op je gebruik.",
+        "pt": "The copyright and related rights status of this Item has been reviewed by the organization that has made the Item available, but the organization was unable to make a conclusive determination as to the copyright status of the Item.",
+        "th": "The copyright and related rights status of this Item has been reviewed by the organization that has made the Item available, but the organization was unable to make a conclusive determination as to the copyright status of the Item.",
+        "tr": "The copyright and related rights status of this Item has been reviewed by the organization that has made the Item available, but the organization was unable to make a conclusive determination as to the copyright status of the Item.",
+        "vi": "The copyright and related rights status of this Item has been reviewed by the organization that has made the Item available, but the organization was unable to make a conclusive determination as to the copyright status of the Item.",
+        "zh-CN": "The copyright and related rights status of this Item has been reviewed by the organization that has made the Item available, but the organization was unable to make a conclusive determination as to the copyright status of the Item.",
+        "zh-TW": "The copyright and related rights status of this Item has been reviewed by the organization that has made the Item available, but the organization was unable to make a conclusive determination as to the copyright status of the Item."
+      },
+      "version": "1.0",
+      "uri": "http://rightsstatements.org/vocab/UND/1.0/",
+      "icon_url": {
+        "base": "https://rightsstatements.org/files/icons/",
+        "files": ["Other.Icon-Only.dark.svg"]
+      },
+      "button_url": {
+        "base": "https://rightsstatements.org/files/buttons/",
+        "file": "UND.dark.svg"
+      }
+    },
+    {
+      "id": "NoC-CR",
+      "name": {
+        "en-US": "No Copyright - Contractual Restrictions",
+        "ca": "Sense Dret d’Autor - Limitacions Contractuals",
+        "de": "Kein Urheberrechtsschutz - Vertragliche Beschränkungen",
+        "es": "Sin derecho de autor - Restricciones Contractuales",
+        "fr": "Absence de protection par le droit d'auteur - Restrictions contractuelles",
+        "it": "No copyright - Restrizioni contrattuali",
+        "ja": "No Copyright - Contractual Restrictions",
+        "ko": "No Copyright - Contractual Restrictions",
+        "nl": "Niet auteursrechtelijk beschermd - contractuele beperkingen",
+        "pt": "No Copyright - Contractual Restrictions",
+        "th": "No Copyright - Contractual Restrictions",
+        "tr": "No Copyright - Contractual Restrictions",
+        "vi": "No Copyright - Contractual Restrictions",
+        "zh-CN": "No Copyright - Contractual Restrictions",
+        "zh-TW": "No Copyright - Contractual Restrictions"
+      },
+      "text": {
+        "en-US": "Use of this Item is not restricted by copyright and/or related rights. As part of the acquisition or digitization of this Work, the organization that has made the Item available is contractually required to limit the use of this Item. Limitations may include, but are not limited to, privacy issues, cultural protections, digitization agreements or donor agreements. Please refer to the organization that has made the Item available for more information.",
+        "ca": "Aquest material no està protegit per drets d’autor i/o drets afins. Com a conseqüència de les condicions d’adquisició o digitalització d’aquest material, l'organització que l’ha posat a disposició està contractualment obligada a limitar-ne l'ús. Les limitacions poden fer referència, entre d’altres, al dret a la intimitat, a la protecció del patrimoni cultural o a acords de digitalització o de donació. Si us plau dirigiu-vos a l'organització que ha posat a disposició el material per obtenir més informació.",
+        "de": "Die Nutzung des Objektes ist nicht beschränkt durch Urheberrecht und/oder verwandte Schutzrechte. Durch Kauf oder Digitalisierung des Werks ist die Institution, die das Objekt zugänglich macht, vertraglich verpflichtet, die Nutzung des Objekts durch Dritte nur eingeschränkt zu erlauben. Einschränkungen ergeben sich möglicherweise aus Persönlichkeitsrechten, Kulturgutschutz, Digitalisierungsabkommen oder Schenkungsverträgen, können aber auch andere Gründe haben. Bitte kontaktieren Sie für weitergehende Informationen die Institution, die das Objekt zugänglich gemacht hat.",
+        "es": "El uso de este material no está restringido por el derecho de autor y/o derechos conexos. Como parte de la adquisición o la digitalización de esta obra, la organización que ha puesto a disposición el material está contractualmente obligada a limitar el uso de este material. Las limitaciones pueden incluir, pero no están limitadas a, cuestiones de privacidad, protecciones culturales, acuerdos de digitalización o acuerdos de donación. Por favor, refiérase a la organización que ha puesto a disposición el material para más información.",
+        "fr": "L'utilisation de cet Objet n'est pas limitée par le droit d'auteur et/ou les droits voisins. Dans le cadre de l'acquisition ou de la numérisation de cette Oeuvre, l'organisme qui a rendu l'Objet accessible a été contractuellement obligé de limiter l'utilisation de cet Objet. Les restrictions peuvent être liées entre autres à la protection de la vie privée, à la protection des biens culturels, à des accords de numérisation ou à des accords conclus avec des donateurs. Pour de plus amples informations, veuillez contacter l'organisme qui a rendu l'Objet accessible.",
+        "it": "L'utilizzo di questo oggetto non è limitato dal diritto d'autore e/o da diritti connessi. Nell'ambito dell'acquisizione o della digitalizzazione di questa opera, l'organizzazione che ha messo l'oggetto a disposizione è contrattualmente tenuta a limitarne l'utilizzo. Le limitazioni possono includere, ma non sono limitate a, questioni di privacy, protezioni culturali, accordi di digitalizzazione o accordi di donazione. Si prega di fare riferimento all'organizzazione che ha messo l'oggetto a disposizione per maggiori informazioni.",
+        "ja": "Use of this Item is not restricted by copyright and/or related rights.",
+        "ko": "Use of this Item is not restricted by copyright and/or related rights.",
+        "nl": "Het gebruik van dit Item is niet beperkt door het auteursrecht en/of aanverwante rechten. Als onderdeel van de verwerving of digitalisering van dit Werk, is de organisatie die het Item beschikbaar heeft gesteld contractueel verplicht om het gebruik van dit Item te beperken. Beperkingen kunnen omvatten, maar zijn niet beperkt tot, privacykwesties, culturele bescherming, digitaliseringsovereenkomsten of donorovereenkomsten. Voor meer informatie, neem alsjeblieft contact op met de organisatie die het Item beschikbaar heeft gesteld.",
+        "pt": "Use of this Item is not restricted by copyright and/or related rights.",
+        "th": "Use of this Item is not restricted by copyright and/or related rights.",
+        "tr": "Use of this Item is not restricted by copyright and/or related rights.",
+        "vi": "Use of this Item is not restricted by copyright and/or related rights.",
+        "zh-CN": "Use of this Item is not restricted by copyright and/or related rights.",
+        "zh-TW": "Use of this Item is not restricted by copyright and/or related rights."
+      },
+      "version": "1.0",
+      "uri": "http://rightsstatements.org/vocab/NoC-CR/1.0/",
+      "icon_url": {
+        "base": "https://rightsstatements.org/files/icons/",
+        "files": ["NoC.Icon-Only.dark.svg"]
+      },
+      "button_url": {
+        "base": "https://rightsstatements.org/files/buttons/",
+        "file": "NoC-CR.dark.svg"
+      }
+    },
+    {
+      "id": "NoC-NC",
+      "name": {
+        "en-US": "No Copyright - Non-Commercial Use Only",
+        "ca": "Sense Dret d’Autor - Només Ús No Comercial",
+        "de": "Kein Urheberrechtsschutz - nur nicht kommerzielle Nutzung erlaubt",
+        "es": "Sin derecho de autor - Uso No Comercial solamente",
+        "fr": "Absence de protection par le droit d'auteur - Utilisation à des fins uniquement non commerciales",
+        "it": "No copyright - Restrizioni contrattuali",
+        "ja": "No Copyright - Non-Commercial Use Only",
+        "ko": "No Copyright - Non-Commercial Use Only",
+        "nl": "Niet auteursrechtelijk beschermd - uitsluitend niet-commercieel gebruik toegestaan",
+        "pt": "No Copyright - Non-Commercial Use Only",
+        "th": "No Copyright - Non-Commercial Use Only",
+        "tr": "No Copyright - Non-Commercial Use Only",
+        "vi": "No Copyright - Non-Commercial Use Only",
+        "zh-CN": "No Copyright - Non-Commercial Use Only",
+        "zh-TW": "No Copyright - Non-Commercial Use Only"
+      },
+      "text": {
+        "en-US": "This Work has been digitized in a public-private partnership. As part of this partnership, the partners have agreed to limit commercial uses of this digital representation of the Work by third parties. You can, without permission, copy, modify, distribute, display, or perform the Item, for non-commercial uses. For any other permissible uses, please review the terms and conditions of the organization that has made the Item available.",
+        "ca": "Aquesta obra ha estat digitalitzada per via d’un acord público-privat. Com a part d’aquest acord, les parts han acordat limitar els usos d’aquesta representació digital de l’obra a terceres persones. Pots, sense autorització expressa, copiar, modificar, distribuir, presentar i representar el material per a usos no comercials. Per altres usos, si us plau revisa les condicions establertes en el web de l’organització que ha posat el material a disposició.",
+        "de": "Das Werk wurde in einer öffentlich-privaten Partnerschaft (PPP) digitalisiert. Innerhalb der Partnerschaft haben die Vertragspartner Einschränkungen einer kommerziellen Nutzung des Digitalisats durch Dritte vereinbart. Sie sind berechtigt, auch ohne weitere Erlaubnis das Objekt für nicht kommerzielle Nutzungen zu kopieren, zu verändern, zu verbreiten, auszustellen oder aufzuführen. Für alle anderen zulässigen Nutzungen überprüfen Sie bitte die Nutzungsbedingungen der Institution, die das Objekt zugänglich gemacht hat.",
+        "es": "Esta obra ha sido digitalizada en una asociación pública-privada. Como parte de esta asociación, los asociados han acordado limitar los usos comerciales por terceras partes de esta representación digital del objeto. Usted puede, sin solicitar permiso, copiar, modificar, distribuir, exhibir o representar el objeto digital para usos no comerciales. Para cualquier otro uso permitido, por favor, revise los términos y condiciones de la organización que ha puesto el material a disposición.",
+        "fr": "Cette Oeuvre a été numérisée en partenariat public-privé. Dans le cadre de ce partenariat, les parties contractantes ont convenu de limiter les utilisations commerciales de cette représentation numérique de l'Oeuvre par des tiers. Vous pouvez, sans autorisation, copier, modifier, distribuer, exposer ou représenter l'Objet à des fins non commerciales. Pour toutes autres utilisations permises, veuillez examiner les conditions générales de l'organisme qui a rendu l'Objet accessible.",
+        "it": "Questa opera è stata digitalizzata in un partenariato pubblico-privato. Nell'ambito di questo partenariato, le parti hanno concordato di limitare gli usi commerciali di questa rappresentazione digitale dell'opera da parte di terzi. E' possibile, senza autorizzazione, copiare, modificare, distribuire, mostrare o rappresentare l'oggetto per scopi non commerciali. Per qualsiasi altro uso ammissibile, si prega di consultare i termini e le condizioni dell'organizzazione che ha messo l'oggetto a disposizione.",
+        "ja": "This Work has been digitized in a public-private partnership. As part of this partnership, the partners have agreed to limit commercial uses of this digital representation of the Work by third parties.",
+        "ko": "This Work has been digitized in a public-private partnership. As part of this partnership, the partners have agreed to limit commercial uses of this digital representation of the Work by third parties.",
+        "nl": "Dit werk is gedigitaliseerd in een publiek-private samenwerking. Als onderdeel van dit partnerschap zijn de deelnemers overeengekomen om commercieel gebruik van deze digitale representatie van het Werk door derden te beperken. Je kan het Item zonder toestemming kopiëren, wijzigen, distribueren, weergeven of uitvoeren voor niet-commercieel gebruik. Voor elk ander toegestaan gebruik de algemene voorwaarden van de organisatie die het Item beschikbaar heeft gesteld.",
+        "pt": "This Work has been digitized in a public-private partnership. As part of this partnership, the partners have agreed to limit commercial uses of this digital representation of the Work by third parties.",
+        "th": "This Work has been digitized in a public-private partnership. As part of this partnership, the partners have agreed to limit commercial uses of this digital representation of the Work by third parties.",
+        "tr": "This Work has been digitized in a public-private partnership. As part of this partnership, the partners have agreed to limit commercial uses of this digital representation of the Work by third parties.",
+        "vi": "This Work has been digitized in a public-private partnership. As part of this partnership, the partners have agreed to limit commercial uses of this digital representation of the Work by third parties.",
+        "zh-CN": "This Work has been digitized in a public-private partnership. As part of this partnership, the partners have agreed to limit commercial uses of this digital representation of the Work by third parties.",
+        "zh-TW": "This Work has been digitized in a public-private partnership. As part of this partnership, the partners have agreed to limit commercial uses of this digital representation of the Work by third parties."
+      },
+      "version": "1.0",
+      "uri": "http://rightsstatements.org/vocab/NoC-NC/1.0/",
+      "icon_url": {
+        "base": "https://rightsstatements.org/files/icons/",
+        "files": ["NoC.Icon-Only.dark.svg"]
+      },
+      "button_url": {
+        "base": "https://rightsstatements.org/files/buttons/",
+        "file": "NoC-NC.dark.svg"
+      }
+    },
+    {
+      "id": "NoC-OKLR",
+      "name": {
+        "en-US": "No Copyright - Other Known Legal Restrictions",
+        "ca": "Sense Dret d’Autor - Altres Limitacions Legals Conegudes",
+        "de": "Kein Urheberrechtsschutz - Andere rechtliche Beschränkungen",
+        "es": "Sin derecho de autor - Otras restricciones legales conocidas",
+        "fr": "Absence de protection par le droit d'auteur - Autres restrictions juridiques connues",
+        "it": "No Copyright - Altre restrizioni legali note",
+        "ja": "No Copyright - Other Known Legal Restrictions",
+        "ko": "No Copyright - Other Known Legal Restrictions",
+        "nl": "Niet auteursrechtelijk beschermd - andere juridische beperkingen",
+        "pt": "No Copyright - Other Known Legal Restrictions",
+        "th": "No Copyright - Other Known Legal Restrictions",
+        "tr": "No Copyright - Other Known Legal Restrictions",
+        "vi": "No Copyright - Other Known Legal Restrictions",
+        "zh-CN": "No Copyright - Other Known Legal Restrictions",
+        "zh-TW": "No Copyright - Other Known Legal Restrictions"
+      },
+      "text": {
+        "en-US": "Use of this Item is not restricted by copyright and/or related rights. In one or more jurisdictions, laws other than copyright are known to impose restrictions on the use of this Item. Please refer to the organization that has made the Item available for more information.",
+        "ca": "Aquest material està protegit per drets d’autor i/o drets afins. Podeu utilitzar aquest material en funció del que permet la legislació de drets d’autor del seu país. Per a més informació dirigiu-vos si us plau a l'organització que ha posat a disposició el material.",
+        "de": "Die Nutzung des Objekts ist nicht durch Urheberrecht und/oder verwandte Schutzrechte beschränkt. In einer oder mehreren Rechtsordnungen wird die Nutzung des Objekts durch andere Rechte als das Urheberrecht oder verwandte Schutzrechte beschränkt. Bitte kontaktieren Sie für weitergehende Informationen die Institution, die den Inhalt zugänglich gemacht hat.",
+        "es": "El uso de este material no está restringido por el derecho de autor y/o derechos conexos. En una o más jurisdicciones, se sabe que otras leyes distintas del derecho de autor imponen restricciones al uso de este material. Por favor, refiérase a la organización que ha puesto a disposición el material para más información.",
+        "fr": "L'utilisation de cet Objet n'est pas limitée par le droit d'auteur et/ou les droits voisins. Dans un ou plusieurs systèmes juridiques, des dispositions légales autres que le droit d'auteur ou les droits voisins imposent des restrictions à l'utilisation de cet Objet. Pour de plus amples informations, veuillez contacter l'organisme qui a rendu l'Objet accessible.",
+        "it": "L'uso di questo oggetto non è limitato dal diritto d'autore e/o dai diritti connessi. In una o più giurisdizioni è noto che leggi diverse dal diritto d'autore impongono restrizioni all'uso di questo oggetto. Si prega di fare riferimento all'organizzazione che ha messo l'oggetto a disposizione per maggiori informazioni.",
+        "ja": "Use of this Item is not restricted by copyright and/or related rights. In one or more jurisdictions, laws other than copyright are known to impose restrictions on the use of this Item.",
+        "ko": "Use of this Item is not restricted by copyright and/or related rights. In one or more jurisdictions, laws other than copyright are known to impose restrictions on the use of this Item.",
+        "nl": "Het gebruik van dit Item is niet beperkt door het auteursrecht en/of aanverwante rechten. In een of meer rechtsgebieden is het bekend dat andere wetten dan de wetgeving betreffende het auteursrecht beperkingen opleggen aan het gebruik van dit Item. Voor meer informatie, neem alsjeblieft contact op met de organisatie die het Item beschikbaar heeft gesteld.",
+        "pt": "Use of this Item is not restricted by copyright and/or related rights. In one or more jurisdictions, laws other than copyright are known to impose restrictions on the use of this Item.",
+        "th": "Use of this Item is not restricted by copyright and/or related rights. In one or more jurisdictions, laws other than copyright are known to impose restrictions on the use of this Item.",
+        "tr": "Use of this Item is not restricted by copyright and/or related rights. In one or more jurisdictions, laws other than copyright are known to impose restrictions on the use of this Item.",
+        "vi": "Use of this Item is not restricted by copyright and/or related rights. In one or more jurisdictions, laws other than copyright are known to impose restrictions on the use of this Item.",
+        "zh-CN": "Use of this Item is not restricted by copyright and/or related rights. In one or more jurisdictions, laws other than copyright are known to impose restrictions on the use of this Item.",
+        "zh-TW": "Use of this Item is not restricted by copyright and/or related rights. In one or more jurisdictions, laws other than copyright are known to impose restrictions on the use of this Item."
+      },
+      "version": "1.0",
+      "uri": "http://rightsstatements.org/vocab/NoC-OKLR/1.0/",
+      "icon_url": {
+        "base": "https://rightsstatements.org/files/icons/",
+        "files": ["NoC.Icon-Only.dark.svg"]
+      },
+      "button_url": {
+        "base": "https://rightsstatements.org/files/buttons/",
+        "file": "NoC-OKLR.dark.svg"
+      }
+    },
+    {
+      "id": "NoC-US",
+      "name": {
+        "en-US": "No Copyright - United States",
+        "ca": "Sense Dret d’Autor - Estats Units",
+        "de": "Kein Urheberrechtsschutz - Vereinigte Staaten",
+        "es": "Sin derecho de autor - Estados Unidos",
+        "fr": "Absence de protection par le droit d'auteur - États-Unis",
+        "it": "No Copyright - Stati Uniti",
+        "ja": "No Copyright - United States",
+        "ko": "No Copyright - United States",
+        "nl": "Niet auteursrechtelijk beschermd - Verenigde Staten",
+        "pt": "No Copyright - United States",
+        "th": "No Copyright - United States",
+        "tr": "No Copyright - United States",
+        "vi": "No Copyright - United States",
+        "zh-CN": "No Copyright - United States",
+        "zh-TW": "No Copyright - United States"
+      },
+      "text": {
+        "en-US": "The organization that has made the Item available believes that the Item is in the Public Domain under the laws of the United States, but a determination was not made as to its copyright status under the copyright laws of other countries. The Item may not be in the Public Domain under the laws of other countries. Please refer to the organization that has made the Item available for more information.",
+        "ca": "L'organització que ha posat el material a disposició considera que el material és de domini públic als Estats Units, però no ha determinat el seu règim de protecció per drets d’autor en altres jurisdiccions. Aquest material no és de domini Públic d’acord amb les lleis d’altres països. Per a més informació dirigiu-vos si us plau a l'organització que ha posat a disposició el material.",
+        "de": "Die Institution, die das Objekt zugänglich gemacht hat, nimmt an, dass dieses nach dem Recht der Vereinigten Staaten gemeinfrei ist, aber es wurde nicht festgestellt, ob es nach den Urheberrechtsgesetzen anderer Länder urheberrechtlich geschützt ist. Das Objekt ist in anderen Rechtsordnungen möglicherweise nicht gemeinfrei. Bitte kontaktieren Sie für weitergehende Informationen die Institution, die das Werk zugänglich gemacht hat.",
+        "es": "La organización que ha puesto a disposición el material cree que el material está en el dominio público bajo las leyes de los Estados Unidos, pero no se ha determinado el estado de derecho de autor bajo las leyes de derecho de autor de otros países. El material puede no estar en el dominio público según las leyes de otros países. Por favor, refiérase a la organización que ha puesto a disposición el material para más información.",
+        "fr": "L'organisme qui a rendu l'Objet accessible est d'avis que, selon la législation des États-Unis, l'Objet est dans le Domaine Public ; toutefois, il n'y a pas de décision sur le fait de savoir s'il est protégé par le droit d'auteur dans d'autres pays. Il est possible que, selon la législation d'autres pays, l'Objet ne soit pas dans le Domaine Public. Pour de plus amples informations, veuillez contacter l'organisme qui a rendu l'Objet accessible.",
+        "it": "L'organizzazione che ha messo l'oggetto a disposizione ritiene che l'oggetto sia nel pubblico dominio secondo le leggi degli Stati Uniti, ma non è stato determinato lo stato del suo copyright secondo le leggi sul diritto d'autore di altri paesi. L'oggetto potrebbe non essere nel pubblico dominio secondo le leggi di altri paesi. Si prega di fare riferimento all'organizzazione che ha messo l'oggetto a disposizione per maggiori informazioni.",
+        "ja": "The organization that has made the Item available believes that the Item is in the Public Domain under the laws of the United States, but a determination was not made as to its copyright status under the copyright laws of other countries. The Item may not be in the Public Domain under the laws of other countries.",
+        "ko": "The organization that has made the Item available believes that the Item is in the Public Domain under the laws of the United States, but a determination was not made as to its copyright status under the copyright laws of other countries. The Item may not be in the Public Domain under the laws of other countries.",
+        "nl": "De organisatie die het Item beschikbaar heeft gesteld, is van mening dat het Item zich in het Publiek Domein bevindt volgens de wetten van de Verenigde Staten, maar de auteursrechtelijke status volgens de auteursrechtwetgeving van andere landen is niet vastgesteld. Het Item bevindt zich mogelijk niet in het Publiek Domein onder de wetgeving van andere landen. Voor meer informatie, neem alsjeblieft contact op met de organisatie die het Item beschikbaar heeft gesteld.",
+        "pt": "The organization that has made the Item available believes that the Item is in the Public Domain under the laws of the United States, but a determination was not made as to its copyright status under the copyright laws of other countries. The Item may not be in the Public Domain under the laws of other countries.",
+        "th": "The organization that has made the Item available believes that the Item is in the Public Domain under the laws of the United States, but a determination was not made as to its copyright status under the copyright laws of other countries. The Item may not be in the Public Domain under the laws of other countries.",
+        "tr": "The organization that has made the Item available believes that the Item is in the Public Domain under the laws of the United States, but a determination was not made as to its copyright status under the copyright laws of other countries. The Item may not be in the Public Domain under the laws of other countries.",
+        "vi": "The organization that has made the Item available believes that the Item is in the Public Domain under the laws of the United States, but a determination was not made as to its copyright status under the copyright laws of other countries. The Item may not be in the Public Domain under the laws of other countries.",
+        "zh-CN": "The organization that has made the Item available believes that the Item is in the Public Domain under the laws of the United States, but a determination was not made as to its copyright status under the copyright laws of other countries. The Item may not be in the Public Domain under the laws of other countries.",
+        "zh-TW": "The organization that has made the Item available believes that the Item is in the Public Domain under the laws of the United States, but a determination was not made as to its copyright status under the copyright laws of other countries. The Item may not be in the Public Domain under the laws of other countries."
+      },
+      "version": "1.0",
+      "uri": "http://rightsstatements.org/vocab/NoC-US/1.0/",
+      "icon_url": {
+        "base": "https://rightsstatements.org/files/icons/",
+        "files": ["NoC.Icon-Only.dark.svg"]
+      },
+      "button_url": {
+        "base": "https://rightsstatements.org/files/buttons/",
+        "file": "NoC-US.dark.svg"
+      }
+    },
+    {
+      "id": "zero",
+      "name": {
+        "en-US": "No Copyright",
+        "ca": "Sense drets d'explotació",
+        "de": "Kein Urheberrechtsschutz",
+        "es": "Sin derechos autorales",
+        "fr": "Pas de droit d’auteur",
+        "it": "Nessun Diritto d'autore",
+        "ja": "著作権なし",
+        "ko": "저작권 없음",
+        "nl": "Geen auteursrecht",
+        "pt": "Sem Direito de Autor nem Direitos Conexos",
+        "th": "ไม่มีลิขสิทธิ์",
+        "tr": "Telif Hakkı Sınırlaması yok",
+        "vi": "Không giữ bản quyền",
+        "zh-CN": "无著作权",
+        "zh-TW": "無著作權"
+      },
+      "text": {
+        "en-US": "CC0 1.0 Universal (CC0 1.0) Public Domain Dedication. The person who associated a work with this deed has dedicated the work to the public domain by waiving all of his or her rights to the work worldwide under copyright law, including all related and neighboring rights, to the extent allowed by law. You can copy, modify, distribute and perform the work, even for commercial purposes, all without asking permission.",
+        "ca": "CC0 1.0 Universal (CC0 1.0) Oferiment al Domini Públic. La persona que ha associat una obra amb aquest document l'ha entregada al domini públic mitjançant la renúncia de tots els drets sobre l'obra pel que fa a la propietat intel·lectual, incloent-hi els drets afins, fins on és possible amb la llei vigent aplicable. Podeu copiar, modificar, distribuir l'obra i fer-ne comunicació pública, fins i tot amb finalitat comercial, sense demanar cap mena de permís.",
+        "de": "CC0 1.0 Universell (CC0 1.0) Public Domain Dedication. Die Person, die ein Werk mit dieser Deed verknüpft hat, hat dieses Werk in die Gemeinfreiheit - auch genannt Public Domain - entlassen, indem sie weltweit auf alle urheberrechtlichen und verwandten Schutzrechte verzichtet hat, soweit das gesetzlich möglich ist. Sie dürfen das Werk kopieren, verändern, verbreiten und aufführen, sogar zu kommerziellen Zwecken, ohne um weitere Erlaubnis bitten zu müssen.",
+        "es": "CC0 1.0 Universal (CC0 1.0) Dedicación de Dominio Público. La persona que asoció una obra con este resumen ha dedicado la obra al dominio público, mediante la renuncia a todos sus derechos a la obra bajo las leyes de derechos autorales en todo el mundo, incluyendo todos los derechos conexos y afines, en la medida permitida por la ley. Puede copiar, modificar, distribuir e interpretar la obra, incluso para propósitos comerciales, sin pedir permiso.",
+        "fr": "CC0 1.0 universel (CC0 1.0) Transfert dans le Domaine Public. La personne qui a associé une œuvre à cet acte a dédié l’œuvre au domaine public en renonçant dans le monde entier à ses droits sur l’œuvre selon les lois sur le droit d’auteur, droit voisin et connexes, dans la mesure permise par la loi. Vous pouvez copier, modifier, distribuer et représenter l’œuvre, même à des fins commerciales, sans avoir besoin de demander l’autorisation.",
+        "it": "CC0 1.0 Universal (CC0 1.0) Donazione al Pubblico Dominio. La persona che ha associato un'opera con questo atto ha dedicato l'opera al pubblico dominio attraverso la rinuncia a tutti i suoi diritti sull'opera in tutto il mondo come previsti dalle leggi sul diritto d'autore, inclusi tutti i diritti connessi al diritto d'autore o affini, nella misura consentita dalla legge. Puoi copiare, modificare, distribuire ed utilizzare l'opera, anche per fini commerciali, senza chiedere alcun permesso.",
+        "ja": "CC0 1.0 全世界 (CC0 1.0) パブリック・ドメイン提供。ある作品に本コモンズ証を関連づけた者は、その作品について世界全地域において著作権法上認められる、その者が持つすべての権利（その作品に関する権利や隣接する権利を含む。）を、法令上認められる最大限の範囲で放棄して、パブリック・ドメインに提供しています。この作品は、たとえ営利目的であっても、許可を得ずに複製、改変・翻案、配布、上演・演奏することが出来ます。",
+        "ko": "CC0 1.0 보편적 (CC0 1.0) 퍼블릭 도메인 기증. 저작물에 이 일반권리증서를 첨부한 자는 법이 정한 범위 내에서 저작인접권을 포함해 저작권법에 따라 전세계적으로 해당 저작물에 대해 자신이 갖는 일체의 권리를 포기함으로써 저작물을 퍼블릭 도메인으로 양도하였습니다. 저작권자의 허락을 구하지 않아도 이 저작물을 상업적인 목적을 포함 모든 목적으로 복사, 수정, 배포, 실연하실 수 있습니다.",
+        "nl": "CC0 1.0 Universeel (CC0 1.0) Publiek Domein Verklaring. De persoon die deze akte aan een werk heeft verbonden heeft het werk toegewezen aan het publiek domein door wereldwijd zijn of haar rechten op het werk onder het auteursrecht, inclusief alle bijbehorende en naburige rechten, af te staan, voor zover door de wet is toegestaan. Je mag het werk zonder toestemming kopiëren, veranderen, verspreiden en uitvoeren, zelfs voor commerciële doeleinden.",
+        "pt": "CC0 1.0 Universal (CC0 1.0) Dedicação ao Domínio Público. A pessoa que associou um trabalho a este resumo dedicou o trabalho ao domínio público, renunciando a todos os seus direitos sobre o trabalho, em todo o mundo, ao abrigo das leis de direito de autor e/ou de direitos conexos, na medida permitida por lei. Pode copiar, modificar, distribuir e executar o trabalho, mesmo para fins comerciais, tudo sem pedir autorização.",
+        "th": "CC0 1.0 Universal (CC0 1.0) Public Domain Dedication. The person who associated a work with this deed has dedicated the work to the public domain by waiving all of his or her rights to the work worldwide under copyright law, including all related and neighboring rights, to the extent allowed by law. You can copy, modify, distribute and perform the work, even for commercial purposes, all without asking permission.",
+        "tr": "CC0 1.0 Evrensel (CC0 1.0) Kamu Malı Atfetme. Bu özet ile eserini ilişkilendiren kişi, eserini Kamu Malı olarak adar, tüm ilgili ve komşu haklar dahil olmak üzere, telif haklarından kanunların izin verdiği sınırlarda dünya çapında feragat eder. Bu eseri hiçbir izin almadan ticari amaçlar da dahi olmak üzere kopyalayabilir, düzenleyebilir, dağıtabilir ya da kullanabilirsiniz.",
+        "vi": "CC0 1.0 Toàn cầu (CC0 1.0) Public Domain Dedication. The person who associated a work with this deed has dedicated the work to the public domain by waiving all of his or her rights to the work worldwide under copyright law, including all related and neighboring rights, to the extent allowed by law. You can copy, modify, distribute and perform the work, even for commercial purposes, all without asking permission.",
+        "zh-CN": "CC0 1.0 通用 (CC0 1.0) 公共领域贡献。在作品上适用该文本的人已经将作品 贡献 至公共领域，在法律允许的范围，放弃所有他在全世界范围内基于著作权法对作品享有的权利，包括所有相关权利和邻接权利。您可以复制、修改、发行和表演本作品，甚至可用于商业性目的，都无需要求同意。",
+        "zh-TW": "CC0 1.0 通用 (CC0 1.0) 公眾領域貢獻宣告。以著作結合本標章之人，代表在法律許可的範圍內，拋棄該著作依著作權法所享有之權利，包括所有相關與鄰接的法律權利，並宣告將該著作貢獻至公眾領域。你可以複製、修改、發布或展示此作品，亦可進行商業利用，完全不需要經過許可。"
+      },
+      "version": "1.0",
+      "uri": "https://creativecommons.org/publicdomain/zero/1.0/",
+      "icon_url": {
+        "base": "https://mirrors.creativecommons.org/presskit/icons/",
+        "files": ["zero.svg"]
+      },
+      "button_url": {
+        "base": "https://mirrors.creativecommons.org/presskit/buttons/88x31/svg/",
+        "file": "cc-zero.svg"
+      }
+    },
+    {
+      "id": "mark",
+      "name": {
+        "en-US": "No Copyright",
+        "ca": "Sense drets d'explotació",
+        "de": "Kein Urheberrechtsschutz",
+        "es": "Sin derechos autorales",
+        "fr": "Pas de droit d’auteur",
+        "it": "Nessun Diritto d'autore",
+        "ja": "著作権なし",
+        "ko": "저작권 없음",
+        "nl": "Geen auteursrecht",
+        "pt": "Sem Direito de Autor nem Direitos Conexos",
+        "th": "ไม่มีลิขสิทธิ์",
+        "tr": "Telif Hakkı Sınırlaması yok",
+        "vi": "Không giữ bản quyền",
+        "zh-CN": "无著作权",
+        "zh-TW": "無著作權"
+      },
+      "text": {
+        "en-US": "Public Domain Mark 1.0. This work has been identified as being free of known restrictions under copyright law, including all related and neighboring rights. You can copy, modify, distribute and perform the work, even for commercial purposes, all without asking permission.",
+        "ca": "Marca de Domini Públic 1.0. Aquesta obra ha estat identificada com a lliure de restriccions d'ús conegudes segons la llei de propietat intel·lectual, incloent-hi els drets afins. Podeu copiar, modificar i distribuir l'obra, així com fer-ne comunicació pública, fins i tot amb finalitat comercial, sense necessitat de demanar permís.",
+        "de": "Public Domain Mark 1.0. Dieses Werk wurde als frei von bekannten urheberrechtlichen Einschränkungen identifiziert, einschließlich aller verwandten Schutzrechte. Sie dürfen das Werk kopieren, verändern, verbreiten und aufführen, sogar zu kommerziellen Zwecken, ohne irgendwie um Erlaubnis bitten zu müssen.",
+        "es": "Etiqueta de Dominio Público 1.0. Esta obra ha sido identificada como libre de restricciones conocidas bajo la ley derecho autoral, incluyendo todos los derechos conexos. Puede copiar, modificar, distribuir e interpretar la obra, incluso para fines comerciales, todo esto sin pedir permiso.",
+        "fr": "Marque du Domaine Public 1.0. Cette œuvre a été identifiée comme libre de restrictions connues selon les lois du droits d’auteur, y compris tous les droits affiliés et connexes. Vous pouvez copier, modifier, distribuer et jouer l’œuvre, même à des fins commerciales, sans avoir besoin d’une permission.",
+        "it": "Marchio di pubblico dominio 1.0. Quest'opera è stata identificata come libera da restrizioni conosciute delle leggi sul diritto d'autore, inclusi tutti i diritti annessi e collegati. Puoi copiare, modificare, distribuire ed utilizzare l'opera, anche per propositi commerciali, senza chiedere autorizzazione.",
+        "ja": "パブリック・ドメイン・マーク 1.0。この作品は著作権法の既知の制約（隣接権や関連する権利を含む）から自由であると特定 されています。この作品は、たとえ営利目的であっても、許可を得ずに複製、改変・翻案、配布、上演・演奏することが出来ます。",
+        "ko": "퍼블릭 도메인 마크 1.0. 이 저작물은 모든 저작인접권을 포함한 저작권법 하의 규제로부터 자유로운 것으로확인되었습니다.저작권자의 허락을 구하지 않고도 상업적인 목적을 포함해 어떠한 목적으로도 이 저작물을 복사, 수정, 배포, 실연할 수 있습니다.",
+        "nl": "Public Domain Mark 1.0. Van dit werk is vastgesteld dat er geen bekende auteursrechtelijke beperkingen op rusten, alle aanverwante en naburige rechten daarbij inbegrepen. Je mag het werk zonder toestemming kopiëren, wijzigen, verspreiden,en uitvoeren, zelfs voor commerciële doeleinden.",
+        "pt": "Marca de Domínio Público 1.0. Este trabalho foi identificado como estando livre de restrições conhecidas nos termos da legislação de direito de autor e de direitos conexos. Pode copiar, modificar, distribuir e executar o trabalho, mesmo para fins comerciais, tudo sem pedir autorização.",
+        "th": "การระบุงานสาธารณะสมบัติ 1.0. This work has been identified as being free of known restrictions under copyright law, including all related and neighboring rights. You can copy, modify, distribute and perform the work, even for commercial purposes, all without asking permission.",
+        "tr": "Kamu Malı İşareti 1.0. Bu eser, bilinen tüm telif hakkı sınırlandırmalarından ve ilgili hak sınırlandırmalarından bağımsız olarak tanımlanmıştır. Eseri izin almadan, ticari amaçlar da dahil olmak üzere kopyalayabilir, değiştirebilir, dağıtabilir ve sergileyebilirsiniz.",
+        "vi": "Public Domain Mark 1.0. This work has been identified as being free of known restrictions under copyright law, including all related and neighboring rights. You can copy, modify, distribute and perform the work, even for commercial purposes, all without asking permission.",
+        "zh-CN": "公共领域标识 1.0。本作品已经被 识别 为免受已知著作权法限制，包括所有相关权利和邻接权利。您可以复制、修改、分发和表演作品，甚至用于商业性目的，均无须寻求同意。",
+        "zh-TW": "公眾領域標章 1.0。此作品已被辨識為無已知的著作權利限制，亦不受所有相關和鄰接權利的限制。你可以複製、修改、發布或展示此作品，亦可進行商業利用，完全不需要經過額外許可。"
+      },
+      "version": "1.0",
+      "uri": "https://creativecommons.org/publicdomain/mark/1.0/",
+      "icon_url": {
+        "base": "https://mirrors.creativecommons.org/presskit/icons/",
+        "files": ["pd.svg"]
+      },
+      "button_url": {
+        "base": "https://mirrors.creativecommons.org/presskit/buttons/88x31/svg/",
+        "file": "publicdomain.svg"
+      }
+    },
+    {
+      "id": "by",
+      "name": {
+        "en-US": "Attribution",
+        "ca": "Reconeixement",
+        "de": "Namensnennung",
+        "es": "Atribución",
+        "fr": "Attribution",
+        "it": "Attribuzione",
+        "ja": "表示",
+        "ko": "저작자표시",
+        "nl": "Naamsvermelding",
+        "pt": "Atribuição",
+        "th": "แสดงที่มาิ์",
+        "tr": "Atıf",
+        "vi": "Ghi công",
+        "zh-CN": "署名",
+        "zh-TW": "姓名標示"
+      },
+      "text": {
+        "en-US": "Attribution 4.0 International (CC BY 4.0). This license allows reusers to distribute, remix, adapt, and build upon the material in any medium or format, so long as attribution is given to the creator. The license allows for commercial use.",
+        "ca": "Reconeixement 4.0 Internacional (CC BY 4.0). This license allows reusers to distribute, remix, adapt, and build upon the material in any medium or format, so long as attribution is given to the creator. The license allows for commercial use.",
+        "de": "Namensnennung 4.0 International (CC BY 4.0). This license allows reusers to distribute, remix, adapt, and build upon the material in any medium or format, so long as attribution is given to the creator. The license allows for commercial use.",
+        "es": "Atribución 4.0 Internacional (CC BY 4.0). This license allows reusers to distribute, remix, adapt, and build upon the material in any medium or format, so long as attribution is given to the creator. The license allows for commercial use.",
+        "fr": "Attribution 4.0 International (CC BY 4.0). This license allows reusers to distribute, remix, adapt, and build upon the material in any medium or format, so long as attribution is given to the creator. The license allows for commercial use.",
+        "it": "Attribuzione 4.0 Internazionale (CC BY 4.0). This license allows reusers to distribute, remix, adapt, and build upon the material in any medium or format, so long as attribution is given to the creator. The license allows for commercial use.",
+        "ja": "表示 4.0 国際 (CC BY 4.0). This license allows reusers to distribute, remix, adapt, and build upon the material in any medium or format, so long as attribution is given to the creator. The license allows for commercial use.",
+        "ko": "저작자표시 4.0 국제 (CC BY 4.0). This license allows reusers to distribute, remix, adapt, and build upon the material in any medium or format, so long as attribution is given to the creator. The license allows for commercial use.",
+        "nl": "Naamsvermelding 4.0 Internationaal (CC BY 4.0). This license allows reusers to distribute, remix, adapt, and build upon the material in any medium or format, so long as attribution is given to the creator. The license allows for commercial use.",
+        "pt": "Atribuição 4.0 Internacional (CC BY 4.0). This license allows reusers to distribute, remix, adapt, and build upon the material in any medium or format, so long as attribution is given to the creator. The license allows for commercial use.",
+        "th": "แสดงที่มา 4.0 International (CC BY 4.0). This license allows reusers to distribute, remix, adapt, and build upon the material in any medium or format, so long as attribution is given to the creator. The license allows for commercial use.",
+        "tr": "Atıf 4.0 Uluslararası (CC BY 4.0). This license allows reusers to distribute, remix, adapt, and build upon the material in any medium or format, so long as attribution is given to the creator. The license allows for commercial use.",
+        "vi": "Ghi công 4.0 Quốc tế (CC BY 4.0). This license allows reusers to distribute, remix, adapt, and build upon the material in any medium or format, so long as attribution is given to the creator. The license allows for commercial use.",
+        "zh-CN": "署名 4.0 国际 (CC BY 4.0)。This license allows reusers to distribute, remix, adapt, and build upon the material in any medium or format, so long as attribution is given to the creator. The license allows for commercial use.",
+        "zh-TW": "姓名標示 4.0 國際 (CC BY 4.0)。This license allows reusers to distribute, remix, adapt, and build upon the material in any medium or format, so long as attribution is given to the creator. The license allows for commercial use."
+      },
+      "version": "4.0",
+      "uri": "https://creativecommons.org/licenses/by/4.0/",
+      "icon_url": {
+        "base": "https://mirrors.creativecommons.org/presskit/icons/",
+        "files": ["cc.svg", "by.svg"]
+      },
+      "button_url": {
+        "base": "https://mirrors.creativecommons.org/presskit/buttons/88x31/svg/",
+        "file": "by.svg"
+      }
+    },
+    {
+      "id": "by-sa",
+      "name": {
+        "en-US": "Attribution-ShareAlike",
+        "ca": "Reconeixement-CompartirIgual",
+        "de": "Namensnennung - Weitergabe unter gleichen Bedingungen",
+        "es": "Atribución-CompartirIgual",
+        "fr": "Attribution - Partage dans les Mêmes Conditions",
+        "it": "Attribuzione - Condividi allo stesso modo",
+        "ja": "表示 - 継承",
+        "ko": "저작자표시-동일조건변경허락",
+        "nl": "Naamsvermelding-GelijkDelen",
+        "pt": "Atribuição-CompartilhaIgual",
+        "th": "แสดงที่มา-อนุญาตแบบเดียวกัน",
+        "tr": "Atıf-AynıLisanslaPaylaş",
+        "vi": "Ghi công - Chia sẻ tương tự",
+        "zh-CN": "署名-相同方式共享",
+        "zh-TW": "姓名標示-相同方式分享"
+      },
+      "text": {
+        "en-US": "Attribution-ShareAlike 4.0 International (CC BY-SA 4.0). This license allows reusers to distribute, remix, adapt, and build upon the material in any medium or format, so long as attribution is given to the creator. The license allows for commercial use. If you remix, adapt, or build upon the material, you must license the modified material under identical terms.",
+        "ca": "Reconeixement-CompartirIgual 4.0 Internacional (CC BY-SA 4.0). This license allows reusers to distribute, remix, adapt, and build upon the material in any medium or format, so long as attribution is given to the creator. The license allows for commercial use. If you remix, adapt, or build upon the material, you must license the modified material under identical terms.",
+        "de": "Namensnennung - Weitergabe unter gleichen Bedingungen 4.0 International (CC BY-SA 4.0). This license allows reusers to distribute, remix, adapt, and build upon the material in any medium or format, so long as attribution is given to the creator. The license allows for commercial use. If you remix, adapt, or build upon the material, you must license the modified material under identical terms.",
+        "es": "Atribución-CompartirIgual 4.0 Internacional (CC BY-SA 4.0). This license allows reusers to distribute, remix, adapt, and build upon the material in any medium or format, so long as attribution is given to the creator. The license allows for commercial use. If you remix, adapt, or build upon the material, you must license the modified material under identical terms.",
+        "fr": "Attribution - Partage dans les Mêmes Conditions 4.0 International (CC BY-SA 4.0). This license allows reusers to distribute, remix, adapt, and build upon the material in any medium or format, so long as attribution is given to the creator. The license allows for commercial use. If you remix, adapt, or build upon the material, you must license the modified material under identical terms.",
+        "it": "Attribuzione - Condividi allo stesso modo 4.0 Internazionale (CC BY-SA 4.0). This license allows reusers to distribute, remix, adapt, and build upon the material in any medium or format, so long as attribution is given to the creator. The license allows for commercial use. If you remix, adapt, or build upon the material, you must license the modified material under identical terms.",
+        "ja": "表示 - 継承 4.0 国際 (CC BY-SA 4.0). This license allows reusers to distribute, remix, adapt, and build upon the material in any medium or format, so long as attribution is given to the creator. The license allows for commercial use. If you remix, adapt, or build upon the material, you must license the modified material under identical terms.",
+        "ko": "저작자표시-동일조건변경허락 4.0 국제 (CC BY-SA 4.0). This license allows reusers to distribute, remix, adapt, and build upon the material in any medium or format, so long as attribution is given to the creator. The license allows for commercial use. If you remix, adapt, or build upon the material, you must license the modified material under identical terms.",
+        "nl": "Naamsvermelding-GelijkDelen 4.0 Internationaal (CC BY-SA 4.0). This license allows reusers to distribute, remix, adapt, and build upon the material in any medium or format, so long as attribution is given to the creator. The license allows for commercial use. If you remix, adapt, or build upon the material, you must license the modified material under identical terms.",
+        "pt": "Atribuição-CompartilhaIgual 4.0 Internacional (CC BY-SA 4.0). This license allows reusers to distribute, remix, adapt, and build upon the material in any medium or format, so long as attribution is given to the creator. The license allows for commercial use. If you remix, adapt, or build upon the material, you must license the modified material under identical terms.",
+        "th": "แสดงที่มา-อนุญาตแบบเดียวกัน 4.0 International (CC BY-SA 4.0). This license allows reusers to distribute, remix, adapt, and build upon the material in any medium or format, so long as attribution is given to the creator. The license allows for commercial use. If you remix, adapt, or build upon the material, you must license the modified material under identical terms.",
+        "tr": "Atıf-AynıLisanslaPaylaş 4.0 Uluslararası (CC BY-SA 4.0). This license allows reusers to distribute, remix, adapt, and build upon the material in any medium or format, so long as attribution is given to the creator. The license allows for commercial use. If you remix, adapt, or build upon the material, you must license the modified material under identical terms.",
+        "vi": "Ghi công - Chia sẻ tương tự 4.0 Quốc tế (CC BY-SA 4.0). This license allows reusers to distribute, remix, adapt, and build upon the material in any medium or format, so long as attribution is given to the creator. The license allows for commercial use. If you remix, adapt, or build upon the material, you must license the modified material under identical terms.",
+        "zh-CN": "署名-相同方式共享 4.0 国际 (CC BY-SA 4.0). This license allows reusers to distribute, remix, adapt, and build upon the material in any medium or format, so long as attribution is given to the creator. The license allows for commercial use. If you remix, adapt, or build upon the material, you must license the modified material under identical terms.",
+        "zh-TW": "姓名標示-相同方式分享 4.0 國際 (CC BY-SA 4.0). This license allows reusers to distribute, remix, adapt, and build upon the material in any medium or format, so long as attribution is given to the creator. The license allows for commercial use. If you remix, adapt, or build upon the material, you must license the modified material under identical terms."
+      },
+      "version": "4.0",
+      "uri": "https://creativecommons.org/licenses/by-sa/4.0/",
+      "icon_url": {
+        "base": "https://mirrors.creativecommons.org/presskit/icons/",
+        "files": ["cc.svg", "by.svg", "sa.svg"]
+      },
+      "button_url": {
+        "base": "https://mirrors.creativecommons.org/presskit/buttons/88x31/svg/",
+        "file": "by-sa.svg"
+      }
+    },
+    {
+      "id": "by-nd",
+      "name": {
+        "en-US": "Attribution-NoDerivatives",
+        "ca": "Reconeixement-SenseObraDerivada",
+        "de": "Namensnennung - Keine Bearbeitungen",
+        "es": "Atribución-SinDerivadas",
+        "fr": "Attribution - Pas de Modification",
+        "it": "Attribuzione - Non opere derivate",
+        "ja": "表示 - 改変禁止",
+        "ko": "저작자표시-변경금지",
+        "nl": "Naamsvermelding-GeenAfgeleideWerken",
+        "pt": "Atribuição-SemDerivações",
+        "th": "Attribution-NoDerivatives",
+        "tr": "Alıntı-Türetilemez",
+        "vi": "Attribution-NoDerivatives",
+        "zh-CN": "署名-禁止演绎",
+        "zh-TW": "姓名標示-禁止改作"
+      },
+      "text": {
+        "en-US": "Attribution-NoDerivatives 4.0 International (CC BY-ND 4.0). This license allows reusers to copy and distribute the material in any medium or format in unadapted form only, and only so long as attribution is given to the creator. The license allows for commercial use.",
+        "ca": "Reconeixement-SenseObraDerivada 4.0 Internacional (CC BY-ND 4.0). This license allows reusers to copy and distribute the material in any medium or format in unadapted form only, and only so long as attribution is given to the creator. The license allows for commercial use.",
+        "de": "Namensnennung - Keine Bearbeitungen 4.0 International (CC BY-ND 4.0). This license allows reusers to copy and distribute the material in any medium or format in unadapted form only, and only so long as attribution is given to the creator. The license allows for commercial use.",
+        "es": "Atribución-SinDerivadas 4.0 Internacional (CC BY-ND 4.0). This license allows reusers to copy and distribute the material in any medium or format in unadapted form only, and only so long as attribution is given to the creator. The license allows for commercial use.",
+        "fr": "Attribution - Pas de Modification 4.0 International (CC BY-ND 4.0). This license allows reusers to copy and distribute the material in any medium or format in unadapted form only, and only so long as attribution is given to the creator. The license allows for commercial use.",
+        "it": "Attribuzione - Non opere derivate 4.0 Internazionale (CC BY-ND 4.0). This license allows reusers to copy and distribute the material in any medium or format in unadapted form only, and only so long as attribution is given to the creator. The license allows for commercial use.",
+        "ja": "表示 - 改変禁止 4.0 国際 (CC BY-ND 4.0). This license allows reusers to copy and distribute the material in any medium or format in unadapted form only, and only so long as attribution is given to the creator. The license allows for commercial use.",
+        "ko": "저작자표시-변경금지 4.0 국제 (CC BY-ND 4.0). This license allows reusers to copy and distribute the material in any medium or format in unadapted form only, and only so long as attribution is given to the creator. The license allows for commercial use.",
+        "nl": "Naamsvermelding-GeenAfgeleideWerken 4.0 Internationaal (CC BY-ND 4.0). This license allows reusers to copy and distribute the material in any medium or format in unadapted form only, and only so long as attribution is given to the creator. The license allows for commercial use.",
+        "pt": "Atribuição-SemDerivações 4.0 Internacional (CC BY-ND 4.0). This license allows reusers to copy and distribute the material in any medium or format in unadapted form only, and only so long as attribution is given to the creator. The license allows for commercial use.",
+        "th": "Attribution-NoDerivatives 4.0 International (CC BY-ND 4.0). This license allows reusers to copy and distribute the material in any medium or format in unadapted form only, and only so long as attribution is given to the creator. The license allows for commercial use.",
+        "tr": "Alıntı-Türetilemez 4.0 Uluslararası (CC BY-ND 4.0). This license allows reusers to copy and distribute the material in any medium or format in unadapted form only, and only so long as attribution is given to the creator. The license allows for commercial use.",
+        "vi": "Attribution-NoDerivatives 4.0 Quốc tế (CC BY-ND 4.0). This license allows reusers to copy and distribute the material in any medium or format in unadapted form only, and only so long as attribution is given to the creator. The license allows for commercial use.",
+        "zh-CN": "署名-禁止演绎 4.0 国际 (CC BY-ND 4.0). This license allows reusers to copy and distribute the material in any medium or format in unadapted form only, and only so long as attribution is given to the creator. The license allows for commercial use.",
+        "zh-TW": "姓名標示-禁止改作 4.0 國際 (CC BY-ND 4.0). This license allows reusers to copy and distribute the material in any medium or format in unadapted form only, and only so long as attribution is given to the creator. The license allows for commercial use."
+      },
+      "version": "4.0",
+      "uri": "https://creativecommons.org/licenses/by-nd/4.0/",
+      "icon_url": {
+        "base": "https://mirrors.creativecommons.org/presskit/icons/",
+        "files": ["cc.svg", "by.svg", "nd.svg"]
+      },
+      "button_url": {
+        "base": "https://mirrors.creativecommons.org/presskit/buttons/88x31/svg/",
+        "file": "by-nd.svg"
+      }
+    },
+    {
+      "id": "by-nc",
+      "name": {
+        "en-US": "Attribution-NonCommercial",
+        "ca": "Reconeixement-NoComercial",
+        "de": "Namensnennung-Nicht kommerziell",
+        "es": "Atribución-NoComercial",
+        "fr": "Attribution - Pas d’Utilisation Commerciale",
+        "it": "Attribuzione - Non commerciale",
+        "ja": "表示 - 非営利",
+        "ko": "저작자표시-비영리",
+        "nl": "Naamsvermelding-NietCommercieel",
+        "pt": "Atribuição-NãoComercial",
+        "th": "แสดงที่มา-ไม่ใช้เพื่อการค้า",
+        "tr": "Atıf-GayriTicari",
+        "vi": "Attribution-NoDerivatives",
+        "zh-CN": "署名-非商业性使用",
+        "zh-TW": "姓名標示-非商業性"
+      },
+      "text": {
+        "en-US": "Attribution-NonCommercial 4.0 International (CC BY-NC 4.0). This license allows reusers to distribute, remix, adapt, and build upon the material in any medium or format for noncommercial purposes only, and only so long as attribution is given to the creator.",
+        "ca": "Reconeixement-NoComercial 4.0 Internacional (CC BY-NC 4.0). This license allows reusers to distribute, remix, adapt, and build upon the material in any medium or format for noncommercial purposes only, and only so long as attribution is given to the creator.",
+        "de": "Namensnennung-Nicht kommerziell 4.0 International (CC BY-NC 4.0). This license allows reusers to distribute, remix, adapt, and build upon the material in any medium or format for noncommercial purposes only, and only so long as attribution is given to the creator.",
+        "es": "Atribución-NoComercial 4.0 Internacional (CC BY-NC 4.0). This license allows reusers to distribute, remix, adapt, and build upon the material in any medium or format for noncommercial purposes only, and only so long as attribution is given to the creator.",
+        "fr": "Attribution - Pas d’Utilisation Commerciale 4.0 International (CC BY-NC 4.0). This license allows reusers to distribute, remix, adapt, and build upon the material in any medium or format for noncommercial purposes only, and only so long as attribution is given to the creator.",
+        "it": "Attribuzione - Non commerciale 4.0 Internazionale (CC BY-NC 4.0). This license allows reusers to distribute, remix, adapt, and build upon the material in any medium or format for noncommercial purposes only, and only so long as attribution is given to the creator.",
+        "ja": "表示 - 非営利 4.0 国際 (CC BY-NC 4.0). This license allows reusers to distribute, remix, adapt, and build upon the material in any medium or format for noncommercial purposes only, and only so long as attribution is given to the creator.",
+        "ko": "저작자표시-비영리 4.0 국제 (CC BY-NC 4.0). This license allows reusers to distribute, remix, adapt, and build upon the material in any medium or format for noncommercial purposes only, and only so long as attribution is given to the creator.",
+        "nl": "Naamsvermelding-NietCommercieel 4.0 Internationaal (CC BY-NC 4.0). This license allows reusers to distribute, remix, adapt, and build upon the material in any medium or format for noncommercial purposes only, and only so long as attribution is given to the creator.",
+        "pt": "Atribuição-NãoComercial 4.0 Internacional (CC BY-NC 4.0). This license allows reusers to distribute, remix, adapt, and build upon the material in any medium or format for noncommercial purposes only, and only so long as attribution is given to the creator.",
+        "th": "แสดงที่มา-ไม่ใช้เพื่อการค้า 4.0 International (CC BY-NC 4.0). This license allows reusers to distribute, remix, adapt, and build upon the material in any medium or format for noncommercial purposes only, and only so long as attribution is given to the creator.",
+        "tr": "Atıf-GayriTicari 4.0 Uluslararası (CC BY-NC 4.0). This license allows reusers to distribute, remix, adapt, and build upon the material in any medium or format for noncommercial purposes only, and only so long as attribution is given to the creator.",
+        "vi": "This license allows reusers to distribute, remix, adapt, and build upon the material in any medium or format for noncommercial purposes only, and only so long as attribution is given to the creator.",
+        "zh-CN": "署名-非商业性使用 4.0 国际 (CC BY-NC 4.0). This license allows reusers to distribute, remix, adapt, and build upon the material in any medium or format for noncommercial purposes only, and only so long as attribution is given to the creator.",
+        "zh-TW": "姓名標示-非商業性 4.0 國際 (CC BY-NC 4.0). This license allows reusers to distribute, remix, adapt, and build upon the material in any medium or format for noncommercial purposes only, and only so long as attribution is given to the creator."
+      },
+      "version": "4.0",
+      "uri": "https://creativecommons.org/licenses/by-nc/4.0/",
+      "icon_url": {
+        "base": "https://mirrors.creativecommons.org/presskit/icons/",
+        "files": ["cc.svg", "by.svg", "nc.svg"]
+      },
+      "button_url": {
+        "base": "https://mirrors.creativecommons.org/presskit/buttons/88x31/svg/",
+        "file": "by-nc.svg"
+      }
+    },
+    {
+      "id": "by-nc-sa",
+      "name": {
+        "en-US": "Attribution-NonCommercial-ShareAlike",
+        "ca": "Reconeixement-NoComercial-CompartirIgual",
+        "de": "Namensnennung - Nicht-kommerziell - Weitergabe unter gleichen Bedingungen",
+        "es": "Atribución-NoComercial-CompartirIgual",
+        "fr": "Attribution - Pas d’Utilisation Commerciale - Partage dans les Mêmes Conditions",
+        "it": "Attribuzione - Non commerciale - Condividi allo stesso modo",
+        "ja": "表示 - 非営利 - 継承",
+        "ko": "저작자표시-비영리-동일조건변경허락",
+        "nl": "Naamsvermelding-NietCommercieel-GelijkDelen",
+        "pt": "Atribuição-NãoComercial-CompartilhaIgual",
+        "th": "แสดงที่มา-ไม่ใช้เพื่อการค้า-อนุญาตแบบเดียวกัน",
+        "tr": "Atıf-GayriTicari-AynıLisanslaPaylaş",
+        "vi": "Ghi công - Phi thương mại - Chia sẻ tương tự",
+        "zh-CN": "署名-非商业性使用-相同方式共享",
+        "zh-TW": "姓名標示-非商業性-相同方式分享"
+      },
+      "text": {
+        "en-US": "Attribution-NonCommercial-ShareAlike 4.0 International (CC BY-NC-SA 4.0). This license allows reusers to distribute, remix, adapt, and build upon the material in any medium or format for noncommercial purposes only, and only so long as attribution is given to the creator. If you remix, adapt, or build upon the material, you must license the modified material under identical terms.",
+        "ca": "Reconeixement-NoComercial-CompartirIgual 4.0 Internacional (CC BY-NC-SA 4.0). This license allows reusers to distribute, remix, adapt, and build upon the material in any medium or format for noncommercial purposes only, and only so long as attribution is given to the creator. If you remix, adapt, or build upon the material, you must license the modified material under identical terms.",
+        "de": "Namensnennung - Nicht-kommerziell - Weitergabe unter gleichen Bedingungen 4.0 International (CC BY-NC-SA 4.0). This license allows reusers to distribute, remix, adapt, and build upon the material in any medium or format for noncommercial purposes only, and only so long as attribution is given to the creator. If you remix, adapt, or build upon the material, you must license the modified material under identical terms.",
+        "es": "Atribución-NoComercial-CompartirIgual 4.0 Internacional (CC BY-NC-SA 4.0). This license allows reusers to distribute, remix, adapt, and build upon the material in any medium or format for noncommercial purposes only, and only so long as attribution is given to the creator. If you remix, adapt, or build upon the material, you must license the modified material under identical terms.",
+        "fr": "Attribution - Pas d’Utilisation Commerciale - Partage dans les Mêmes Conditions 4.0 International (CC BY-NC-SA 4.0). This license allows reusers to distribute, remix, adapt, and build upon the material in any medium or format for noncommercial purposes only, and only so long as attribution is given to the creator. If you remix, adapt, or build upon the material, you must license the modified material under identical terms.",
+        "it": "Attribuzione - Non commerciale - Condividi allo stesso modo 4.0 Internazionale (CC BY-NC-SA 4.0). This license allows reusers to distribute, remix, adapt, and build upon the material in any medium or format for noncommercial purposes only, and only so long as attribution is given to the creator. If you remix, adapt, or build upon the material, you must license the modified material under identical terms.",
+        "ja": "表示 - 非営利 - 継承 4.0 国際 (CC BY-NC-SA 4.0). This license allows reusers to distribute, remix, adapt, and build upon the material in any medium or format for noncommercial purposes only, and only so long as attribution is given to the creator. If you remix, adapt, or build upon the material, you must license the modified material under identical terms.",
+        "ko": "저작자표시-비영리-동일조건변경허락 4.0 국제 (CC BY-NC-SA 4.0). This license allows reusers to distribute, remix, adapt, and build upon the material in any medium or format for noncommercial purposes only, and only so long as attribution is given to the creator. If you remix, adapt, or build upon the material, you must license the modified material under identical terms.",
+        "nl": "Naamsvermelding-NietCommercieel-GelijkDelen 4.0 Internationaal (CC BY-NC-SA 4.0). This license allows reusers to distribute, remix, adapt, and build upon the material in any medium or format for noncommercial purposes only, and only so long as attribution is given to the creator. If you remix, adapt, or build upon the material, you must license the modified material under identical terms.",
+        "pt": "Atribuição-NãoComercial-CompartilhaIgual 4.0 Internacional (CC BY-NC-SA 4.0). This license allows reusers to distribute, remix, adapt, and build upon the material in any medium or format for noncommercial purposes only, and only so long as attribution is given to the creator. If you remix, adapt, or build upon the material, you must license the modified material under identical terms.",
+        "th": "แสดงที่มา-ไม่ใช้เพื่อการค้า-อนุญาตแบบเดียวกัน 4.0 International (CC BY-NC-SA 4.0). This license allows reusers to distribute, remix, adapt, and build upon the material in any medium or format for noncommercial purposes only, and only so long as attribution is given to the creator. If you remix, adapt, or build upon the material, you must license the modified material under identical terms.",
+        "tr": "Atıf-GayriTicari-AynıLisanslaPaylaş 4.0 Uluslararası (CC BY-NC-SA 4.0). This license allows reusers to distribute, remix, adapt, and build upon the material in any medium or format for noncommercial purposes only, and only so long as attribution is given to the creator. If you remix, adapt, or build upon the material, you must license the modified material under identical terms.",
+        "vi": "Ghi công - Phi thương mại - Chia sẻ tương tự 4.0 Quốc tế (CC BY-NC-SA 4.0). This license allows reusers to distribute, remix, adapt, and build upon the material in any medium or format for noncommercial purposes only, and only so long as attribution is given to the creator. If you remix, adapt, or build upon the material, you must license the modified material under identical terms.",
+        "zh-CN": "署名-非商业性使用-相同方式共享 4.0 国际 (CC BY-NC-SA 4.0). This license allows reusers to distribute, remix, adapt, and build upon the material in any medium or format for noncommercial purposes only, and only so long as attribution is given to the creator. If you remix, adapt, or build upon the material, you must license the modified material under identical terms.",
+        "zh-TW": "姓名標示-非商業性-相同方式分享 4.0 國際 (CC BY-NC-SA 4.0). This license allows reusers to distribute, remix, adapt, and build upon the material in any medium or format for noncommercial purposes only, and only so long as attribution is given to the creator. If you remix, adapt, or build upon the material, you must license the modified material under identical terms."
+      },
+      "version": "4.0",
+      "uri": "https://creativecommons.org/licenses/by-nc-sa/4.0/",
+      "icon_url": {
+        "base": "https://mirrors.creativecommons.org/presskit/icons/",
+        "files": ["cc.svg", "by.svg", "nc.svg", "sa.svg"]
+      },
+      "button_url": {
+        "base": "https://mirrors.creativecommons.org/presskit/buttons/88x31/svg/",
+        "file": "by-nc-sa.svg"
+      }
+    },
+    {
+      "id": "by-nc-nd",
+      "name": {
+        "en-US": "Attribution-NonCommercial-NoDerivatives",
+        "ca": "Reconeixement-NoComercial-SenseObraDerivada",
+        "de": "Namensnennung - Nicht kommerziell - Keine Bearbeitungen",
+        "es": "Atribución-NoComercial-SinDerivadas",
+        "fr": "Attribution - Pas d'Utilisation Commerciale - Pas de Modification",
+        "it": "Attribuzione - Non commerciale - Non opere derivate",
+        "ja": "表示 - 非営利 - 改変禁止",
+        "ko": "저작자표시-비영리-변경금지",
+        "nl": "Naamsvermelding-NietCommercieel-GeenAfgeleideWerken",
+        "pt": "Atribuição-NãoComercial-SemDerivações",
+        "th": "Attribution-NonCommercial-NoDerivatives",
+        "tr": "Alıntı-GayriTicari-Türetilemez",
+        "vi": "Attribution-NonCommercial-NoDerivatives",
+        "zh-CN": "署名-非商业性使用-禁止演绎",
+        "zh-TW": "姓名標示-非商業性-禁止改作"
+      },
+      "text": {
+        "en-US": "Attribution-NonCommercial-NoDerivatives 4.0 International (CC BY-NC-ND 4.0). This license allows reusers to copy and distribute the material in any medium or format in unadapted form only, for noncommercial purposes only, and only so long as attribution is given to the creator.",
+        "ca": "Reconeixement-NoComercial-SenseObraDerivada 4.0 Internacional (CC BY-NC-ND 4.0). This license allows reusers to copy and distribute the material in any medium or format in unadapted form only, for noncommercial purposes only, and only so long as attribution is given to the creator.",
+        "de": "Namensnennung - Nicht kommerziell - Keine Bearbeitungen 4.0 International (CC BY-NC-ND 4.0). This license allows reusers to copy and distribute the material in any medium or format in unadapted form only, for noncommercial purposes only, and only so long as attribution is given to the creator.",
+        "es": "Atribución-NoComercial-SinDerivadas 4.0 Internacional (CC BY-NC-ND 4.0). This license allows reusers to copy and distribute the material in any medium or format in unadapted form only, for noncommercial purposes only, and only so long as attribution is given to the creator.",
+        "fr": "Attribution - Pas d'Utilisation Commerciale - Pas de Modification 4.0 International (CC BY-NC-ND 4.0). This license allows reusers to copy and distribute the material in any medium or format in unadapted form only, for noncommercial purposes only, and only so long as attribution is given to the creator.",
+        "it": "Attribuzione - Non commerciale - Non opere derivate 4.0 Internazionale (CC BY-NC-ND 4.0). This license allows reusers to copy and distribute the material in any medium or format in unadapted form only, for noncommercial purposes only, and only so long as attribution is given to the creator.",
+        "ja": "表示 - 非営利 - 改変禁止 4.0 国際 (CC BY-NC-ND 4.0). This license allows reusers to copy and distribute the material in any medium or format in unadapted form only, for noncommercial purposes only, and only so long as attribution is given to the creator.",
+        "ko": "저작자표시-비영리-변경금지 4.0 국제 (CC BY-NC-ND 4.0). This license allows reusers to copy and distribute the material in any medium or format in unadapted form only, for noncommercial purposes only, and only so long as attribution is given to the creator.",
+        "nl": "Naamsvermelding-NietCommercieel-GeenAfgeleideWerken 4.0 Internationaal (CC BY-NC-ND 4.0). This license allows reusers to copy and distribute the material in any medium or format in unadapted form only, for noncommercial purposes only, and only so long as attribution is given to the creator.",
+        "pt": "Atribuição-NãoComercial-SemDerivações 4.0 Internacional (CC BY-NC-ND 4.0). This license allows reusers to copy and distribute the material in any medium or format in unadapted form only, for noncommercial purposes only, and only so long as attribution is given to the creator.",
+        "th": "Attribution-NonCommercial-NoDerivatives 4.0 International (CC BY-NC-ND 4.0). This license allows reusers to copy and distribute the material in any medium or format in unadapted form only, for noncommercial purposes only, and only so long as attribution is given to the creator.",
+        "tr": "Alıntı-GayriTicari-Türetilemez 4.0 Uluslararası (CC BY-NC-ND 4.0). This license allows reusers to copy and distribute the material in any medium or format in unadapted form only, for noncommercial purposes only, and only so long as attribution is given to the creator.",
+        "vi": "Attribution-NonCommercial-NoDerivatives 4.0 Quốc tế (CC BY-NC-ND 4.0). This license allows reusers to copy and distribute the material in any medium or format in unadapted form only, for noncommercial purposes only, and only so long as attribution is given to the creator.",
+        "zh-CN": "署名-非商业性使用-禁止演绎 4.0 国际 (CC BY-NC-ND 4.0). This license allows reusers to copy and distribute the material in any medium or format in unadapted form only, for noncommercial purposes only, and only so long as attribution is given to the creator.",
+        "zh-TW": "姓名標示-非商業性-禁止改作 4.0 國際 (CC BY-NC-ND 4.0). This license allows reusers to copy and distribute the material in any medium or format in unadapted form only, for noncommercial purposes only, and only so long as attribution is given to the creator."
+      },
+      "version": "4.0",
+      "uri": "https://creativecommons.org/licenses/by-nc-nd/4.0/",
+      "icon_url": {
+        "base": "https://mirrors.creativecommons.org/presskit/icons/",
+        "files": ["cc.svg", "by.svg", "nc.svg", "nd.svg"]
+      },
+      "button_url": {
+        "base": "https://mirrors.creativecommons.org/presskit/buttons/88x31/svg/",
+        "file": "by-nc-nd.svg"
+      }
+    }
+  ],
+  "version": "1.1",
+  "changelog": "1.1 2022-06-10 add text localization;"
+}

@@ -356,3 +356,23 @@ a.SimpleSearch-headerAdvancedSearchButtonLink {
 #trademark {
    display: none;
 }
+
+
+/***********************************************************
+ *  Clickable preview image to expand.
+ */
+.ItemImage-expandButton {
+   height: 100%;
+   width: 100%;
+   opacity: 0;
+   top: 0;
+   right: 0;
+ }
+ 
+ .ItemPDF-expandButton {
+   height: 100%;
+   width: 100%;
+   opacity: 0;
+   top: 0;
+   right: 0;
+ }
