@@ -3,7 +3,7 @@ Code Repository: https://github.com/gsu-library/contentdm-hosted-files
 Author: Matt Brooks <mbrooks34@gsu.edu>  
 Date Created: 2019-06-27  
 License: none  
-Version: 1.10.0
+Version: 1.10.1
 
 ## Description
 This repostiory performs the following:
@@ -34,7 +34,7 @@ These parameters can be used in any combination and do not have to contain a val
 ## CONTENTdm Cookbook Recipes<a name="cookbook"></a>
 The following recipes used are from the [CONTENTdm cookbook recipe portal](https://cdmdemo.contentdm.oclc.org/digital/custom/recipedownloads):
 
-- [Rights & Licenses Badges](https://help.oclc.org/Metadata_Services/CONTENTdm/Advanced_website_customization/Customization_cookbook/Rights_and_licenses_badges), v1.0
+- [Rights & Licenses Badges](https://help.oclc.org/Metadata_Services/CONTENTdm/Advanced_website_customization/Customization_cookbook/Rights_and_licenses_badges), v1.1
 - [Mirador 2 Integration](https://help.oclc.org/Metadata_Services/CONTENTdm/Advanced_website_customization/Customization_cookbook/Mirador_viewer_integration), v2
 - [Insert IIIF Links as Metadata](https://help.oclc.org/Metadata_Services/CONTENTdm/Advanced_website_customization/Customization_cookbook/insert_iiif_manifest_link_as_metadata), v1.0
 
