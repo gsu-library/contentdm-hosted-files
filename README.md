@@ -3,7 +3,7 @@ Code Repository: https://github.com/gsu-library/contentdm-hosted-files
 Author: Matt Brooks <mbrooks34@gsu.edu>  
 Date Created: 2019-06-27  
 License: none  
-Version: 1.10.1
+Version: 1.11.0
 
 ## Description
 This repostiory performs the following:
