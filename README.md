@@ -4,7 +4,7 @@ Code Repository: https://github.com/gsu-library/contentdm-hosted-files
 Author: Matt Brooks <mbrooks34@gsu.edu>  
 Date Created: 2019-06-27  
 License: none  
-Version: 1.12.0
+Version: 1.13.0
 
 ## Description
 
@@ -15,7 +15,8 @@ This repostiory performs the following:
 - adds links to georeferenced items
 - adds links to the collections atlphdata and planATLpubs
 - adds an offensive content popup warning
-- implements the [cookbook recipes](#cookbook) below
+- adds an ADA statement to the bottom of item pages having hidden metadata of `tag: TitleIIArchival`
+- implements the [cookbook recipes](#contentdm-cookbook-recipes) below
 
 ## Usage
 
@@ -37,13 +38,16 @@ Add the following URL parameters to a page to enable debugging:
 
 These parameters can be used in any combination and do not have to contain a value (e.g., `?debugCss&removeJs` will both remove the custom JavaScript and replace the custom CSS with the CSS file from the static server). The removeCss parameter trumps the debugCSS parameter so if both are present only the CSS will be removed from the page.
 
-## CONTENTdm Cookbook Recipes<a name="cookbook"></a>
+## CONTENTdm Cookbook Recipes
 
 The following recipes used are from the [CONTENTdm cookbook recipe portal](https://cdmdemo.contentdm.oclc.org/digital/custom/recipedownloads):
 
 - [Rights & Licenses Badges](https://help.oclc.org/Metadata_Services/CONTENTdm/Advanced_website_customization/Customization_cookbook/Rights_and_licenses_badges), v1.1
 - [Mirador 2 Integration](https://help.oclc.org/Metadata_Services/CONTENTdm/Advanced_website_customization/Customization_cookbook/Mirador_viewer_integration), v2
 - [Insert IIIF Links as Metadata](https://help.oclc.org/Metadata_Services/CONTENTdm/Advanced_website_customization/Customization_cookbook/insert_iiif_manifest_link_as_metadata), v1.0
+- [Archived Content Banner](https://cdmdemo.contentdm.oclc.org/digital/custom/recipedownloads#id-ada-bnr), v1.3 [^1]
+
+[^1]: The ada-statement.js file is based off of this.
 
 ## Dependencies
 
