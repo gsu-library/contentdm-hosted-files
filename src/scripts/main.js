@@ -34,6 +34,7 @@ import { aeon_button } from "./modules/aeon-integration";
 import { rights_licenses_badges } from "./modules/rights-licenses-badges";
 import { mirador_integration } from "./modules/mirador-integration";
 import { insert_iiif_links } from "./modules/insert-iiif-links";
+import { ada_statement } from "./modules/ada-statement";
 
 
 // var removeJs = false
@@ -77,11 +78,12 @@ document.addEventListener("cdm-collection-landing-page:ready", function() {
 
 
 // Custom CDM call for an item page ready state.
-document.addEventListener('cdm-item-page:ready', function(){
+document.addEventListener('cdm-item-page:ready', function(e){
    all_pages_tweaks();
    // if(!removeJs) { item_page_tweaks(); }
    item_page_tweaks();
    offensive_content_popup();
+   ada_statement(e);
 });
 
 
