@@ -47,7 +47,7 @@ The following recipes used are from the [CONTENTdm cookbook recipe portal](https
 - [Insert IIIF Links as Metadata](https://help.oclc.org/Metadata_Services/CONTENTdm/Advanced_website_customization/Customization_cookbook/insert_iiif_manifest_link_as_metadata), v1.0
 - [Archived Content Banner](https://cdmdemo.contentdm.oclc.org/digital/custom/recipedownloads#id-ada-bnr), v1.3 [^1]
 
-[^1]: The [ada-statement.js](src/scripts/modules/ada-statement.js) file is based off of this.
+[^1]: The ada-statement.js file is based off of this.
 
 ## Dependencies
 
