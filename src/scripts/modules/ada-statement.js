@@ -13,7 +13,7 @@ function ada_statement(e) {
    itemId = e.detail.itemId;
    get_item_info(collectionId, itemId);
    adaTitle = 'Accessibility Support';
-   adaStatement = 'This item is exempt from Title II requirements. For more information, see our <a href="https://digitalcollections.library.gsu.edu/digital/custom/accessibility">Accessibility Statement</a>.';
+   adaStatement = 'This item is maintained for historical, research, or record-keeping purposes only. This item may not meet current WCAG 2.1 AA accessibility standards and under ADA Title II is exempt. For more information, see our <a href="https://digitalcollections.library.gsu.edu/digital/custom/accessibility">Accessibility Statement</a>. Please contact us at <a href="mailto:digitalcollections@gsu.edu">digitalcollections@gsu.edu</a> to request accessible alternatives.';
 
 
    // Call API so we can get item tags.
